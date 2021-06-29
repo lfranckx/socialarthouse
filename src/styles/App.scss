@@ -1,0 +1,30 @@
+@font-face {
+  font-family: "Manhattan";
+  src: url('../fonts/Manhattan-Regular.otf');
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url('../fonts/Lato-Light.otf');
+}
+
+* {
+  font-family: 'Lato';
+}
+
+h1, h2, h3, h4, h5 {
+  margin: 0;
+  font-family: "Manhattan", serif;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+body {
+  margin: 0;
+}
+
+.App {
+  text-align: center;
+}
