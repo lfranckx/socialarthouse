@@ -1,6 +1,8 @@
 import React from 'react';
 import '../styles/Navbar.scss';
 import logo from '../images/logo.png';
+import Homepage from './Homepage';
+import { Link } from 'react-router-dom';
 
 export default function Navbar(props) {
     return (
@@ -8,9 +10,9 @@ export default function Navbar(props) {
             <nav>
                 <div className="empty-space"></div>
 
-                <img id="logo" src={logo} alt="logo"/>
+                <h1><img id="logo" src={logo} alt="logo"/></h1>
 
-                <button class="btn">Need to Connect</button>
+                <Link class="btn" to={Homepage}>Need to Connect</Link>
             </nav>
         </div>
     );

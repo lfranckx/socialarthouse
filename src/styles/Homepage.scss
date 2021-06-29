@@ -1,11 +1,133 @@
 #homepage {
-    main {
-        height: 70vh;
+    header {
         background-image: url('../images/Wave-lines.png');
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
         padding: 160px 40px 40px;
 
         h2 {
-            font-size: 48px;
+            font-size: 52px;
+            text-transform: uppercase;
+        }
+
+        h3 {
+            font-family: "Lato";
+            font-size: 32px;
+            margin: 60px auto 380px;
+            max-width: 1000px;
+        }
+    }
+
+    main {
+        #about {
+            background: #DCCEC8;
+            padding: 60px 0;
+
+            h3 {
+                font-size: 44px;
+                max-width: 1000px;
+                margin: auto;
+            }
+
+            ul {
+                margin-top: 60px;
+                display: grid;
+                grid-template-columns: repeat(3, minmax(0, 1fr));
+
+                li {
+                    padding: 40px;
+
+                    &:nth-child(2) {
+                        border-right: solid 1px #000;
+                        border-left: solid 1px #000;
+                    }
+
+                    h4 {
+                        font-size: 32px;
+                        font-family: "Lato-Bold";
+                    } 
+                    
+                    p {
+                        text-align: left;
+                    }
+                }
+            }
+        }   
+
+        #services {
+            padding: 60px 0;
+
+            h3 {
+                font-size: 44px;
+            }
+
+            ul {
+                display: grid;
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                // max-width: 1400px;
+                // margin: 20px auto 0;
+                padding: 80px;
+
+                li {
+                    padding: 40px;
+
+                    &:nth-child(1) {
+                        border-right: solid 1px #000;
+                        border-bottom: solid 1px #000;
+                    }
+
+
+                    &:nth-child(2) {
+                        border-bottom: solid 1px #000;
+                    }
+
+                    &:nth-child(3) {
+                        border-right: solid 1px #000;
+                    }
+
+                    h4 {
+                        font-size: 32px;
+                        font-family: "Lato-Bold";
+                    }
+
+                    p {
+                        text-align: left;
+                        padding: 20px 0;
+                        max-width: 500px;
+                        margin: auto;
+                    }
+
+                    button {
+                        border: none;
+                        background: none;
+                        display: flex;
+                        align-items: baseline;
+                        margin-top: 20px;
+                        margin-left: auto;
+                        font-family: "Lato-Bold";
+
+                        .fas {
+                            font-size: 10px;
+                            margin-left: 5px;
+                        }
+                    }
+                }
+            }
+        }
+
+        #contact {
+            background: #F2F2F2;
+            padding: 60px 0 80px;
+
+            h3 {
+                font-size: 44px;
+            }
+
+            div {
+                margin-top: 60px;
+            }
         }
     }
 }
