@@ -129,5 +129,29 @@
                 margin-top: 60px;
             }
         }
+
+        #team {
+            padding: 60px 0;
+
+            h3 {
+                font-size: 44px;
+            }
+
+            div {
+
+                display: flex;
+                justify-content: space-around;
+                padding: 60px;
+
+                .card {
+                    img {
+                        height: 200px;
+                        border-radius: 50%;
+                    }
+                }
+                
+            }
+
+        }
     }
 }

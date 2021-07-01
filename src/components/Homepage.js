@@ -2,6 +2,11 @@ import React from 'react';
 import '../styles/Homepage.scss';
 import { Link }from 'react-router-dom';
 
+import maria from "../images/maria.jpg";
+import justine from "../images/justine.jpg"
+import marlene from "../images/marlene.jpg"
+import courtney from "../images/courtney.jpg"
+
 export default function Homepage(props) {
     return (
         <div id="homepage">
@@ -65,11 +70,20 @@ export default function Homepage(props) {
                 </section>
 
                 <section id="team">
+                    <h3>Social Arthouse Team</h3>
                     <div>
-                        <img src="" alt="maria" />
-                        <img src="" alt="justine" />
-                        <img src="" alt="marlene" />
-                        <img src="" alt="courtney" />
+                        <div className="card">
+                            <img src={maria} alt="maria" />
+                        </div>
+                        <div className="card">
+                            <img src={justine} alt="justine" />
+                        </div>
+                        <div className="card">
+                            <img src={marlene} alt="marlene" />
+                        </div>
+                        <div className="card">
+                            <img src={courtney} alt="courtney" />
+                        </div>
                     </div>
                 </section>
             </main>
