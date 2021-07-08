@@ -14,3 +14,33 @@
 .brown {
     background: #814A3D;
 }
+
+.black {
+    background: #000;
+}
+
+#artists {
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(352px, 1fr));
+        grid-gap: 20px;
+
+        div {
+            // max-width: 350px;
+            display: flex;
+            justify-content: center;
+            align-items: baseline;
+
+            img {
+                max-width: 350px;
+                // width: 350px;
+            }
+
+            .fill {
+                max-width: 350px;
+                height: 100%;
+                width: 100%;
+            }
+        }
+    }
+}
