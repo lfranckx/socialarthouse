@@ -1,5 +1,7 @@
-import React from 'react';
+import React, { Component } from 'react';
 import '../styles/ArtistRoster.scss';
+// import Masonry, { ResponsiveMasonry } from 'react-responsive-masonry';
+import Masonry from 'react-masonry-css';
 
 import andi from '../images/artists/andi.png';
 import bri from '../images/artists/bri.png';
@@ -19,43 +21,160 @@ import sydney from '../images/artists/sydney.jpeg';
 import tippi from '../images/artists/tippi.jpg';
 
 
-export default function ArtistRoster(props) {
-    return (
-        <>
-            <section id="artists">
-                <h3>Our Artist Collective</h3>
-                <div className='grid'>
-                    <div><img className="thumbnail" src={johnny} alt="johnny-ramirez" /></div>
-                    <div><div className="tan fill"></div></div>
-                    <div><img className="thumbnail" src={leysa} alt="leysa-carillo" /></div>
-                    <div><div className="black fill"></div></div>
-                    
-                    <div><img className="thumbnail" src={lala} alt="lala-chihala" /></div>
-                    <div><img className="thumbnail" src={ramon} alt="ramon-garcia" /></div>
-                    <div><img className="thumbnail" src={laura} alt="laura-gibson" /></div>
-                    <div><div className="light-brown fill"></div></div>
-                    
-                    <div><div className='brown fill'></div></div>
-                    <div><img className="thumbnail" src={michelle} alt="michelle-oconnor" /></div>
-                    <div><div className="black fill"></div></div>
-                    <div><img className="thumbnail" src={tippi} alt="tippi-shorter" /></div>
-                    
-                    <div><img className="thumbnail" src={drew} alt="drew-schaefering" /></div>
-                    <div><div className="tan fill"></div></div>
-                    <div><img className="thumbnail" src={chita} alt="chita-beseau" /></div>
-                    <div><img className="thumbnail" src={sydney} alt="sydney" /></div>
-                    
-                    <div><img className="thumbnail" src={rolando} alt="rolando-aqui" /></div>
-                    <div><img className="thumbnail" src={andi} alt="andi-scarbrough" /></div>
-                    <div><div className="tan fill"></div></div>
-                    <div><img className="thumbnail" src={shelley} alt="shelley-gregory" /></div>
-                    
-                    <div><img className="thumbnail" src={bri} alt="bri-bird" /></div>
-                    <div><div className='brown fill'></div></div>
-                    <div><div className="black fill"></div></div>
-                    <div><img className="thumbnail" src={minkim} alt="min-kim" /></div>
-                </div>
-            </section>
-        </>
-    )
+
+
+export default class ArtistRoster extends Component {
+    render () {
+        // const breakpoints = {
+        //     default: 4,
+        //     1100: 3,
+        //     900: 2,
+        //     700: 1
+        // }
+
+        return (
+            <>
+                <section id="artists">
+                    <h3>Our Artist Collective</h3>
+                    <div className='grid'>
+                        <div className="grid-item">
+                            <img className="thumbnail" src={johnny} alt="johnny-ramirez" />
+                            <div className="text-container">
+                                <h4>Johnny Ramirez</h4>
+                                <h4>@johnnyramirez</h4>
+                            </div>
+                            <div className="overlay"></div>
+                        </div>
+                        <div><div className="tan fill"></div></div>
+                        <div className="grid-item">
+                            <img className="thumbnail" src={leysa} alt="leysa-carillo" />
+                            <div className="text-container">
+                                <h4>Leysa Carrillo</h4>
+                                <h4>@LeysaHairAndMakeup</h4>
+                            </div>
+                            <div className="overlay"></div>
+                        </div>
+                        <div><div className="black fill"></div></div>
+                        
+                        <div className="grid-item">
+                            <img className="thumbnail" src={lala} alt="lala-chihala" />
+                            <div className="text-container">
+                                <h4>Lala Chihala</h4>
+                                <h4>@lalasupdos</h4>
+                            </div>
+                            <div className="overlay"></div>
+                        </div>
+                        <div className="grid-item">
+                            <img className="thumbnail" src={ramon} alt="ramon-garcia" />
+                            <div className="text-container">
+                                <h4>Ramon Garcia</h4>
+                                <h4>@RamonTGarcia</h4>
+                            </div>
+                            <div className="overlay"></div>
+                        </div>
+                        <div className="grid-item">
+                            <img className="thumbnail" src={laura} alt="laura-gibson" />
+                            <div className="text-container">
+                                <h4>Laura Gibson</h4>
+                                <h4>@LGibsonColorist</h4>
+                            </div>
+                            <div className="overlay"></div>
+                        </div>
+                        <div><div className="light-brown fill"></div></div>
+                        
+                        <div><div className='brown fill'></div></div>
+                        <div className="grid-item">
+                            <img className="thumbnail" src={michelle} alt="michelle-oconnor" />
+                            <div className="text-container">
+                                <h4>Michelle O'Connor</h4>
+                                <h4>@michelleoconnorbeauty</h4>
+                            </div>
+                            <div className="overlay"></div>
+                        </div>
+                        <div><div className="black fill"></div></div>
+                        <div className="grid-item">
+                            <img className="thumbnail" src={tippi} alt="tippi-shorter" />
+                            <div className="text-container">
+                                <h4>Tippi Shorter</h4>
+                                <h4>@Tippishoertrank</h4>
+                            </div>
+                            <div className="overlay"></div>
+                        </div>
+                        
+                        <div className='grid-item'>
+                            <img className="thumbnail" src={drew} alt="drew-schaefering" />
+                            <div className="text-container">
+                                <h4>Drew Schaefering</h4>
+                                <h4>@drewschaeferinghair</h4>
+                            </div>
+                            <div className="overlay"></div>
+                        </div>
+                        <div><div className="tan fill"></div></div>
+                        <div className='grid-item'>
+                            <img className="thumbnail" src={chita} alt="chita-beseau" />
+                            <div className="text-container">
+                                <h4>Chita Beseau</h4>
+                                <h4>@ChitaBeseau</h4>
+                            </div>
+                            <div className="overlay"></div>
+                        </div>
+                        <div className='grid-item'>
+                            <img className="thumbnail" src={sydney} alt="sydney-lopez" />
+                            <div className="text-container">
+                                <h4>Sydney Lopez</h4>
+                                <h4>@sydneyannlopezhair</h4>
+                            </div>
+                            <div className="overlay"></div>
+                        </div>
+                        
+                        <div className='grid-item'>
+                            <img className="thumbnail" src={rolando} alt="rolando-aqui" />
+                            <div className="text-container">
+                                <h4>Rolando Aqui</h4>
+                                <h4>@rolandoaqui</h4>
+                            </div>
+                            <div className="overlay"></div>
+                        </div>
+                        <div className='grid-item'>
+                            <img className="thumbnail" src={andi} alt="andi-scarbrough" />
+                            <div className="text-container">
+                                <h4>Andi Scarbrough</h4> 
+                                <h4>Crown_Works</h4>
+                            </div>
+                            <div className="overlay"></div>
+                        </div>
+                        <div><div className="tan fill"></div></div>
+                        <div className='grid-item'>
+                            <img className="thumbnail" src={shelley} alt="shelley-gregory" />
+                            <div className="text-container">
+                                <h4>Shelley Gregory</h4>
+                                <h4>ShelleyGregoryHair</h4>
+                            </div>
+                            <div className="overlay"></div>
+                        </div>
+                        
+                        <div className='grid-item'>
+                            <img className="thumbnail" src={bri} alt="bri-bird" />
+                            <div className="text-container">
+                                <h4>Bri Bird</h4>
+                                <h4>@manemystic</h4>
+                            </div>
+                            <div className="overlay"></div>
+                        </div>
+                        <div><div className='brown fill'></div></div>
+                        <div><div className="black fill"></div></div>
+                        <div className='grid-item'>
+                            <img className="thumbnail" src={minkim} alt="min-kim" />
+                            <div className="text-container">
+                                <h4>Min Kim</h4>
+                                <h4>@minkimcolorist</h4>
+                            </div>
+                            <div className="overlay"></div>
+                        </div>
+                    </div>
+                </section>
+            </>
+        )
+    }
+    
 }
