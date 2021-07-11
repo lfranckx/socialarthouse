@@ -232,20 +232,37 @@
 @media(max-width: 550px) {
     #homepage {
         header {
+            padding: 40px 20px 1px;
+
+            h2 {
+                font-size: 38px;
+            }
+
             h3 {
-                font-size: 24.5px;
-                margin-bottom: 440px;
+                font-size: 22px;
+                margin-bottom: 180px;
+                margin-top: 40px;
+                position: relative;
+                bottom: 20px;
             }
         }
 
         main {
 
             section {
+                padding: 60px 10px;
+
                 h3 {
-                    font-size: 36.75px;
+                    font-size: 32px;
                 }
             }
+
             #about {
+
+                h3 {
+                    font-size: 28px;
+                }
+
                 ul {
                     display: block;
                     li {
@@ -268,6 +285,10 @@
                     padding: 0;
                     li {
                         padding: 40px 0;
+
+                        h4 {
+                            font-size: 20px;
+                        }
                     }
                 }
             }
