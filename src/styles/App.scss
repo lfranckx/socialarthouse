@@ -24,6 +24,15 @@
   transition: all .2s ease-in-out;
 }
 
+body {
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+.App {
+  text-align: center;
+}
+
 h1, h2, h3, h4, h5, ul, p, a {
   margin: 0;
   padding: 0;
@@ -40,14 +49,6 @@ a {
 
 li {
   list-style-type: none;
-}
-
-body {
-  margin: 0;
-}
-
-.App {
-  text-align: center;
 }
 
 button {
@@ -78,6 +79,10 @@ button {
   padding: 20px 60px;
   border: none;
   font-size: 16px;
+}
+
+.hidden {
+  display: none;
 }
 
 @media (max-width: 550px) {

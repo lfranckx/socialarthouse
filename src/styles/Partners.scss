@@ -11,10 +11,8 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-row-gap: 100px;
-
-        padding: 60px 20px;
         max-width: 1000px;
-        margin: auto;
+        margin: 120px auto 60px;
 
         a {
             display: flex;  
@@ -27,6 +25,12 @@
         }
     }
 
+    .content {
+        height: 0px;
+        overflow: hidden;
+        transition: height ease 0.5s;
+    }
+
     button {
         background: none;
         color: #fff;
@@ -36,7 +40,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin: auto;
+        margin: 40px auto 0;
 
         &:hover i {
             cursor: pointer;

@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/Partners.scss';
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 
 import bab from '../images/partners/bab.png';
 import dyson from '../images/partners/dyson.png';
@@ -24,8 +24,12 @@ import mrlogo from '../images/partners/MRlogo-purple.png';
 import provalliance from '../images/partners/provalliance.png';
 
 
+
 export default function Partners(props) {
     const [isOpen, setIsOpen] = useState(false);
+    const collapsibleRef = useRef();
+
+    if (collapsibleRef.current) console.log(collapsibleRef.current.scrollHeight);
 
     return (
         <section id="partners">
@@ -49,32 +53,42 @@ export default function Partners(props) {
                 <a href="https://www.kerastase-usa.com/" target="_blank" rel="noopener noreferrer">
                     <img className="partner-logo" src={kerastase} alt="kerastase-paris" />
                 </a>
-                { isOpen && <>
-                    <a href='https://frommbeauty.com/' target="_blank" rel="noopener noreferrer">
-                        <img className="partner-logo" src={fromm} alt="fromm" />
-                    </a>
-                    <a href="https://www.joico.com/" target="_blank" rel="noopener noreferrer">
-                        <img className="partner-logo" src={joico} alt="joico" />
-                    </a>
-                    <a href="https://www.genejuarez.com/" target="_blank" rel="noopener noreferrer">
-                        <img className="partner-logo" src={genejuarez} alt="gene-juarez" />
-                    </a>
-                    <a href="https://www.matrix.com/" target="_blank" rel="noopener noreferrer">
-                        <img className="partner-logo" src={matrix} alt="matrix" />
-                    </a>
-                    <a href="https://www.beautyboxla.com/" target="_blank" rel="noopener noreferrer">
-                        <img className="partner-logo" src={beautybox} alt="dyson" /></a>
-                    <a href="https://www.beautyquestgroup.com/" target="_blank" rel="noopener noreferrer">
-                        <img className="partner-logo" src={bqg} alt="bqg-logo" />
-                    </a>
-                    <a href="https://www.miladypro.com/" target="_blank" rel="noopener noreferrer">
-                        <img className="partner-logo" src={miladypro} alt="milady-pro" />
-                    </a>
-                    <a href="https://www.madison-reed.com/" target="_blank" rel="noopener noreferrer">
-                        <img className="partner-logo" src={mrlogo} alt="madison-reed" />
-                    </a>
-                </>}
-            </div>            
+
+            </div>
+            <div 
+                ref={collapsibleRef} 
+                style={isOpen 
+                    ? {
+                        height: collapsibleRef.current.scrollHeight + 'px',
+                    } : {
+                        height: '0px',
+                    }}
+                className={"container content"}>
+                <a href='https://frommbeauty.com/' target="_blank" rel="noopener noreferrer">
+                    <img className="partner-logo" src={fromm} alt="fromm" />
+                </a>
+                <a href="https://www.joico.com/" target="_blank" rel="noopener noreferrer">
+                    <img className="partner-logo" src={joico} alt="joico" />
+                </a>
+                <a href="https://www.genejuarez.com/" target="_blank" rel="noopener noreferrer">
+                    <img className="partner-logo" src={genejuarez} alt="gene-juarez" />
+                </a>
+                <a href="https://www.matrix.com/" target="_blank" rel="noopener noreferrer">
+                    <img className="partner-logo" src={matrix} alt="matrix" />
+                </a>
+                <a href="https://www.beautyboxla.com/" target="_blank" rel="noopener noreferrer">
+                    <img className="partner-logo" src={beautybox} alt="dyson" /></a>
+                <a href="https://www.beautyquestgroup.com/" target="_blank" rel="noopener noreferrer">
+                    <img className="partner-logo" src={bqg} alt="bqg-logo" />
+                </a>
+                <a href="https://www.miladypro.com/" target="_blank" rel="noopener noreferrer">
+                    <img className="partner-logo" src={miladypro} alt="milady-pro" />
+                </a>
+                <a href="https://www.madison-reed.com/" target="_blank" rel="noopener noreferrer">
+                    <img className="partner-logo" src={mrlogo} alt="madison-reed" />
+                </a>
+            </div>
+                        
             <button onClick={() => setIsOpen(!isOpen)}>
                 {isOpen ? 'Close' : 'And More' }
                 { !isOpen && <span><i class="fas fa-chevron-down bounce"></i></span> }

@@ -63,61 +63,6 @@
             }
         }   
 
-        #services {
-            ul {
-                display: grid;
-                grid-template-columns: repeat(2, minmax(0, 1fr));
-                max-width: 2000px;
-                margin: auto;
-                padding: 50px 100px;
-
-                li {
-                    padding: 40px;
-
-                    &:nth-child(1) {
-                        border-right: solid 1px #000;
-                        border-bottom: solid 1px #000;
-                    }
-
-
-                    &:nth-child(2) {
-                        border-bottom: solid 1px #000;
-                    }
-
-                    &:nth-child(3) {
-                        border-right: solid 1px #000;
-                    }
-
-                    h4 {
-                        font-size: 32px;
-                        font-family: "Lato-Bold";
-                    }
-
-                    p {
-                        text-align: left;
-                        padding: 20px 0;
-                        max-width: 500px;
-                        margin: auto;
-                    }
-
-                    button {
-                        border: none;
-                        background: none;
-                        display: flex;
-                        align-items: baseline;
-                        margin-top: 20px;
-                        margin-left: auto;
-                        font-family: "Lato-Bold";
-
-                        .fas {
-                            font-size: 10px;
-                            margin-left: 5px;
-                        }
-                    }
-                }
-            }
-        }
-
         #contact {
             background: #F2F2F2;
             padding-bottom: 80px;
@@ -157,18 +102,7 @@
     }
 }
 
-@media(max-width: 1200px) {
 
-    #homepage {
-        main {
-            #services {
-                ul {
-                    padding: 50px;
-                }
-            }
-        }
-    }
-}
 
 @media(max-width: 800px) {
     #homepage {
@@ -196,35 +130,7 @@
                 }
             }
             
-            #services {
-                ul {
-                    display: block;
-                    li {        
-                            &:nth-child(1) {
-                                border-right: none;
-                            }
             
-                            &:nth-child(3) {
-                                border-right: none;
-                                border-bottom: solid 1px #000;
-                            }
-    
-                            &:nth-child(4) {
-                                border-bottom: solid 1px #000;
-                            }
-                        
-
-                        &:nth-child(1) {
-                            border-right: none;
-                        }
-        
-                        &:nth-child(3) {
-                            border-right: none;
-                            border-bottom: solid 1px #000;
-                        }
-                    }
-                }
-            }
         }
     }
 }
@@ -277,19 +183,6 @@
 
                         h4 {
                             font-size: 24.5px;
-                        }
-                    }
-                }
-            }
-
-            #services {
-                ul {
-                    padding: 0;
-                    li {
-                        padding: 40px 0;
-
-                        h4 {
-                            font-size: 20px;
                         }
                     }
                 }
