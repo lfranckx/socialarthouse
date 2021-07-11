@@ -12,7 +12,7 @@ export default function Navbar(props) {
 
                 <h1><img id="logo" src={logo} alt="logo"/></h1>
 
-                <Link class="btn" to={Homepage}>Need to Connect</Link>
+                <Link class="btn" to={Homepage}>Need to Connect?</Link>
             </nav>
         </div>
     );

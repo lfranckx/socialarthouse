@@ -137,25 +137,6 @@
     height: 447px;
 }
 
-// react-masonry-css
-.my-masonry-grid {
-    display: -webkit-box; /* Not needed if autoprefixing */
-    display: -ms-flexbox; /* Not needed if autoprefixing */
-    display: flex;
-    margin-left: -30px; /* gutter size offset */
-    width: auto;
-  }
-.my-masonry-grid_column {
-    padding-left: 30px; /* gutter size */
-    background-clip: padding-box;
-}
-  
-/* Style your items */
-.my-masonry-grid_column > div { /* change div to reference your elements you put in <Masonry> */
-    background: grey;
-    margin-bottom: 30px;
-}
-
 @media(max-width: 1500px) {
     #artists {
         .grid {
@@ -164,7 +145,7 @@
     }
 }
 
-@media(max-width: 1050px) {
+@media(max-width: 1150px) {
     #artists {
         .grid {
             columns: 2;
@@ -185,29 +166,37 @@
     }
 }
 
-@media(max-width: 450px) {
+@media(max-width: 380px) {
     #artists {
         .grid {
     
             a {
-                width: 250px;
+                width: 280px;
     
                 .grid-item {
-    
-                    &:hover {
-                        transform: scale(1.03);
-                    }
         
                     img {
-                        width: 250px;
+                        width: 280px;
                     }
 
                     .text-container {
-                        width: 250px;
+                        width: 280px;
+
+                        h4 {
+                            &:nth-child(1) {
+                                font-size: 22px;
+                                bottom: 35px;
+                            }
+
+                            &:nth-child(2) {
+                                font-size: 16px;
+                                bottom: 10px;
+                            }
+                        }
                     }
 
                     .overlay {
-                        width: 250px;
+                        width: 280px;
                     }
                 }
             }
