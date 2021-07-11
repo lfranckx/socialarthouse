@@ -1,38 +1,43 @@
 #footer {
     width: 100%;
     background: #000;
-    padding: 100px 40px 150px;
+    padding: 100px 40px;
 
     footer {
         max-width: 1500px;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-template-columns: 3fr 1fr;
 
-        .column {
-            div {
-                text-align: left;
-                margin-bottom: 15px;
-                p {
-                    font-size: 20px;
-                    font-family: "Lato-Reg";
-                    color: #fff;
-                }
+        .left {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 
-                .state {
-                    text-decoration: underline;
-                    margin-bottom: 30px;
-                    color: #fff;
-                }
-
-                a.email {
-                    color: #fff;
-                    font-size: 18px;
+            .column {
+                div {
+                    text-align: left;
+                    margin-bottom: 15px;
+                    p {
+                        font-size: 20px;
+                        font-family: "Lato-Reg";
+                        color: #fff;
+                    }
+    
+                    .state {
+                        text-decoration: underline;
+                        margin-bottom: 30px;
+                        color: #fff;
+                    }
+    
+                    a.email {
+                        color: #fff;
+                        font-size: 18px;
+                    }
                 }
             }
         }
     
 
-        .right-column {
+        .right {
             display: flex;
             justify-content: flex-end;
             max-width: 400px;
@@ -53,27 +58,53 @@
                     font-family: "Lato-reg"; 
                 }
             }
+
+            #copyright {
+                font-size: 10px;
+                margin-top: 40px;
+            }
         }
-    }
-}
-@media (max-width: 500px) {
-    #footer {
-        padding: 20px;
     }
 }
 
 @media (max-width: 679px) {
     #footer {
+        padding: 40px 20px;
+
         footer {
-            .column {
-                div {
-                    .state {
-                        margin-bottom: 10px;
+
+            .left {
+                .column {
+                    div {
+                        .state {
+                            margin-bottom: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 550px) {
+    #footer {
+        footer {
+            display: block;
+
+            .left {
+                .column {
+                    div {
+                        p {
+                            font-size: 18px;
+                        }
                     }
                 }
             }
 
-            .right-column {
+            .right {
+                max-width: 100%;
+                margin-top: 50px;
+                justify-content: flex-start;
             }
         }
     }
