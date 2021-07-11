@@ -1,19 +1,13 @@
 import React from 'react';
 import '../styles/Homepage.scss';
-import { Link }from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import ArtistRoster from './ArtistRoster';
+import Partners from './Partners';
 
 import maria from "../images/maria.jpg";
 import justine from "../images/justine.jpg";
 import marlene from "../images/marlene.jpg";
 import courtney from "../images/courtney.jpg";
-
-import bab from '../images/partners/bab.png';
-import dyson from '../images/partners/dyson.png';
-import kerastase from '../images/partners/kerastase.png';
-import loreal from '../images/partners/loreal.png';
-import redken from '../images/partners/redken.png';
-import ulta from '../images/partners/ulta.png';
 
 export default function Homepage(props) {
     return (
@@ -103,18 +97,7 @@ export default function Homepage(props) {
                     </div>
                 </section>
 
-                <section id="partners">
-                    <h3>Our Brand Partners</h3>
-                    <div className="container">
-                        <div><img className="partner-logo" src={dyson} alt="dyson" /></div>
-                        <div><img className="partner-logo" src={ulta} alt="ulta-beauty" /></div>
-                        <div><img className="partner-logo" src={loreal} alt="loreal-professional" /></div>
-                        <div><img className="partner-logo" src={redken} alt="redken" /></div>
-                        <div><img className="partner-logo" src={bab} alt="bumble-and-bumble" /></div>
-                        <div><img className="partner-logo" src={kerastase} alt="kerastase-paris" /></div>
-                    </div>
-                    <button>And More<span><i class="fas fa-chevron-down"></i></span></button>
-                </section>
+                <Partners />
                 <ArtistRoster />
             </main>
         </div>

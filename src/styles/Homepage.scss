@@ -22,7 +22,7 @@
 
     main {
         section {
-            padding: 60px 0;
+            padding: 60px 20px;
 
             h3 {
                 font-size: 48px;
@@ -53,6 +53,7 @@
                     h4 {
                         font-size: 32px;
                         font-family: "Lato-Bold";
+                        margin-bottom: 20px;
                     } 
                     
                     p {
@@ -66,9 +67,9 @@
             ul {
                 display: grid;
                 grid-template-columns: repeat(2, minmax(0, 1fr));
-                // max-width: 1400px;
-                // margin: 20px auto 0;
-                padding: 80px;
+                max-width: 2000px;
+                margin: auto;
+                padding: 50px 100px;
 
                 li {
                     padding: 40px;
@@ -128,11 +129,13 @@
 
         #team {
             div.container {
-                display: flex;
-                justify-content: space-around;
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
                 padding: 60px 0 0;
 
                 .card {
+                    margin-bottom: 50px;
+                    
                     img {
                         height: 200px;
                         border-radius: 50%;
@@ -151,45 +154,121 @@
                 }
             }
         }
+    }
+}
 
-        #partners {
-            // background: #DC997D;
-            background: #000000;
-            color: #fff;
-            padding-bottom: 20px;
+@media(max-width: 1200px) {
 
-            .container {
-                display: grid;
-                grid-template-columns: repeat(3, minmax(0, 2fr));
-                grid-row-gap: 40px;
-                padding: 60px 20px;
-                max-width: 1400px;
-                margin: auto;
+    #homepage {
+        main {
+            #services {
+                ul {
+                    padding: 50px;
+                }
+            }
+        }
+    }
+}
 
-                div {
-                    display: flex;  
-                    align-items: center;
-                    justify-content: center;
+@media(max-width: 800px) {
+    #homepage {
+        header {
+            h3 {
+                font-size: 28px;
+            }
+        }
 
-                    .partner-logo {
-                        max-width: 150px;
+        main {
+
+            section {
+                h3 {
+                    font-size: 42px;
+                }
+            }
+            #about {
+                ul {
+                    li {
+                        padding: 40px 20px;
+                        h4 {
+                            font-size: 28px;
+                        }
+                    }
+                }
+            }
+            
+            #services {
+                ul {
+                    display: block;
+                    li {        
+                            &:nth-child(1) {
+                                border-right: none;
+                            }
+            
+                            &:nth-child(3) {
+                                border-right: none;
+                                border-bottom: solid 1px #000;
+                            }
+    
+                            &:nth-child(4) {
+                                border-bottom: solid 1px #000;
+                            }
+                        
+
+                        &:nth-child(1) {
+                            border-right: none;
+                        }
+        
+                        &:nth-child(3) {
+                            border-right: none;
+                            border-bottom: solid 1px #000;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 550px) {
+    #homepage {
+        header {
+            h3 {
+                font-size: 24.5px;
+                margin-bottom: 440px;
+            }
+        }
+
+        main {
+
+            section {
+                h3 {
+                    font-size: 36.75px;
+                }
+            }
+            #about {
+                ul {
+                    display: block;
+                    li {
+                        &:nth-child(2) {
+                            border-right: none;
+                            border-left: none;
+                            border-top: 1px solid #000;
+                            border-bottom: 1px solid #000;
+                        }
+
+                        h4 {
+                            font-size: 24.5px;
+                        }
                     }
                 }
             }
 
-            button {
-                background: none;
-                color: #fff;
-                border: none;
-                font-size: 18px;
-                font-family: "Lato-Reg";
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                margin: auto;
-                
-                &:hover {
-                    cursor: pointer;
+            #services {
+                ul {
+                    padding: 0;
+                    li {
+                        padding: 40px 0;
+                    }
                 }
             }
         }

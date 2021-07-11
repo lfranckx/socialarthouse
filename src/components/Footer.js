@@ -1,10 +1,47 @@
 import React from 'react';
+import '../styles/Footer.scss';
 
 export default function Footer(props) {
     return (
         <div id="footer">
             <footer>
+                <div className='column'>
+                    <div>
+                        <p className="state">California</p>
+                        <p>Marlene</p>
+                        <a href="mailto:marlene@socialarthouse.com" className="email"
+                            target="_blank" rel="noopener noreferrer">Marlene@socialarthouse.com</a>
+                    </div>
+                </div>
+                <div className='column'>
+                    <div>
+                        <p className='state'>New York</p>
+                        <p>Courtney</p>
+                        <a href="mailto:courtney@socialarthouse.com" className="email"
+                            target="_blank" rel="noopener noreferrer">Courtney@socialarthouse.com</a>
+                    </div>
+                    <div>
+                        <p>Maria</p>
+                        <a href="mailto:maria@socialarthouse.com" className="email"
+                            target="_blank" rel="noopener noreferrer">Maria@socialarthouse.com</a>
+                    </div>
+                </div>
+                <div className='column'>
+                    <div>
+                        <p className="state">Colorado</p>
+                        <p>Justine</p>
+                        <a href="mailto:justine@socialarthouse.com" className="email"
+                            target="_blank" rel="noopener noreferrer">Justine@socialarthouse.com</a>
+                    </div>
+                </div>
 
+                <div className="right-column">
+                    <div>
+                        <p>Expansive Consulting Experience for Brands through ingenuity, originality, and imagination</p>
+                        <a href="mailto:info@socialarthouse.com" className="email"
+                            target="_blank" rel="noopener noreferrer">Info@socialarthouse.com</a>
+                    </div>
+                </div>
             </footer>
         </div>
     );

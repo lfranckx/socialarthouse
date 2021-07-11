@@ -1,0 +1,56 @@
+#footer {
+    width: 100%;
+    background: #000;
+    padding: 100px 0 150px;
+
+    footer {
+        max-width: 1500px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+        .column {
+            div {
+                text-align: left;
+                margin-bottom: 15px;
+                p {
+                    font-size: 20px;
+                    font-family: "Lato-Reg";
+                    color: #fff;
+                }
+
+                .state {
+                    text-decoration: underline;
+                    margin-bottom: 30px;
+                    color: #fff;
+                }
+
+                a.email {
+                    color: #fff;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+
+    .right-column {
+        display: flex;
+        justify-content: flex-end;
+
+        div {
+            max-width: 400px;
+            text-align: left;
+
+            p {
+                color: #fff;
+                font-size: 20px;
+                margin-bottom: 30px;
+            }
+
+            a {
+                color: #fff;
+                font-size: 20px;
+                font-family: "Lato-reg"; 
+            }
+        }
+    }
+}
