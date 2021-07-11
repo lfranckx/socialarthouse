@@ -1,6 +1,7 @@
 import React from 'react';
 import '../styles/Services.scss';
 import { useState } from 'react';
+import { Link, animateScroll as scroll } from 'react-scroll';
 
 export default function Services(props) {
     const [isFlipped1, flipCard1] = useState(false);
@@ -9,7 +10,7 @@ export default function Services(props) {
     const [isFlipped4, flipCard4] = useState(false);
 
     return (
-        <section id="services">
+        <section id={props.id}>
             <h3>Services</h3>
             <ul className="list">
                 <li className={ isFlipped1 ? 'item show flip' : 'item'}>
@@ -85,6 +86,10 @@ export default function Services(props) {
                     </button>
                 </li>
             </ul>
+
+            <Link activeClass="active" to="contact" spy={true} smooth={true} offset={0} duration={500}>
+                <i class="fas fa-chevron-down bounce"></i>
+            </Link>
         </section>
     )
 }
