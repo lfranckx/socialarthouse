@@ -1,155 +1,105 @@
 .grid {
-    max-width: 1500px;
-    margin: auto;
-    columns: 4;
-    column-gap: 10px;
-  }
-  
-  .grid > div {
-    width: 350px;
-  }
-  
-  .fill {
-    max-width: 350px;
-    height: 100%;
-    width: 350px;
-    margin-bottom: 20px;
-  }
-  
-  .tan {
-    height: 180px;
-  }
-  
-  .black {
-    height: 400px;
-  }
-  
-  .light-brown {
-    height: 360px;
-  }
-  
-  .brown {
-    height: 300px;
-  }
-  
-  .grid a {
-    width: 350px;
-    cursor: pointer;
-  }
-  
-  .grid-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    break-inside: avoid;
-  
-    height: fit-content;
-    height: -moz-fit-content;
-    width: 350px;
-    margin-bottom: 20px;
-  
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .grid-item:hover {
-    transform: scale(1.2);
-  }
-  
-  div.image {
-    height: auto;
-    display: block;
-    width: 350px;
-    transform: translateZ(0);
-    transition: transform 0.75s cubic-bezier(0.2, 1, 0.3, 1);
-  }
-  
-  div.image:before {
-    content: "";
-    display: block;
-    overflow: hidden;
-  }
-  
-  div.image img {
-    width: 350px;
-    height: auto;
-  }
-  
-  .text-container {
-    position: absolute;
-    bottom: 0;
-    width: 350px;
-    height: fit-content;
-    display: flex;
-    flex-direction: column;
-    // justify-content: center;
-    align-content: center;
-  }
-  
-  h4 {
-      text-transform: uppercase;
-      font-family: "Lato-Bold";
-      color: #fff;
-  
-      &:nth-child(1) {
-          font-size: 26px;
-      }
-  
-      &:nth-child(2) {
-          font-size: 18px;
-          margin-bottom: 15px;
-      }
-  }
-  
-  h4:nth-child(1) {
-    font-size: 26px;
-  }
-  
-  h4:nth-child(2) {
-    font-size: 18px;
-    margin-bottom: 15px;
-  }
-                 
-   .overlay {
-    position: absolute;
-    width: 350px;
-    height: fit-content;
-    background: rgba(0, 0, 0, 0.25);
-  }
-  
-  // change the heights of colored blocks
-  .grid > div:nth-child(11) > div.tan {
-      height: 268px;
-  }
-  
-  .grid > div:nth-child(17) > div.brown {
-      height: 405px;
-  }
-  
-  .grid > div:nth-child(18) > div.black {
-      height: 447px;
-  }
-  
-  @media(max-width: 1500px) {
-    .grid {
-        columns: 3;
-    }
-  }
-  
-  @media(max-width: 1150px) {
-    .grid {
-      columns: 2;
-    }
-  }
-  
-  @media(max-width: 750px) {
-    .grid {
-      columns: 1;
-    }
-  
-    .grid .fill {
-        display: none;
-        margin-bottom: 0;
-    }
-  }
+  max-width: 1500px;
+  margin: auto;
+  columns: 4;
+  column-gap: 10px;
+}
+
+.grid a {
+width: 350px;
+cursor: pointer;
+}
+
+.grid a .grid-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  break-inside: avoid;
+
+  height: fit-content;
+  height: -moz-fit-content;
+  width: 350px;
+  margin-bottom: 20px;
+
+  position: relative;
+  overflow: hidden;
+}
+
+.grid a .grid-item:hover .image {
+transform: scale(1.2);
+}
+
+.grid a .grid-item div.image {
+height: auto;
+display: block;
+width: 350px;
+transform: translateZ(0);
+transition: transform 0.75s cubic-bezier(0.2, 1, 0.3, 1);
+}
+
+.grid a .grid-item div.image:before {
+  content: "";
+  display: block;
+  overflow: hidden;
+}
+
+.grid a .grid-item div.image img {
+  width: 350px;
+  height: auto;
+}
+
+.grid a .grid-item .text-container {
+position: absolute;
+bottom: 0;
+width: 350px;
+height: fit-content;
+text-align: center;
+}
+
+h4 {
+  text-transform: uppercase;
+  font-family: "Lato-Bold";
+  color: #fff;
+  margin: 0;
+}
+
+h4:nth-child(1) {
+font-size: 26px;
+}
+
+h4:nth-child(2) {
+font-size: 18px;
+margin-bottom: 40px;
+}
+
+.overlay {
+position: absolute;
+width: 350px;
+height: fit-content;
+background: rgba(0, 0, 0, 0.25);
+}
+
+@media(max-width: 1500px) {
+.grid {
+    columns: 3;
+}
+}
+
+@media(max-width: 1150px) {
+.grid {
+  columns: 2;
+}
+}
+
+@media(max-width: 750px) {
+.grid {
+  columns: 1;
+}
+
+.grid .fill {
+    display: none;
+    margin-bottom: 0;
+}
+}
