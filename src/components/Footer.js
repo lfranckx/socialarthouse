@@ -14,7 +14,7 @@ export default function Footer(props) {
                             <p className="state">California</p>
                             <p>Marlene</p>
                             <a href="mailto:marlene@socialarthouse.com" className="email"
-                                target="_blank" rel="noopener noreferrer">Marlene@socialarthouse.com</a>
+                                rel="noopener noreferrer">Marlene@socialarthouse.com</a>
                         </div>
                     </div>
                     <div className='column'>
@@ -22,12 +22,12 @@ export default function Footer(props) {
                             <p className='state'>New York</p>
                             <p>Courtney</p>
                             <a href="mailto:courtney@socialarthouse.com" className="email"
-                                target="_blank" rel="noopener noreferrer">Courtney@socialarthouse.com</a>
+                                rel="noopener noreferrer">Courtney@socialarthouse.com</a>
                         </div>
                         <div>
                             <p>Maria</p>
                             <a href="mailto:maria@socialarthouse.com" className="email"
-                                target="_blank" rel="noopener noreferrer">Maria@socialarthouse.com</a>
+                                rel="noopener noreferrer">Maria@socialarthouse.com</a>
                         </div>
                     </div>
                     <div className='column'>
@@ -35,7 +35,7 @@ export default function Footer(props) {
                             <p className="state">Colorado</p>
                             <p>Justine</p>
                             <a href="mailto:justine@socialarthouse.com" className="email"
-                                target="_blank" rel="noopener noreferrer">Justine@socialarthouse.com</a>
+                                rel="noopener noreferrer">Justine@socialarthouse.com</a>
                         </div>
                     </div>
                 </div>
@@ -45,7 +45,7 @@ export default function Footer(props) {
                     <div>
                         <p>Expansive Consulting Experience for Brands through ingenuity, originality, and imagination</p>
                         <a href="mailto:info@socialarthouse.com" className="email"
-                            target="_blank" rel="noopener noreferrer">Info@socialarthouse.com</a>
+                            rel="noopener noreferrer">Info@socialarthouse.com</a>
                         <div>
                             <Link activeClass="active" to="navbar" spy={true} smooth={true} offset={0} duration={500}>
                                 <img className="logo" src={logo} alt="SAH-logo"/>

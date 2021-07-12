@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link, animateScroll as scroll } from 'react-scroll';
 
 export default function About(props) {
     return (
@@ -18,6 +19,10 @@ export default function About(props) {
                     <p>Our mission for both our brand and influencer partners is to build long-lasting collaborations that promote strategic development and gorwth for all.</p>
                 </li>
             </ul>
+
+            <Link activeClass="active" to="services" spy={true} smooth={true} offset={0} duration={500}>
+                <i id="about-down-arrow" class="fas fa-chevron-down bounce"></i>
+            </Link>
         </section>
     )
 }

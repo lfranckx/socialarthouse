@@ -91,7 +91,7 @@ export default function Partners(props) {
                         
             <button onClick={() => setIsOpen(!isOpen)}>
                 {isOpen ? 'Close' : 'And More' }
-                { !isOpen && <span><i id="down-arrow" class="fas fa-chevron-down bounce"></i></span> }
+                { !isOpen && <span><i id="partners-down-arrow" class="fas fa-chevron-down bounce"></i></span> }
             </button>
         </section>
     );
