@@ -32,12 +32,20 @@
         column-gap: 10px;
 
         div {
-            width: 350px;
+            max-width: 350px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            -webkit-column-break-inside: avoid;
+            page-break-inside: avoid;
+            break-inside: avoid;
 
             .fill {
                 max-width: 350px;
+                width: 100%;
                 height: 100%;
-                width: 350px;
                 margin-bottom: 20px;
             }
 
@@ -62,22 +70,14 @@
         a {
             max-width: 350px;
             width: 100%;
-            cursor: pointer;
+            cursor: initial;
 
             .grid-item {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-
                 height: fit-content;
                 height: -moz-fit-content;
                 max-width: 350px;
                 width: 100%;
-                break-inside: avoid;
                 margin-bottom: 20px;
-
-                position: relative;
-                overflow: hidden;
 
                 // Scale image up on hover
                 &:hover .image {
@@ -85,12 +85,9 @@
                 }
 
                 div.image {
-                    height: auto;
-                    display: block;
                     max-width: 350px;
                     width: 100%;
-                    transform: translateZ(0);
-                    transition: transform 0.75s cubic-bezier(0.2, 1, 0.3, 1);
+                    height: 100%;
 
                     img {
                         max-width: 350px;
@@ -106,7 +103,6 @@
                     height: fit-content;
                     display: flex;
                     flex-direction: column;
-                    // justify-content: center;
                     align-content: center;
     
                     h4 {
@@ -130,7 +126,6 @@
                     width: 350px;
                     height: fit-content;
                     background: rgba(0, 0, 0, 0.25);
-                    z-index: 2;
                 }
             }
         }
