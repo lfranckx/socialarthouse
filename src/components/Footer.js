@@ -1,5 +1,8 @@
 import React from 'react';
 import '../styles/Footer.scss';
+import { Link, animateScroll as scroll } from 'react-scroll';
+
+import logo from '../images/sah-logo.png'
 
 export default function Footer(props) {
     return (
@@ -43,8 +46,14 @@ export default function Footer(props) {
                         <p>Expansive Consulting Experience for Brands through ingenuity, originality, and imagination</p>
                         <a href="mailto:info@socialarthouse.com" className="email"
                             target="_blank" rel="noopener noreferrer">Info@socialarthouse.com</a>
+                        <div>
+                            <Link activeClass="active" to="header" spy={true} smooth={true} offset={0} duration={500}>
+                                <img className="logo" src={logo} alt="SAH-logo"/>
+                            </Link>
+                        </div>
                         <p id='copyright'>Copyright © 2021. All rights reserved.</p>
                     </div>
+                    
                 </div>
             </footer>
         </div>
