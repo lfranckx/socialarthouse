@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <Navbar />
+        <Navbar id='navbar'/>
         <Switch>
           <Route exact path="/" render={() => <Redirect to={'/home'} />} />
           <Route path='/home' exact component={Homepage} />

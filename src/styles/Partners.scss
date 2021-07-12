@@ -42,16 +42,17 @@
         align-items: center;
         margin: 40px auto 0;
 
-        .fas {
+        #down-arrow {
             font-size: 18px;
+            animation-duration: 0;
+            animation-iteration-count: 0;
         }
 
-        &:hover i {
+        &:hover #down-arrow {
             cursor: pointer;
             animation-duration: 2s;
             animation-iteration-count: infinite;
             transform-origin: bottom;
-            width: 200px;
             transform: scale(1.05);
         }
         

@@ -6,7 +6,7 @@
         -o-background-size: cover;
         background-size: cover;
         padding: 160px 40px 40px;
-        height: 100vh;
+        min-height: 100vh;
         scroll-snap-align: center;
 
         h2 {
@@ -21,16 +21,15 @@
             max-width: 1000px;
         }
 
-        i {
+        .fa-chevron-down {
             font-size: 32px;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            transform-origin: bottom;
+            transform: scale(1.05);  
 
             &:hover {
                 cursor: pointer;
-                animation-duration: 2s;
-                animation-iteration-count: infinite;
-                transform-origin: bottom;
-                width: 200px;
-                transform: scale(1.05);  
             }
         }
 
@@ -55,16 +54,15 @@
                 font-size: 48px;
             }
 
-            i {
+            .fa-chevron-down  {
                 font-size: 32px;
+                animation-duration: 2s;
+                animation-iteration-count: infinite;
+                transform-origin: bottom;
+                transform: scale(1.05);  
     
                 &:hover {
                     cursor: pointer;
-                    animation-duration: 2s;
-                    animation-iteration-count: infinite;
-                    transform-origin: bottom;
-                    width: 200px;
-                    transform: scale(1.05);  
                 }
             }
     

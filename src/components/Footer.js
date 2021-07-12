@@ -47,7 +47,7 @@ export default function Footer(props) {
                         <a href="mailto:info@socialarthouse.com" className="email"
                             target="_blank" rel="noopener noreferrer">Info@socialarthouse.com</a>
                         <div>
-                            <Link activeClass="active" to="header" spy={true} smooth={true} offset={0} duration={500}>
+                            <Link activeClass="active" to="navbar" spy={true} smooth={true} offset={0} duration={500}>
                                 <img className="logo" src={logo} alt="SAH-logo"/>
                             </Link>
                         </div>

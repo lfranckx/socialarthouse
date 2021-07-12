@@ -1,12 +1,11 @@
 #services {
-    height: 100vh;
-    
+    min-height: 100vh;
     .list {
         display: grid;
         grid-template-columns: repeat(2, minmax(0, 1fr));
         max-width: 2000px;
         margin: auto;
-        padding: 50px 100px;
+        padding: 50px;
 
         .item.show {
             background: #DC997D;
@@ -48,7 +47,7 @@
             }
 
             h4 {
-                font-size: 32px;
+                font-size: 30px;
                 font-family: "Lato-Bold";
             }
 
@@ -68,12 +67,16 @@
                 margin-left: auto;
                 font-family: "Lato-Bold";
 
-                .fas {
+                .fa-chevron-right {
                     font-size: 10px;
                     margin-left: 5px;
                 }
             }
         }
+    }
+
+    .fa-chevron-down {
+        // margin-top: 50px;
     }
 }
 
@@ -97,12 +100,18 @@
 @media(max-width: 1200px) {
     #services {
         .list {
-            padding: 50px;
+            padding: 20px;
+
+            .item {
+                h4 {
+                    font-size: 26px;
+                }
+            }
         }
     }
 }
 
-@media(max-width: 800px) {
+@media(max-width: 850px) {
     #services {
         .list {
             display: block;
