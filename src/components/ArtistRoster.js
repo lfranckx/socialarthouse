@@ -155,7 +155,7 @@ export default class ArtistRoster extends Component {
                             </div>
                             <div className="text-container">
                                 <h4>Tippi Shorter</h4>
-                                <h4>@Tippishoertrank</h4>
+                                <h4>@Tippishorterrank</h4>
                             </div>
                             <div className="overlay"></div>
                         </div>
