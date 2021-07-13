@@ -85,6 +85,10 @@ button {
   cursor: pointer;
 }
 
+.fade-in {
+  transition: opacity 1s ease;
+}
+
 .hidden {
   display: none;
 }
