@@ -8,7 +8,7 @@ export default function ThankYou() {
     return (
         <main>
             <animated.div style={props} id="thankyou">
-                <h2 className='h1'>Thank you for contacting us. A member of our team will be in touch with you soon.</h2>
+                <h2 className='h1'>Thank you for contacting us. A member of our team will be in touch soon.</h2>
                 <animated.div style={props}>
                     <h3>&#8220;Become Your Dream&#8221; - De La Vega</h3>
                 </animated.div>

@@ -7,14 +7,6 @@
         margin: 50px auto;
         padding: 50px;
 
-        // border: 50px solid transparent; /* replace padding with transparent border */
-        // overflow:hidden; 
-
-        // background:
-        //     linear-gradient(#000 0 0) center/100% 1px,
-        //     linear-gradient(#000 0 0) center/1px 100%;
-        // background-repeat:no-repeat;
-
         .item.show {
             background: #DC997D;
         }
@@ -22,7 +14,6 @@
         .item {
             padding: 40px;
             transition: all ease 0.3s;
-            // outline: 1px solid;
 
             ul {
                 display: block;
@@ -53,26 +44,7 @@
             &:nth-child(3) {
                 border-right: 1px solid black;
             }
-
-            // &:nth-child(1):after {
-            //     height: 1px;
-            //     width: 100%;
-            // }
-
-            // &:nth-child(3):after {
-            //     height: 100%;
-            //     width: 1px;
-            //     top: 0
-            // }
-
-            // &:nth-child(1):after, &:nth-child(3):after {
-            //     background: #000;
-            //     content: '';
-            //     position: absolute;
-            //     transform: translate(-50%); // center align lines
-            //     left: 50%;
-            // }
-
+            
             h4 {
                 font-size: 30px;
                 font-family: "Lato-Bold";
@@ -111,12 +83,13 @@
 @keyframes flip {
     0% {
         transform: scale(1) rotate3d(-1, 1, 0, 0deg);
+        transform: rotateY(0);
     }
     50% {
-        transform: scale(0.5) rotate3d(-1, 1, 0, 90deg);
+        transform: rotateY(90deg);
     }
     100% {
-        transform: scale(1) rotate3d(-1, 1, 0, 0deg);
+        transform: rotateY(0);
     }
 }
 

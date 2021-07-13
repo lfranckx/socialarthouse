@@ -13,6 +13,7 @@ export default function Services(props) {
         <section id={props.id}>
             <h3>Services</h3>
             <ul className="list">
+                
                 <li className={ isFlipped1 ? 'item show flip' : 'item'}>
                     { isFlipped1 ?  <div>
                         <h4>Brand Buildings</h4>
