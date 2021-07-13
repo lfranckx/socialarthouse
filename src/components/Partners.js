@@ -58,7 +58,7 @@ export default function Partners(props) {
                         height: collapsibleRef.current.scrollHeight + 'px',
                     } : {
                         height: '0px',
-                        margin: '0px'
+                        margin: '0px auto'
                     }}
                 className={"content"}>
                 <a href="https://www.matrix.com/" target="_blank" rel="noopener noreferrer">
