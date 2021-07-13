@@ -1,7 +1,5 @@
 import React from 'react';
 import '../styles/Homepage.scss';
-// import { Link } from 'react-router-dom';
-import { Link, animateScroll as scroll } from 'react-scroll';
 
 import Header from './Header';
 import About from './About';

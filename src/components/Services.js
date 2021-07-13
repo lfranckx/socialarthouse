@@ -1,7 +1,7 @@
 import React from 'react';
 import '../styles/Services.scss';
 import { useState } from 'react';
-import { Link, animateScroll as scroll } from 'react-scroll';
+import { Link } from 'react-scroll';
 
 export default function Services(props) {
     const [isFlipped1, flipCard1] = useState(false);

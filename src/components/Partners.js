@@ -10,18 +10,18 @@ import redken from '../images/partners/redken.png';
 import ulta from '../images/partners/ulta.png';
 
 import beautybox from '../images/partners/beauty-box.jpeg';
-import bioionic from '../images/partners/Bio-Ionic.png';
+// import bioionic from '../images/partners/Bio-Ionic.png';
 import bqg from '../images/partners/bqg_logo.png';
-import cuvee from '../images/partners/cuvee.png';
+// import cuvee from '../images/partners/cuvee.png';
 import fromm from '../images/partners/fromm.png';
 import genejuarez from '../images/partners/genejuarez.png';
 import joico from '../images/partners/joico.png';
-import johnny from '../images/partners/johnny-logo.png';
-import kuene from '../images/partners/kuene.png';
+// import johnny from '../images/partners/johnny-logo.png';
+// import kuene from '../images/partners/kuene.png';
 import matrix from '../images/partners/matrix.png';
 import miladypro from '../images/partners/miladypro.png';
 import mrlogo from '../images/partners/MRlogo-purple.png';
-import provalliance from '../images/partners/provalliance.png';
+// import provalliance from '../images/partners/provalliance.png';
 
 
 

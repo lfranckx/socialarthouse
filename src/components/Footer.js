@@ -1,7 +1,6 @@
 import React from 'react';
 import '../styles/Footer.scss';
-import { Link, animateScroll as scroll } from 'react-scroll';
-
+import { Link } from 'react-router-dom';
 import logo from '../images/sah-logo.png'
 
 export default function Footer(props) {
@@ -47,7 +46,7 @@ export default function Footer(props) {
                         <a href="mailto:info@socialarthouse.com" className="email"
                             rel="noopener noreferrer">Info@socialarthouse.com</a>
                         <div>
-                            <Link activeClass="active" to="navbar" spy={true} smooth={true} offset={0} duration={500}>
+                            <Link to='/'>
                                 <img className="logo" src={logo} alt="SAH-logo"/>
                             </Link>
                         </div>

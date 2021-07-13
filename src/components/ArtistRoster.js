@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-scroll';
 import '../styles/ArtistRoster.scss';
 
 import andi from '../images/artists/andi.png';
@@ -273,6 +274,8 @@ export default class ArtistRoster extends Component {
 
                     <div><div className='tan fill'></div></div>
                 </div>                    
+
+                <Link className="btn" activeClass="active" to="navbar" spy={true} smooth={true} offset={0} duration={500}>Back to top</Link>
             </section>
         )
     }

@@ -1,8 +1,44 @@
 #contact-form {
-    height: 100vh;
+    min-height: 80vh;
     padding: 100px 20px 40px;
 
     h2 {
         font-size: 48px;
+    }
+
+    form {
+        display: block;
+        max-width: 700px;
+        margin: 50px auto;
+        padding: 50px 0 50px;
+        border: solid 1px #000;
+        border-radius: 2px;
+        background: #f2f2f2;
+
+        label {
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+
+        input {
+            outline: none;
+            border: solid 1px #000;
+            border-radius: 2px;
+            padding: 10px;
+            margin: 10px 0;
+            font-size: 18px;
+            width: 70%;
+        }
+        
+        textarea {
+            width: 70%;
+            margin-top: 10px;
+            font-size: 18px;
+            padding: 10px;
+        }
+
+        .btn {
+            margin-top: 20px;
+        }
     }
 }
