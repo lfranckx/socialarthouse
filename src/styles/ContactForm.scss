@@ -1,26 +1,38 @@
 #contact-form {
     min-height: 80vh;
-    padding: 100px 20px 40px;
+    padding: 50px 0 40px;
     background-image: url('../images/Wave-lines.png');
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    display: flex;
+
+    div.container {
+        max-width: 30%;
+        padding-top: 90px;
+        margin-left: auto;
+        text-align: left;
+    }
 
     h2 {
         font-size: 48px;
+        margin-bottom: 25px;
+    }
+
+    h3 {
+        font-size: 28px;
+        font-family: 'Lato';
     }
 
     form {
         display: block;
+        width: 50%;
         max-width: 700px;
         margin: 50px auto;
-        padding: 50px 0 50px;
-        // border: solid 1px #000;
+        padding: 25px 0 25px;
         border-radius: 2px;
-        // background: #f2f2f2;
         background: #DCCEC8;
-        // background: #DC997D;
         box-shadow: 0 4px 20px rgb(0 0 0 / 10%);
         
 
@@ -43,18 +55,115 @@
             padding: 10px;
             margin: 10px 0;
             font-size: 18px;
-            width: 70%;
+            width: 80%;
         }
-        
+
         textarea {
-            width: 70%;
+            width: 80%;
             margin-top: 10px;
             font-size: 18px;
             padding: 10px;
         }
 
+        input::placeholder {
+            text-transform: uppercase;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        textarea::placeholder {
+            text-transform: uppercase;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
         .btn {
             margin-top: 40px;
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    #contact-form {
+        display: block;
+        padding: 40px 20px;
+
+        div.container {
+            max-width: 100%;
+            padding-top: 20px;
+            text-align: center;
+        }
+    
+        h2 {
+            font-size: 40px;
+            margin-bottom: 25px;
+        }
+    
+        h3 {
+            font-size: 20px;
+            font-family: 'Lato';
+        }
+    
+        form {
+            width: 100%;
+            max-width: 700px;
+            margin: 50px auto;
+            padding: 25px 0 25px;
+            border-radius: 2px;
+            
+    
+            .label {
+                margin: 10px auto 5px;
+                padding: 0 5px;
+                text-align: left;
+                width: 80%;
+            }
+    
+            label {
+                font-size: 18px;
+                font-family: "Lato-Reg";
+            }
+    
+            input {
+                outline: none;
+                border: solid 1px #000;
+                border-radius: 2px;
+                padding: 10px;
+                margin: 10px 0;
+                font-size: 18px;
+                width: 80%;
+            }
+    
+            textarea {
+                width: 80%;
+                margin-top: 10px;
+                font-size: 18px;
+                padding: 10px;
+            }
+    
+            input::placeholder {
+                text-transform: uppercase;
+                font-size: 14px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            
+            textarea::placeholder {
+                text-transform: uppercase;
+                font-size: 16px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+    
+            .btn {
+                margin-top: 40px;
+            }
         }
     }
 }

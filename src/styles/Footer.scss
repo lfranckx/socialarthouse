@@ -52,8 +52,8 @@
 
                 p {
                     color: #fff;
-                    font-size: 20px;
-                    margin-bottom: 30px;
+                    font-size: 22px;
+                    margin-bottom: 40px;
                 }
 
                 a {
@@ -63,6 +63,24 @@
 
                     &:hover {
                         color: #c3c3c3;
+                    }
+                }
+
+                div.cb-container {
+                    margin-bottom: -10px;
+                    .contact-btn {
+                        background: #DCCEC8;
+                        padding: 10px 15px;
+                        border-radius: 8px;
+                        color: #fff;
+                        color: #000;
+                        font-family: 'Lato-Reg';
+                        font-size: 18px;
+                        text-transform: uppercase;
+
+                        &:hover {
+                            background: #fff;
+                        }
                     }
                 }
             }
@@ -92,6 +110,24 @@
                         .state {
                             margin-bottom: 10px;
                         }
+
+                        p {
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+
+            .right {
+                div {
+                    p {
+                        font-size: 18px;
+                    }
+
+                    div.cb-container {
+                        .contact-btn {
+                            font-size: 16px;
+                        }
                     }
                 }
             }
@@ -103,16 +139,6 @@
     #footer {
         footer {
             display: block;
-
-            .left {
-                .column {
-                    div {
-                        p {
-                            font-size: 18px;
-                        }
-                    }
-                }
-            }
 
             .right {
                 max-width: 100%;

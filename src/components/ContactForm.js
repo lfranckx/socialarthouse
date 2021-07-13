@@ -30,54 +30,76 @@ const ContactForm = () => {
     return(
         <main> 
             <animated.div style={props} id="contact-form">
-                <h2>Contact</h2>
+                <div className='container'>
+                    <h2>Get in Touch</h2>
+                    <h3>Expansive Consulting Experience for Brands through ingenuity, originality, and imagination</h3>
+                </div>
                 <form onSubmit={sendEmail}>
                     <div className="label">
-                        <label htmlFor="first_name">First Name</label>
+                        <label htmlFor="name"></label>
                     </div>
                     <div>
                         <input
                             type="text"
                             name="first_name"
+                            placeholder='Your Name'
                         />
                     </div>
 
                     <div className="label">
-                        <label htmlFor="last_name">Last Name</label>
+                        <label htmlFor="salon"></label>
                     </div>
                     <div>
                         <input
                             type="text"
-                            name="last_name"
+                            name="salon"
+                            placeholder='Your Salon'
                         />
                     </div>
 
                     <div className="label">
-                        <label htmlFor="email">Email</label>
+                        <label htmlFor="email"></label>
                     </div>
                     <div>
                         <input
                             type="email"
                             name="email"
+                            placeholder="Email"
                         />
                     </div>
 
                     <div className="label">
-                        <label htmlFor="phone">Phone Number</label>
+                        <label htmlFor="phone"></label>
                     </div>
                     <div>
                         <input
                             type="tel"
                             name="phone"
+                            placeholder='Your Phone Number'
                         />
                     </div>
 
                     <div className="label">
-                        <label htmlFor="message">Message</label>
+                        <label htmlFor="website"></label>
+                    </div>
+                    <div>
+                        <input
+                            type="text"
+                            name="website"
+                            placeholder='Your Website or Instagram'
+                        />
+                    </div>
+
+                    <div className="label">
+                        <label htmlFor="message"></label>
                     </div>
 
                     <div>
-                        <textarea name='message' rows='10' />
+                        <textarea 
+                            name='message' 
+                            rows='10' 
+                            placeholder="Describe how you would like to work with us"
+                        />
                     </div>
                     
                     <button className="btn" type="submit">

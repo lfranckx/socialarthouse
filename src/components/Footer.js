@@ -42,9 +42,10 @@ export default function Footer(props) {
 
                 <div className="right">
                     <div>
-                        <p>Expansive Consulting Experience for Brands through ingenuity, originality, and imagination</p>
-                        <a href="mailto:info@socialarthouse.com" className="email"
-                            rel="noopener noreferrer">Info@socialarthouse.com</a>
+                        <p>We are the house of incredible creative solutions</p>
+                        <div className="cb-container">
+                            <Link className="contact-btn" to='/contact'>Get in Touch</Link>
+                        </div>
                         <div>
                             <Link to='/'>
                                 <img className="logo" src={logo} alt="SAH-logo"/>
@@ -52,7 +53,6 @@ export default function Footer(props) {
                         </div>
                         <p id='copyright'>Copyright © 2021. All rights reserved.</p>
                     </div>
-                    
                 </div>
             </footer>
         </div>
