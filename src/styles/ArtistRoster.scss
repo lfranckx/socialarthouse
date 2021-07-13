@@ -206,9 +206,11 @@
                 width: 280px;
     
                 .grid-item {
-        
-                    img {
-                        width: 280px;
+
+                    div.image {
+                        img {
+                            width: 280px;
+                        }
                     }
 
                     .text-container {
@@ -229,6 +231,45 @@
 
                     .overlay {
                         width: 280px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 390px) {
+    #artists {
+        .grid {
+            a {
+                width: 260px;
+    
+                .grid-item {
+
+                    div.image {
+                        img {
+                            width: 260px;
+                        }
+                    }
+
+                    .text-container {
+                        width: 260px;
+
+                        h4 {
+                            &:nth-child(1) {
+                                font-size: 22px;
+                                bottom: 35px;
+                            }
+
+                            &:nth-child(2) {
+                                font-size: 16px;
+                                bottom: 10px;
+                            }
+                        }
+                    }
+
+                    .overlay {
+                        width: 260px;
                     }
                 }
             }

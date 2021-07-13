@@ -137,8 +137,24 @@
 
 @media (max-width: 550px) {
     #footer {
+        padding-bottom: 0;
         footer {
             display: block;
+
+            .left {
+                .column {
+                    max-width: 100px;
+                    div {
+                        .state {
+                            margin-bottom: 10px;
+                        }
+
+                        p {
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
 
             .right {
                 max-width: 100%;

@@ -1,5 +1,6 @@
 import React from 'react';
 import { useEffect } from 'react';
+import { useHistory } from 'react-router';
 import { useSpring, animated } from 'react-spring';
 import emailjs from 'emailjs-com';
 
@@ -10,17 +11,14 @@ const ContactForm = () => {
         window.scrollTo(0,0);
     }, [])
 
-    function redirect() {
-        props.history.push('/');
-    }
+    const history = useHistory();
 
     function sendEmail(e) {
         e.preventDefault();
 
         emailjs.sendForm('service_lfs5csq', 'template_qhm0n59', e.target, 'user_4ZnH44kohKcJmQhnL2VGX')
             .then(res => {
-                console.log(res);
-                redirect();
+                history.push('/');
             })
             .catch(err => console.log(err));
     }
