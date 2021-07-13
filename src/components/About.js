@@ -21,7 +21,7 @@ export default function About(props) {
             </ul>
 
             <Link activeClass="active" to="services" spy={true} smooth={true} offset={0} duration={500}>
-                <i id="about-down-arrow" class="fas fa-chevron-down bounce"></i>
+                <i id="about-down-arrow" className="fas fa-chevron-down bounce"></i>
             </Link>
         </section>
     )

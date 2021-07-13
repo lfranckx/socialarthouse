@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, animateScroll as scroll } from 'react-scroll';
+import { Link } from 'react-scroll';
 
 export default function Header(props) {
     return (
@@ -8,7 +8,7 @@ export default function Header(props) {
             <h3>We Offer an Expansive Consulting Experience for Brands Through <span>Ingenuity, Originality, and Imagination</span></h3>
             
             <Link activeClass="active" to="about" spy={true} smooth={true} offset={0} duration={500}>
-                <i class="fas fa-chevron-down bounce"></i>
+                <i className="fas fa-chevron-down bounce"></i>
             </Link>
         </header>
     )

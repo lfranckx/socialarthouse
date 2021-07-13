@@ -17,10 +17,10 @@ export default function Services(props) {
                     { isFlipped1 ?  <div>
                         <h4>Brand Buildings</h4>
                         <ul>
-                            <li><i class="fas fa-check"></i> Brand Audit</li>
-                            <li><i class="fas fa-check"></i> Go-to-Market Strategy Development</li>
-                            <li><i class="fas fa-check"></i> Creative Design &amp; Asset Development</li>
-                            <li><i class="fas fa-check"></i> Promotion, Communication and Advertising</li>
+                            <li><i className="fas fa-check"></i> Brand Audit</li>
+                            <li><i className="fas fa-check"></i> Go-to-Market Strategy Development</li>
+                            <li><i className="fas fa-check"></i> Creative Design &amp; Asset Development</li>
+                            <li><i className="fas fa-check"></i> Promotion, Communication and Advertising</li>
                         </ul> </div> : 
                         <> 
                             <h4>Brand Buildings</h4>
@@ -29,16 +29,16 @@ export default function Services(props) {
                     }
                     <button onClick={() => flipCard1(!isFlipped1)}>
                         { isFlipped1 ? 'Back' : 'View More' }
-                        { !isFlipped1 && <i class="fas fa-chevron-right"></i>}
+                        { !isFlipped1 && <i className="fas fa-chevron-right"></i>}
                     </button> 
                 </li>
                 <li className={ isFlipped2 ? 'item show flip' : 'item' }>
                     { isFlipped2 ? <div>
                         <h4>Platform &amp; Media Design</h4>
                         <ul>
-                            <li><i class="fas fa-check"></i> Social Media Development</li>
-                            <li><i class="fas fa-check"></i> Website Development</li>
-                            <li><i class="fas fa-check"></i> Podcast Development</li>
+                            <li><i className="fas fa-check"></i> Social Media Development</li>
+                            <li><i className="fas fa-check"></i> Website Development</li>
+                            <li><i className="fas fa-check"></i> Podcast Development</li>
                         </ul> </div> : 
                         <div>
                             <h4>Platform &amp; Media Design</h4>
@@ -47,15 +47,15 @@ export default function Services(props) {
                     }
                     <button onClick={() => flipCard2(!isFlipped2)}>
                         { isFlipped2 ? 'Back' : 'View More' }
-                        { !isFlipped2 && <i class="fas fa-chevron-right"></i> }
+                        { !isFlipped2 && <i className="fas fa-chevron-right"></i> }
                     </button>
                 </li>
                 <li className={ isFlipped3 ? 'item show flip' : 'item' }>
                     { isFlipped3 ? <div>
                         <h4>Educational Development Services</h4>
                         <ul>
-                            <li><i class="fas fa-check"></i> Product Development</li>
-                            <li><i class="fas fa-check"></i> Content Development</li>
+                            <li><i className="fas fa-check"></i> Product Development</li>
+                            <li><i className="fas fa-check"></i> Content Development</li>
                         </ul> </div> : 
                         <>
                             <h4>Educational Development Services</h4>
@@ -64,16 +64,16 @@ export default function Services(props) {
                     }
                     <button onClick={() => flipCard3(!isFlipped3)}>
                         { isFlipped3 ? 'Back' : 'View More'}
-                        { !isFlipped3 && <i class="fas fa-chevron-right"></i> }
+                        { !isFlipped3 && <i className="fas fa-chevron-right"></i> }
                     </button>
                 </li>
                 <li className={ isFlipped4 ? 'item show flip' : 'item' }>
                     { isFlipped4 ? <div>
                         <h4>Shows, Events, &amp; Production</h4>
                         <ul>
-                            <li><i class="fas fa-check"></i> Show Development</li>
-                            <li><i class="fas fa-check"></i> Event Development</li>
-                            <li><i class="fas fa-check"></i> Technical Development</li>
+                            <li><i className="fas fa-check"></i> Show Development</li>
+                            <li><i className="fas fa-check"></i> Event Development</li>
+                            <li><i className="fas fa-check"></i> Technical Development</li>
                         </ul> </div> : 
                         <>
                             <h4>Shows, Events, &amp; Production</h4>
@@ -82,13 +82,13 @@ export default function Services(props) {
                     }
                     <button onClick={() => flipCard4(!isFlipped4)}> 
                         { isFlipped4 ? 'Back' : 'View More ' }
-                        { !isFlipped4 && <i class="fas fa-chevron-right"></i> }
+                        { !isFlipped4 && <i className="fas fa-chevron-right"></i> }
                     </button>
                 </li>
             </ul>
 
-            <Link activeClass="active" to="contact" spy={true} smooth={true} offset={0} duration={500}>
-                <i class="fas fa-chevron-down bounce"></i>
+            <Link activeclassname="active" to="contact" spy={true} smooth={true} offset={0} duration={500}>
+                <i className="fas fa-chevron-down bounce"></i>
             </Link>
         </section>
     )

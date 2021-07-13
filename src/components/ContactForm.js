@@ -12,9 +12,9 @@ const ContactForm = () => {
     function sendEmail(e) {
         e.preventDefault();
 
-        emailjs.sendForm('service_lfs5csq', 'template_qhm0n59', e.target, 'user_4ZnH44kohKcJmQhnL2VGX').then(res => {
-
-        }).catch(err => console.log(err));
+        emailjs.sendForm('service_lfs5csq', 'template_qhm0n59', e.target, 'user_4ZnH44kohKcJmQhnL2VGX')
+            .then(res => {console.log(res)})
+            .catch(err => console.log(err));
     }
 
     return(

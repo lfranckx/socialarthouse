@@ -33,7 +33,7 @@ export default function Team(props) {
             </div>
 
             <Link activeClass="active" to="partners" spy={true} smooth={true} offset={0} duration={500}>
-                <i class="fas fa-chevron-down bounce"></i>
+                <i className="fas fa-chevron-down bounce"></i>
             </Link>
         </section>
     )
