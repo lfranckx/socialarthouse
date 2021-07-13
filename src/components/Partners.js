@@ -10,26 +10,24 @@ import redken from '../images/partners/redken.png';
 import ulta from '../images/partners/ulta.png';
 
 import beautybox from '../images/partners/beauty-box.jpeg';
-// import bioionic from '../images/partners/Bio-Ionic.png';
+import bioionic from '../images/partners/Bioionic.png';
 import bqg from '../images/partners/bqg_logo.png';
-// import cuvee from '../images/partners/cuvee.png';
+import cuvee from '../images/partners/cuvee.png';
 import fromm from '../images/partners/fromm.png';
 import genejuarez from '../images/partners/genejuarez.png';
 import joico from '../images/partners/joico.png';
-// import johnny from '../images/partners/johnny-logo.png';
-// import kuene from '../images/partners/kuene.png';
+import johnny from '../images/partners/johnny-ramirez.png';
+import kuene from '../images/partners/keune.png';
 import matrix from '../images/partners/matrix.png';
 import miladypro from '../images/partners/miladypro.png';
-import mrlogo from '../images/partners/MRlogo-purple.png';
-// import provalliance from '../images/partners/provalliance.png';
+import mrlogo from '../images/partners/Madison.png';
+import provalliance from '../images/partners/provalliance.png';
 
 
 
 export default function Partners(props) {
     const [isOpen, setIsOpen] = useState(false);
     const collapsibleRef = useRef();
-
-    if (collapsibleRef.current) console.log(collapsibleRef.current.scrollHeight);
 
     return (
         <section id="partners">
@@ -53,7 +51,15 @@ export default function Partners(props) {
                 <a href="https://www.kerastase-usa.com/" target="_blank" rel="noopener noreferrer">
                     <img className="partner-logo" src={kerastase} alt="kerastase-paris" />
                 </a>
-
+                <a href="https://johnnyramirez.com/" target="_blank" rel="noopener noreferrer">
+                    <img className="partner-logo" src={johnny} alt="johnny-ramirez-california" />
+                </a>
+                <a href="https://www.madison-reed.com/" target="_blank" rel="noopener noreferrer">
+                    <img className="partner-logo" src={mrlogo} alt="madison-reed" />
+                </a>
+                <a href='https://frommbeauty.com/' target="_blank" rel="noopener noreferrer">
+                    <img className="partner-logo" src={fromm} alt="fromm" />
+                </a>
             </div>
             <div 
                 ref={collapsibleRef} 
@@ -63,10 +69,7 @@ export default function Partners(props) {
                     } : {
                         height: '0px',
                     }}
-                className={"container content"}>
-                <a href='https://frommbeauty.com/' target="_blank" rel="noopener noreferrer">
-                    <img className="partner-logo" src={fromm} alt="fromm" />
-                </a>
+                className={"content"}>
                 <a href="https://www.joico.com/" target="_blank" rel="noopener noreferrer">
                     <img className="partner-logo" src={joico} alt="joico" />
                 </a>
@@ -84,8 +87,17 @@ export default function Partners(props) {
                 <a href="https://www.miladypro.com/" target="_blank" rel="noopener noreferrer">
                     <img className="partner-logo" src={miladypro} alt="milady-pro" />
                 </a>
-                <a href="https://www.madison-reed.com/" target="_blank" rel="noopener noreferrer">
-                    <img className="partner-logo" src={mrlogo} alt="madison-reed" />
+                <a href="https://www.bioionic.com/" target="_blank" rel="noopener noreferrer">
+                    <img className="partner-logo" src={bioionic} alt="bio-ionic" />
+                </a>
+                <a href="https://www.cuveebeauty.com/" target="_blank" rel="noopener noreferrer">
+                    <img className="partner-logo" src={cuvee} alt="cuvee-beauty" />
+                </a>
+                <a href="https://www.keune.com/" target="_blank" rel="noopener noreferrer">
+                    <img className="partner-logo" src={kuene} alt="keune-hair-cosmetics" />
+                </a>
+                <a href="https://www.groupe-provalliance.com/fr/" target="_blank" rel="noopener noreferrer">
+                    <img className="partner-logo" src={provalliance} alt="provalliance" />
                 </a>
             </div>
                         

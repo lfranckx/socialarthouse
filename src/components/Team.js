@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from 'react-scroll';
+import '../styles/Team.scss';
+
 import maria from "../images/maria.jpg";
 import justine from "../images/justine.jpg";
 import marlene from "../images/marlene.jpg";

@@ -29,6 +29,21 @@
         height: 0px;
         overflow: hidden;
         transition: height ease 0.5s;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-row-gap: 100px;
+        max-width: 1000px;
+        margin: 120px auto 60px;
+
+        a {
+            display: flex;  
+            align-items: center;
+            justify-content: center;
+
+            .partner-logo {
+                max-width: 150px;
+            }
+        }
     }
 
     button {
@@ -74,6 +89,10 @@
         .container {
             grid-template-columns: 1fr 1fr;
         }
+
+        .content {
+            grid-template-columns: 1fr 1fr;
+        }
     }
 }
  
@@ -91,5 +110,22 @@
                 }
             }
         }
+
+        .content {
+            grid-template-columns: 1fr;
+            grid-row-gap: 60px;
+            padding-top: 0;
+            margin-top: 0;
+
+            a {
+                .partner-logo {
+                    max-width: 100px;
+                }
+            }
+        }
+
+        // button {
+        //     margin-top: -60px;
+        // }
     }
 }

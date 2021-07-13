@@ -1,0 +1,43 @@
+#team {
+    div.container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        padding: 60px 0 0;
+
+        .card {
+            margin-bottom: 50px;
+            
+            img {
+                height: 200px;
+                border-radius: 50%;
+            }
+
+            h4 {
+                font-family: "Lato-Bold";
+                margin: 5px 0;
+            }
+
+            h5 {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+            }
+        }
+    }
+}
+
+@media(max-width: 1000px) {
+    #team {
+        div.container {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+
+@media(max-width: 500px) {
+    #team {
+        div.container {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+}

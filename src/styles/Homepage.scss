@@ -124,34 +124,6 @@
                 margin-top: 60px;
             }
         }
-
-        #team {
-            div.container {
-                display: grid;
-                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-                padding: 60px 0 0;
-
-                .card {
-                    margin-bottom: 50px;
-                    
-                    img {
-                        height: 200px;
-                        border-radius: 50%;
-                    }
-
-                    h4 {
-                        font-family: "Lato-Bold";
-                        margin: 5px 0;
-                    }
-
-                    h5 {
-                        display: flex;
-                        justify-content: center;
-                        flex-direction: column;
-                    }
-                }
-            }
-        }
     }
 }
 
@@ -188,19 +160,21 @@
     }
 }
 
+@media(max-width: 600px) {
+    #homepage header {
+        padding-top: 60px
+    }
+}
+
 @media(max-width: 550px) {
     #homepage {
         header {
-            padding: 40px 20px 1px;
-
             h2 {
                 font-size: 38px;
             }
 
             h3 {
                 font-size: 22px;
-                margin-bottom: 200px;
-                margin-top: 40px;
                 position: relative;
                 bottom: 20px;
             }

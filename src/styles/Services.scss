@@ -7,6 +7,12 @@
         margin: auto;
         padding: 50px;
 
+        // background-image: 
+        //     repeating-linear-gradient(#000 0 1px, transparent 1px 50%),
+        //     repeating-linear-gradient(90deg, #000 0 1px, transparent 1px 100%);
+        //     background-size: 50%;
+
+
         .item.show {
             background: #DC997D;
         }
@@ -33,18 +39,18 @@
             }
 
             &:nth-child(1) {
-                border-right: solid 1px #000;
-                border-bottom: solid 1px #000;
+                border-bottom: 1px solid black;
+                border-right: 1px solid black;
             }
 
-
             &:nth-child(2) {
-                border-bottom: solid 1px #000;
+                border-bottom: 1px solid black;
             }
 
             &:nth-child(3) {
-                border-right: solid 1px #000;
+                border-right: 1px solid black;
             }
+
 
             h4 {
                 font-size: 30px;
@@ -100,8 +106,6 @@
 @media(max-width: 1200px) {
     #services {
         .list {
-            padding: 20px;
-
             .item {
                 h4 {
                     font-size: 26px;

@@ -7,13 +7,6 @@ nav {
     justify-content: space-around;
     padding: 10px 0;
 
-    ul {
-        display: flex;
-        li {
-            margin: 0 10px;
-        }
-    }
-
     #logo {
         height: 70px;
     }
@@ -23,14 +16,27 @@ nav {
     }
 }
 
-
-
-@media (max-width: 800px) {
-    .empty-space {
-        width: 0;
-    }
+@media (max-width: 600px) {
     nav {
         justify-content: flex-start;
         justify-content: space-around;
+
+        .empty-space {
+            width: 0;
+        }    
+    }
+}
+
+@media (max-width: 550px) {
+    nav {
+
+        #logo {
+            height: 50px;
+        }
+
+        .btn {
+            font-size: 12px;
+            padding: 10px 15px;
+        }
     }
 }
