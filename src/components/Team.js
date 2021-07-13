@@ -13,9 +13,9 @@ export default function Team(props) {
             <h3>Social Arthouse Team</h3>
             <div className="container">
                 <div className="card">
-                    <img src={maria} alt="maria" />
-                    <h4>Maria Vigarito</h4>
-                    <h5>Executive Event &amp; Brand Specialist</h5>
+                    <img src={marlene} alt="marlene" />
+                    <h4>Marlene Arce</h4>
+                    <h5>Founder, CEO</h5>
                 </div>
                 <div className="card">
                     <img src={justine} alt="justine" />
@@ -23,9 +23,9 @@ export default function Team(props) {
                     <h5>COO, Developing Partner</h5>
                 </div>
                 <div className="card">
-                    <img src={marlene} alt="marlene" />
-                    <h4>Marlene Arce</h4>
-                    <h5>Founder, CEO</h5>
+                    <img src={maria} alt="maria" />
+                    <h4>Maria Vigarito</h4>
+                    <h5>Executive Event &amp; Brand Specialist</h5>
                 </div>
                 <div className="card">
                     <img src={courtney} alt="courtney" />
