@@ -18,7 +18,7 @@ const ContactForm = () => {
 
         emailjs.sendForm('service_lfs5csq', 'template_qhm0n59', e.target, 'user_4ZnH44kohKcJmQhnL2VGX')
             .then(res => {
-                history.push('/');
+                history.push('/thankyou');
             })
             .catch(err => console.log(err));
     }
@@ -39,7 +39,7 @@ const ContactForm = () => {
                     <div>
                         <input
                             type="text"
-                            name="first_name"
+                            name="name"
                             placeholder='Your Name'
                         />
                     </div>
