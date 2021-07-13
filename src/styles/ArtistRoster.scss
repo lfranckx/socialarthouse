@@ -122,24 +122,50 @@
     }
 }
 
-// change color box sizes
-#artists > .grid > div:nth-child(11) > div.tan {
-    height: 268px;
+// bottom tan box
+#artists > div > div:nth-child(14) > div.tan {
+    height: 145px;
+}
+// brown box middle
+#artists > div > div:nth-child(19) > div.brown {
+    height: 180px;
+}
+// bottom right black box
+#artists > div > div:nth-child(29) > div.tan {
+    height: 55px;
 }
 
-#artists > .grid > div:nth-child(17) > div.brown {
-    height: 405px;
-}
-
-#artists > .grid > div:nth-child(18) > div.black {
-    height: 447px;
-}
-
-@media(max-width: 1500px) {
+@media(max-width: 1470px) {
     #artists {
         .grid {
             columns: 3;
         }
+    }
+}
+
+@media(min-width: 1150px) and (max-width: 1470px) {
+    #artists > div > div:nth-child(8) > div.tan {
+        display: none;
+    }
+
+    #artists > div > div:nth-child(10) > div.light-brown {
+        height: 200px;
+    }
+
+    #artists > div > div:nth-child(13) > div.black {
+        display: none;
+    }
+
+    #artists > div > div:nth-child(19) > div.tan {
+        height: 130px;
+    }
+
+    #artists > div > div:nth-child(21) > div.light-brown {
+        display: none;
+    }
+
+    #artists > div > div:nth-child(29) > div.tan {
+        height: 75px;
     }
 }
 

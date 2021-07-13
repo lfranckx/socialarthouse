@@ -70,6 +70,20 @@ export default class ArtistRoster extends Component {
                     
                     <div><div className='tan fill'></div></div>
 
+                    <a href="https://www.instagram.com/shelleygregoryhair/"
+                        target="_blank" rel="noopener noreferrer">
+                        <div className='grid-item'>
+                            <div className="image">
+                                <img src={shelley} alt="shelley-gregory" />
+                            </div>
+                            <div className="text-container">
+                                <h4>Shelley Gregory</h4>
+                                <h4>@ShelleyGregoryHair</h4>
+                            </div>
+                            <div className="overlay"></div>
+                        </div>
+                    </a>
+
                     <a href="https://www.instagram.com/manemystic/"
                         target="_blank" rel="noopener noreferrer">
                         <div className='grid-item'>
@@ -83,7 +97,7 @@ export default class ArtistRoster extends Component {
                             <div className="overlay"></div>
                         </div>
                     </a>
-                    
+
                     <div><div className='tan fill'></div></div>
 
                     <a href="https://www.instagram.com/ramontgarcia/"
@@ -115,21 +129,23 @@ export default class ArtistRoster extends Component {
                             <div className="overlay"></div>
                         </div>            
                     </a>
-                    <div><div className='tan fill'></div></div>
 
-                    <a href='https://www.instagram.com/chitabeseau/'
+                    <a href="https://www.instagram.com/jikaiahstylist/"
                         target="_blank" rel="noopener noreferrer">
                         <div className='grid-item'>
                             <div className="image">
-                                <img src={chita} alt="chita-beseau" />
+                                <img src={jikaiah} alt="jikaiah-stylist" />
                             </div>
                             <div className="text-container">
-                                <h4>Chita Beseau</h4>
-                                <h4>@ChitaBeseau</h4>
+                                <h4>Jikiah Stevens</h4> 
+                                <h4>@jikaiahstylist</h4>
                             </div>
                             <div className="overlay"></div>
-                        </div>
+                        </div>            
                     </a>
+
+                    <div><div className='black fill'></div></div>
+                    <div><div className='tan fill'></div></div>
                     
                     <a href="https://www.instagram.com/leysahairandmakeup/"
                         target="_blank" rel="noopener noreferrer">
@@ -160,37 +176,54 @@ export default class ArtistRoster extends Component {
                             <div className="overlay"></div>
                         </div>
                     </a>
-                    
-                    <a href="https://www.instagram.com/sydneyannlopezhair/"
-                        target="_blank" rel="noopener noreferrer">
-                        <div className='grid-item'>
-                            <div className="image">
-                                <img src={sydney} alt="sydney-lopez" />
-                            </div>
-                            <div className="text-container">
-                                <h4>Sydney Lopez</h4>
-                                <h4>@sydneyannlopezhair</h4>
-                            </div>
-                            <div className="overlay"></div>
-                        </div>
-                    </a>
-                    
-                    <div><div className='brown fill'></div></div>
-                    <div><div className='black fill'></div></div>
 
-                    <a href="https://www.instagram.com/shelleygregoryhair/"
+                    <a href='https://www.instagram.com/chitabeseau/'
                         target="_blank" rel="noopener noreferrer">
                         <div className='grid-item'>
                             <div className="image">
-                                <img src={shelley} alt="shelley-gregory" />
+                                <img src={chita} alt="chita-beseau" />
                             </div>
                             <div className="text-container">
-                                <h4>Shelley Gregory</h4>
-                                <h4>@ShelleyGregoryHair</h4>
+                                <h4>Chita Beseau</h4>
+                                <h4>@ChitaBeseau</h4>
                             </div>
                             <div className="overlay"></div>
                         </div>
                     </a>
+
+                    <div><div className='brown fill'></div></div>
+
+                    <a href="https://www.instagram.com/drewschaefering/"
+                        target="_blank" rel="noopener noreferrer">
+                        <div className='grid-item'>
+                            <div className="image">
+                                <img src={drew} alt="drew-schaefering" />
+                            </div>
+                            <div className="text-container">
+                                <h4>Drew Schaefering</h4>
+                                <h4>@drewschaefering</h4>
+                            </div>
+                            <div className="overlay"></div>
+                        </div>
+                    </a>
+
+                    <div><div className='light-brown fill'></div></div>
+
+                    <a href="https://www.instagram.com/lgibsoncolorist/"
+                        target="_blank" rel="noopener noreferrer">
+                        <div className='grid-item'>
+                            <div className="image">
+                                <img src={laura} alt="laura-gibson" />
+                            </div>
+                            <div className="text-container">
+                                <h4>Laura Gibson</h4>
+                                <h4>@lgibsoncolorist</h4>
+                            </div>
+                            <div className="overlay"></div>
+                        </div>
+                    </a>
+
+                    <div><div className='tan fill'></div></div>
                     
                     <a href="https://www.instagram.com/minkimcolorist/"
                         target="_blank" rel="noopener noreferrer">
@@ -205,20 +238,24 @@ export default class ArtistRoster extends Component {
                             <div className="overlay"></div>
                         </div>
                     </a>
+
+                    <div><div className='tan fill'></div></div>
                     
-                    <a href="https://www.instagram.com/drewschaefering/"
+                    <a href="https://www.instagram.com/sydneyannlopezhair/"
                         target="_blank" rel="noopener noreferrer">
                         <div className='grid-item'>
                             <div className="image">
-                                <img src={drew} alt="drew-schaefering" />
+                                <img src={sydney} alt="sydney-lopez" />
                             </div>
                             <div className="text-container">
-                                <h4>Drew Schaefering</h4>
-                                <h4>@drewschaefering</h4>
+                                <h4>Sydney Lopez</h4>
+                                <h4>@sydneyannlopezhair</h4>
                             </div>
                             <div className="overlay"></div>
                         </div>
                     </a>
+
+                    <div><div className='tan fill'></div></div>
                     
                     <a href="https://www.instagram.com/rolandoaqui/"
                         target="_blank" rel="noopener noreferrer">
@@ -233,6 +270,8 @@ export default class ArtistRoster extends Component {
                             <div className="overlay"></div>
                         </div>
                     </a>
+
+                    <div><div className='tan fill'></div></div>
                 </div>                    
             </section>
         )
