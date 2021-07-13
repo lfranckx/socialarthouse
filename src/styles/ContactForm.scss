@@ -1,6 +1,11 @@
 #contact-form {
     min-height: 80vh;
     padding: 100px 20px 40px;
+    background-image: url('../images/Wave-lines.png');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 
     h2 {
         font-size: 48px;
@@ -11,13 +16,24 @@
         max-width: 700px;
         margin: 50px auto;
         padding: 50px 0 50px;
-        border: solid 1px #000;
+        // border: solid 1px #000;
         border-radius: 2px;
-        background: #f2f2f2;
+        // background: #f2f2f2;
+        background: #DCCEC8;
+        // background: #DC997D;
+        box-shadow: 0 4px 20px rgb(0 0 0 / 10%);
+        
+
+        .label {
+            margin: 10px auto 5px;
+            padding: 0 5px;
+            text-align: left;
+            width: 70%;
+        }
 
         label {
-            margin-bottom: 10px;
             font-size: 18px;
+            font-family: "Lato-Reg";
         }
 
         input {
@@ -38,7 +54,44 @@
         }
 
         .btn {
-            margin-top: 20px;
+            margin-top: 40px;
+        }
+    }
+}
+
+@media (max-width: 550px) {
+    #contact-form {
+        padding-top: 50px;
+
+        h2 {
+            font-size: 40px;
+        }
+
+        form {
+            padding: 10px 0;
+            margin-bottom: 5px;
+            .label {
+                width: 90%;
+                label {
+                    font-size: 16px;
+                }
+            }
+    
+    
+            input {
+                width: 90%;
+                font-size: 16px;
+                margin: 5px 0;
+            }
+
+            textarea {
+                width: 90%;
+                font-size: 16px;
+            }
+
+            .btn {
+                margin-top: 20px;
+            }
         }
     }
 }

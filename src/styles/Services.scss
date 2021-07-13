@@ -4,14 +4,16 @@
         display: grid;
         grid-template-columns: repeat(2, minmax(0, 1fr));
         max-width: 2000px;
-        margin: auto;
+        margin: 50px auto;
         padding: 50px;
 
-        // background-image: 
-        //     repeating-linear-gradient(#000 0 1px, transparent 1px 50%),
-        //     repeating-linear-gradient(90deg, #000 0 1px, transparent 1px 100%);
-        //     background-size: 50%;
+        // border: 50px solid transparent; /* replace padding with transparent border */
+        // overflow:hidden; 
 
+        // background:
+        //     linear-gradient(#000 0 0) center/100% 1px,
+        //     linear-gradient(#000 0 0) center/1px 100%;
+        // background-repeat:no-repeat;
 
         .item.show {
             background: #DC997D;
@@ -20,6 +22,7 @@
         .item {
             padding: 40px;
             transition: all ease 0.3s;
+            // outline: 1px solid;
 
             ul {
                 display: block;
@@ -46,11 +49,29 @@
             &:nth-child(2) {
                 border-bottom: 1px solid black;
             }
-
+            
             &:nth-child(3) {
                 border-right: 1px solid black;
             }
 
+            // &:nth-child(1):after {
+            //     height: 1px;
+            //     width: 100%;
+            // }
+
+            // &:nth-child(3):after {
+            //     height: 100%;
+            //     width: 1px;
+            //     top: 0
+            // }
+
+            // &:nth-child(1):after, &:nth-child(3):after {
+            //     background: #000;
+            //     content: '';
+            //     position: absolute;
+            //     transform: translate(-50%); // center align lines
+            //     left: 50%;
+            // }
 
             h4 {
                 font-size: 30px;
@@ -79,10 +100,6 @@
                 }
             }
         }
-    }
-
-    .fa-chevron-down {
-        // margin-top: 50px;
     }
 }
 
@@ -120,6 +137,7 @@
         .list {
             display: block;
             margin: 0 -10px 0;
+            background: none;
 
             .item {        
                 width: 90%;

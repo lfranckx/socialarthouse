@@ -11,7 +11,7 @@ export default function About(props) {
                     <p>A pro-beauty management and creative agency, offering an expansive consulting experience for brands through ingenuity, originality and imagination.</p>
                 </li>
                 <li>
-                    <h4>What We Do (Theory)</h4>
+                    <h4>What We Do</h4>
                     <p>Our job is to leverage industry relationships to support and drive your growth.</p>
                 </li>
                 <li>

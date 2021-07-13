@@ -9,7 +9,6 @@ import loreal from '../images/partners/loreal.png';
 import redken from '../images/partners/redken.png';
 import ulta from '../images/partners/ulta.png';
 
-import beautybox from '../images/partners/beauty-box.jpeg';
 import bioionic from '../images/partners/Bioionic.png';
 import bqg from '../images/partners/bqg_logo.png';
 import cuvee from '../images/partners/cuvee.png';
@@ -51,15 +50,6 @@ export default function Partners(props) {
                 <a href="https://www.kerastase-usa.com/" target="_blank" rel="noopener noreferrer">
                     <img className="partner-logo" src={kerastase} alt="kerastase-paris" />
                 </a>
-                <a href="https://johnnyramirez.com/" target="_blank" rel="noopener noreferrer">
-                    <img className="partner-logo" src={johnny} alt="johnny-ramirez-california" />
-                </a>
-                <a href="https://www.madison-reed.com/" target="_blank" rel="noopener noreferrer">
-                    <img className="partner-logo" src={mrlogo} alt="madison-reed" />
-                </a>
-                <a href='https://frommbeauty.com/' target="_blank" rel="noopener noreferrer">
-                    <img className="partner-logo" src={fromm} alt="fromm" />
-                </a>
             </div>
             <div 
                 ref={collapsibleRef} 
@@ -68,19 +58,12 @@ export default function Partners(props) {
                         height: collapsibleRef.current.scrollHeight + 'px',
                     } : {
                         height: '0px',
+                        margin: '0px'
                     }}
                 className={"content"}>
-                <a href="https://www.joico.com/" target="_blank" rel="noopener noreferrer">
-                    <img className="partner-logo" src={joico} alt="joico" />
-                </a>
-                <a href="https://www.genejuarez.com/" target="_blank" rel="noopener noreferrer">
-                    <img className="partner-logo" src={genejuarez} alt="gene-juarez" />
-                </a>
                 <a href="https://www.matrix.com/" target="_blank" rel="noopener noreferrer">
                     <img className="partner-logo" src={matrix} alt="matrix" />
                 </a>
-                <a href="https://www.beautyboxla.com/" target="_blank" rel="noopener noreferrer">
-                    <img className="partner-logo" src={beautybox} alt="dyson" /></a>
                 <a href="https://www.beautyquestgroup.com/" target="_blank" rel="noopener noreferrer">
                     <img className="partner-logo" src={bqg} alt="bqg-logo" />
                 </a>
@@ -90,11 +73,26 @@ export default function Partners(props) {
                 <a href="https://www.bioionic.com/" target="_blank" rel="noopener noreferrer">
                     <img className="partner-logo" src={bioionic} alt="bio-ionic" />
                 </a>
-                <a href="https://www.cuveebeauty.com/" target="_blank" rel="noopener noreferrer">
-                    <img className="partner-logo" src={cuvee} alt="cuvee-beauty" />
+                <a href="https://www.joico.com/" target="_blank" rel="noopener noreferrer">
+                    <img className="partner-logo" src={joico} alt="joico" />
                 </a>
                 <a href="https://www.keune.com/" target="_blank" rel="noopener noreferrer">
                     <img className="partner-logo" src={kuene} alt="keune-hair-cosmetics" />
+                </a>
+                <a href="https://johnnyramirez.com/" target="_blank" rel="noopener noreferrer">
+                    <img className="partner-logo" src={johnny} alt="johnny-ramirez-california" />
+                </a>
+                <a href="https://www.genejuarez.com/" target="_blank" rel="noopener noreferrer">
+                    <img className="partner-logo" src={genejuarez} alt="gene-juarez" />
+                </a>
+                <a href="https://www.madison-reed.com/" target="_blank" rel="noopener noreferrer">
+                    <img className="partner-logo" src={mrlogo} alt="madison-reed" />
+                </a>
+                <a href='https://frommbeauty.com/' target="_blank" rel="noopener noreferrer">
+                    <img className="partner-logo" src={fromm} alt="fromm" />
+                </a>
+                <a href="https://www.cuveebeauty.com/" target="_blank" rel="noopener noreferrer">
+                    <img className="partner-logo" src={cuvee} alt="cuvee-beauty" />
                 </a>
                 <a href="https://www.groupe-provalliance.com/fr/" target="_blank" rel="noopener noreferrer">
                     <img className="partner-logo" src={provalliance} alt="provalliance" />
