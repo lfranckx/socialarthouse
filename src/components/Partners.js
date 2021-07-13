@@ -8,7 +8,6 @@ import kerastase from '../images/partners/kerastase.png';
 import loreal from '../images/partners/loreal.png';
 import redken from '../images/partners/redken.png';
 import ulta from '../images/partners/ulta.png';
-
 import bioionic from '../images/partners/Bioionic.png';
 import bqg from '../images/partners/bqg_logo.png';
 import cuvee from '../images/partners/cuvee.png';
