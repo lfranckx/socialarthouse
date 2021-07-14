@@ -16,7 +16,7 @@ export default function Services(props) {
                 
                 <li className={ isFlipped1 ? 'item show flip' : 'item'}>
                     { isFlipped1 ?  <div>
-                        <h4>Brand Buildings</h4>
+                        <h4>Brand Building</h4>
                         <ul>
                             <li><i className="fas fa-check"></i> Brand Audit</li>
                             <li><i className="fas fa-check"></i> Go-to-Market Strategy Development</li>
