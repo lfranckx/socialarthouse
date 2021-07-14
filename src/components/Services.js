@@ -24,7 +24,7 @@ export default function Services(props) {
                             <li><i className="fas fa-check"></i> Promotion, Communication and Advertising</li>
                         </ul> </div> : 
                         <> 
-                            <h4>Brand Buildings</h4>
+                            <h4>Brand Building</h4>
                             <p>Find, fine-tune, captivate and optimize opportunities within the market that align with your brand’s fingerprint. For up and coming brands, or established brands looking to grow, our brand building services will provide the foundational insights to help you build your dream. Let us do the heavy lifting.</p>    
                         </>
                     }
