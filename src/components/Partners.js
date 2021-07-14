@@ -18,10 +18,7 @@ import johnny from '../images/partners/johnny-ramirez.png';
 import kuene from '../images/partners/keune.png';
 import matrix from '../images/partners/matrix.png';
 import miladypro from '../images/partners/miladypro.png';
-import mrlogo from '../images/partners/Madison.png';
 import provalliance from '../images/partners/provalliance.png';
-
-
 
 export default function Partners(props) {
     const [isOpen, setIsOpen] = useState(false);
@@ -83,9 +80,6 @@ export default function Partners(props) {
                 </a>
                 <a href="https://www.genejuarez.com/" target="_blank" rel="noopener noreferrer">
                     <img className="partner-logo" src={genejuarez} alt="gene-juarez" />
-                </a>
-                <a href="https://www.madison-reed.com/" target="_blank" rel="noopener noreferrer">
-                    <img className="partner-logo" src={mrlogo} alt="madison-reed" />
                 </a>
                 <a href='https://frommbeauty.com/' target="_blank" rel="noopener noreferrer">
                     <img className="partner-logo" src={fromm} alt="fromm" />

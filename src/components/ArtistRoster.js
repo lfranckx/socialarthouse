@@ -17,7 +17,7 @@ import ramon from '../images/artists/ramon.png';
 import rolando from '../images/artists/rolando.jpg';
 import shelley from '../images/artists/shelley.jpg';
 import sydney from '../images/artists/sydney.jpeg';
-import tippi from '../images/artists/tippi.jpg';
+import tippi from '../images/artists/tippi-cropped.jpg';
 
 export default class ArtistRoster extends Component {
     render () {
@@ -55,15 +55,15 @@ export default class ArtistRoster extends Component {
                     
                     <div><div className='tan fill'></div></div>
 
-                    <a href="https://www.instagram.com/michelleoconnorbeauty/"
+                    <a href="https://www.instagram.com/ramontgarcia/"
                         target="_blank" rel="noopener noreferrer">
                         <div className="grid-item">
                             <div className="image">
-                                <img src={michelle} alt="michelle-oconnor" />
+                                <img src={ramon} alt="ramon-garcia" />
                             </div>
                             <div className="text-container">
-                                <h4>Michelle O'Connor</h4>
-                                <h4>@michelleoconnorbeauty</h4>
+                                <h4>Ramon Garcia</h4>
+                                <h4>@RamonTGarcia</h4>
                             </div>
                             <div className="overlay"></div>
                         </div>
@@ -101,15 +101,15 @@ export default class ArtistRoster extends Component {
 
                     <div><div className='tan fill'></div></div>
 
-                    <a href="https://www.instagram.com/ramontgarcia/"
+                    <a href="https://www.instagram.com/michelleoconnorbeauty/"
                         target="_blank" rel="noopener noreferrer">
                         <div className="grid-item">
                             <div className="image">
-                                <img src={ramon} alt="ramon-garcia" />
+                                <img src={michelle} alt="michelle-oconnor" />
                             </div>
                             <div className="text-container">
-                                <h4>Ramon Garcia</h4>
-                                <h4>@RamonTGarcia</h4>
+                                <h4>Michelle O'Connor</h4>
+                                <h4>@michelleoconnorbeauty</h4>
                             </div>
                             <div className="overlay"></div>
                         </div>
@@ -164,20 +164,20 @@ export default class ArtistRoster extends Component {
                     
                     <div><div className='brown fill'></div></div>
 
-                    <a href="https://www.instagram.com/tippishorter/"
+                    <a href="https://www.instagram.com/lgibsoncolorist/"
                         target="_blank" rel="noopener noreferrer">
-                        <div className="grid-item">
+                        <div className='grid-item'>
                             <div className="image">
-                                <img src={tippi} alt="tippi-shorter" />
+                                <img src={laura} alt="laura-gibson" />
                             </div>
                             <div className="text-container">
-                                <h4>Tippi Shorter</h4>
-                                <h4>@Tippishorterrank</h4>
+                                <h4>Laura Gibson</h4>
+                                <h4>@lgibsoncolorist</h4>
                             </div>
                             <div className="overlay"></div>
                         </div>
                     </a>
-
+                    
                     <a href='https://www.instagram.com/chitabeseau/'
                         target="_blank" rel="noopener noreferrer">
                         <div className='grid-item'>
@@ -210,19 +210,20 @@ export default class ArtistRoster extends Component {
 
                     <div><div className='light-brown fill'></div></div>
 
-                    <a href="https://www.instagram.com/lgibsoncolorist/"
+                    <a href="https://www.instagram.com/tippishorter/"
                         target="_blank" rel="noopener noreferrer">
-                        <div className='grid-item'>
+                        <div className="grid-item">
                             <div className="image">
-                                <img src={laura} alt="laura-gibson" />
+                                <img src={tippi} alt="tippi-shorter" />
                             </div>
                             <div className="text-container">
-                                <h4>Laura Gibson</h4>
-                                <h4>@lgibsoncolorist</h4>
+                                <h4>Tippi Shorter</h4>
+                                <h4>@Tippishorterrank</h4>
                             </div>
                             <div className="overlay"></div>
                         </div>
                     </a>
+
 
                     <div><div className='tan fill'></div></div>
                     

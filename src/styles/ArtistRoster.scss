@@ -124,15 +124,25 @@
 
 // bottom tan box
 #artists > div > div:nth-child(14) > div.tan {
-    height: 147px;
+    height: 181px;
 }
 // brown box middle
 #artists > div > div:nth-child(19) > div.brown {
     height: 180px;
 }
+// bottom light brown box
+#artists > div > div:nth-child(21) > div.light-brown {
+    height: 325px;
+}
+
+#artists > div > div:nth-child(27) > div.tan {
+    height: 203px;
+}
+
 // bottom right tan box
 #artists > div > div:nth-child(29) > div.tan {
     height: 55px;
+    display: none;
 }
 
 @media(max-width: 1470px) {
@@ -156,8 +166,12 @@
         display: none;
     }
 
+    #artists > div > div:nth-child(16) > div.brown {
+        height: 362px;
+    }
+
     #artists > div > div:nth-child(19) > div.brown {
-        height: 128px;
+        display: none;
     }
 
     #artists > div > div:nth-child(21) > div.light-brown {
