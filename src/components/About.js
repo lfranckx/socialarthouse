@@ -16,7 +16,7 @@ export default function About(props) {
                 </li>
                 <li>
                     <h4>Why We Do It</h4>
-                    <p>Our mission for both our brand and influencer partners is to build long-lasting collaborations that promote strategic development and gorwth for all.</p>
+                    <p>Our mission for both our brand and influencer partners is to build long-lasting collaborations that promote strategic development and growth for all.</p>
                 </li>
             </ul>
 
