@@ -7,6 +7,7 @@ import Homepage from './components/Homepage';
 import ContactForm from './components/ContactForm';
 import Footer from './components/Footer';
 import ThankYou from './components/ThankYouPage';
+import NotFoundPage from './components/NotFoundPage';
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
           <Route exact path="/" component={Homepage} />
           <Route exact path='/contact' component={ContactForm} />
           <Route exact path='/thankyou' component={ThankYou} />
+          <Route component={NotFoundPage} />
         </Switch>
         <Footer />
     </div>
