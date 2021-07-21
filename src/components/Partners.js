@@ -18,6 +18,7 @@ import johnny from '../images/partners/johnny-ramirez.png';
 import kuene from '../images/partners/keune.png';
 import matrix from '../images/partners/matrix.png';
 import miladypro from '../images/partners/miladypro.png';
+import ouidad from '../images/partners/ouidad.png';
 import provalliance from '../images/partners/provalliance.png';
 
 export default function Partners(props) {
@@ -69,17 +70,20 @@ export default function Partners(props) {
                 <a href="https://www.bioionic.com/" target="_blank" rel="noopener noreferrer">
                     <img className="partner-logo" src={bioionic} alt="bio-ionic" />
                 </a>
+                <a href="https://www.ouidad.com/" target="_blank" rel="noopener noreferrer">
+                    <img className="partner-logo" src={ouidad} alt="ouidad" />
+                </a>
                 <a href="https://www.joico.com/" target="_blank" rel="noopener noreferrer">
                     <img className="partner-logo" src={joico} alt="joico" />
-                </a>
-                <a href="https://www.keune.com/" target="_blank" rel="noopener noreferrer">
-                    <img className="partner-logo" src={kuene} alt="keune-hair-cosmetics" />
                 </a>
                 <a href="https://johnnyramirez.com/" target="_blank" rel="noopener noreferrer">
                     <img className="partner-logo" src={johnny} alt="johnny-ramirez-california" />
                 </a>
                 <a href="https://www.genejuarez.com/" target="_blank" rel="noopener noreferrer">
                     <img className="partner-logo" src={genejuarez} alt="gene-juarez" />
+                </a>
+                <a href="https://www.keune.com/" target="_blank" rel="noopener noreferrer">
+                    <img className="partner-logo" src={kuene} alt="keune-hair-cosmetics" />
                 </a>
                 <a href='https://frommbeauty.com/' target="_blank" rel="noopener noreferrer">
                     <img className="partner-logo" src={fromm} alt="fromm" />
