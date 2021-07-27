@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/Navbar.scss';
-import logo from '../images/logo.png';
+import logo_big from '../images/SAH_BIG.png';
 import { Link } from 'react-router-dom';
 
 export default function Navbar(props) {
@@ -10,7 +10,7 @@ export default function Navbar(props) {
                 <div className="empty-space"></div>
 
                 <Link to="/">
-                    <h1><img id="logo" src={logo} alt="logo"/></h1>
+                    <h1><img id="logo" src={logo_big} alt="logo"/></h1>
                 </Link>
 
                 <Link className="btn" to="/contact">Need to Connect?</Link>
