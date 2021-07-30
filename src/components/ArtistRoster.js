@@ -184,10 +184,10 @@ export default class ArtistRoster extends Component {
                         target="_blank" rel="noopener noreferrer">
                         <div className='grid-item'>
                             <div className="image">
-                                <img src={monae} alt="monet-everett" />
+                                <img src={monae} alt="Monae-everett" />
                             </div>
                             <div className="text-container">
-                                <h4>Monet Everett</h4>
+                                <h4>Monae Everett</h4>
                                 <h4>@monaeartistry</h4>
                             </div>
                             <div className="overlay"></div>
