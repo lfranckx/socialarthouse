@@ -28,7 +28,6 @@
     .grid {
         max-width: 1500px;
         margin: auto;
-        columns: 4;
         margin-bottom: 50px;
 
         div {
@@ -39,6 +38,8 @@
             -webkit-column-break-inside: avoid;
             page-break-inside: avoid;
             break-inside: avoid;
+            width: 350px;
+            margin: auto;
 
             .fill {
                 max-width: 350px;
@@ -67,6 +68,9 @@
 
         a {
             cursor: initial;
+            width: 350px;
+            margin: auto;
+
             .grid-item {
                 height: fit-content;
                 height: -moz-fit-content;
