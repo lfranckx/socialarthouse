@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-scroll';
 import '../styles/ArtistRoster.scss';
+import Masonry from 'react-masonry-component';
 
 import andi from '../images/artists/andi.png';
 import bri from '../images/artists/bri.png';
@@ -23,6 +24,7 @@ import tippi from '../images/artists/tippi-cropped.jpg';
 export default class ArtistRoster extends Component {
     render () {
         return (
+            <>
             <section id="artists">
                 <h3>Our Artist Collective</h3>
                 <div className='grid'>
@@ -291,6 +293,8 @@ export default class ArtistRoster extends Component {
 
                 <Link className="btn" activeClass="active" to="navbar" spy={true} smooth={true} offset={0} duration={500}>Back to top</Link>
             </section>
+            <MasonryGrid />
+            </>
         )
     }
 }
