@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Link } from 'react-scroll';
 import '../styles/ArtistRoster.scss';
+import ArtistCards from './ArtistCards';
+
 import Masonry from 'react-masonry-component';
 
 import andi from '../images/artists/andi.png';
@@ -23,6 +25,8 @@ import tippi from '../images/artists/tippi-cropped.jpg';
 
 export default class ArtistRoster extends Component {
     render () {
+        console.log(ArtistCards);
+
         return (
             <>
             <section id="artists">
@@ -289,11 +293,10 @@ export default class ArtistRoster extends Component {
                             <div className="overlay"></div>
                         </div>            
                     </a>
-                </div>                    
+                </div>          
 
                 <Link className="btn" activeClass="active" to="navbar" spy={true} smooth={true} offset={0} duration={500}>Back to top</Link>
             </section>
-            <MasonryGrid />
             </>
         )
     }
