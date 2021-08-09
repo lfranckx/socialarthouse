@@ -30,7 +30,7 @@ export default function Team(props) {
                 <div className="card">
                     <img src={courtney} alt="courtney" />
                     <h4>Courtney Bright</h4>
-                    <h5>Exective Content Specialist | <span>Brand Storyteller</span></h5>
+                    <h5>Executive Content Specialist | <span>Brand Storyteller</span></h5>
                 </div>
             </div>
 
