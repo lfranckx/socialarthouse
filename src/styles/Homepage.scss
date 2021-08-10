@@ -90,6 +90,8 @@
                 margin-top: 60px;
                 display: grid;
                 grid-template-columns: repeat(3, minmax(0, 1fr));
+                max-width: 2000px;
+                margin: 60px auto 0;
 
                 li {
                     padding: 40px;

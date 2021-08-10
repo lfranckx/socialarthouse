@@ -15,11 +15,11 @@ export default function ArtistRoster() {
                 <a href={card.url}
                     target="_blank" 
                     rel="noopener noreferrer">
-                    <div className="grid-item">
-                        <div className="image">
+                    <div className="wrap">
+                        <div className="image-wrap">
                             <img src={card.src} alt="artist headshot" />
                         </div>
-                        <div className="text-container">
+                        <div className="text-wrap">
                             <h4>{card.name}</h4>
                             <h4>{card.ig}</h4>
                         </div>
@@ -32,17 +32,17 @@ export default function ArtistRoster() {
 
     return (
         <section id='artists'>
-                <div className='grid'>
-                    <Masonry
-                        className={'my-gallery-class masonry'} // default ''
-                        elementType={'ul'} // default 'div'
-                        options={masonryOptions} // default {}
-                        disableImagesLoaded={false} // default false
-                        updateOnEachImageLoad={false} // default false and works only if disableImagesLoaded is false
-                    >
-                        {children}
-                    </Masonry>
-                </div>
+            <ul>
+                {/* <Masonry */}
+                    // className={'my-gallery-class masonry'} // default ''
+                    // elementType={'ul'} // default 'div'
+                    // options={masonryOptions} // default {}
+                    // disableImagesLoaded={false} // default false
+                    // updateOnEachImageLoad={false} // default false and works only if disableImagesLoaded is false
+                {/* >  */}
+                    {children}
+                {/* </Masonry> */}
+            </ul>
             <Link className="btn" activeClass="active" to="navbar" spy={true} smooth={true} offset={0} duration={500}>Back to top</Link>
         </section>
     ) 
