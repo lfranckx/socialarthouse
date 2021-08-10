@@ -32,17 +32,17 @@ export default function ArtistRoster() {
 
     return (
         <section id='artists'>
-            <ul>
-                {/* <Masonry */}
-                    // className={'my-gallery-class masonry'} // default ''
-                    // elementType={'ul'} // default 'div'
-                    // options={masonryOptions} // default {}
-                    // disableImagesLoaded={false} // default false
-                    // updateOnEachImageLoad={false} // default false and works only if disableImagesLoaded is false
-                {/* >  */}
+            {/* <ul> */}
+                <Masonry
+                    className={'my-gallery-class masonry'} // default ''
+                    elementType={'ul'} // default 'div'
+                    options={masonryOptions} // default {}
+                    disableImagesLoaded={false} // default false
+                    updateOnEachImageLoad={false} // default false and works only if disableImagesLoaded is false
+                > 
                     {children}
-                {/* </Masonry> */}
-            </ul>
+                </Masonry>
+            {/* </ul> */}
             <Link className="btn" activeClass="active" to="navbar" spy={true} smooth={true} offset={0} duration={500}>Back to top</Link>
         </section>
     ) 

@@ -91,37 +91,6 @@
     }
 }
 
-
-@media(max-width: 1470px) {
-    #artists {
-        .grid {
-            columns: 3;
-        }
-    }
-}
-
-
-@media(max-width: 1150px) {
-    #artists {
-        .grid {
-            columns: 2;
-        }
-    }
-}
-
-@media(max-width: 750px) {
-    #artists {
-        .grid {
-            columns: 1;
-
-            .fill {
-                display: none;
-                margin-bottom: 0;
-            }
-        }
-    }
-}
-
 @media (max-width: 550px) {
     #artists {
         h3 {
@@ -130,78 +99,36 @@
     }
 }
 
-@media(max-width: 380px) {
-    #artists {
-        .grid {
-    
-            a {
-                width: 280px;
-    
-                .grid-item {
-
-                    div.image {
-                        img {
-                            width: 280px;
-                        }
-                    }
-
-                    .text-container {
-                        width: 280px;
-
-                        h4 {
-                            &:nth-child(1) {
-                                font-size: 22px;
-                                bottom: 35px;
-                            }
-
-                            &:nth-child(2) {
-                                font-size: 16px;
-                                bottom: 10px;
-                            }
-                        }
-                    }
-
-                    .overlay {
-                        width: 280px;
-                    }
-                }
-            }
-        }
-    }
-}
-
 @media(max-width: 390px) {
     #artists {
-        .grid {
-            a {
+        ul {
+            .card {
                 width: 260px;
+                a {
+                    .wrap {
+                        .image-wrap {
+                            img {
+                                width: 260px;
+                            }
+                        }
+                        .text-wrap {
+                            width: 260px;
+                            h4 {
+                                &:nth-child(1) {
+                                    font-size: 22px;
+                                    bottom: 35px;
+                                }
     
-                .grid-item {
+                                &:nth-child(2) {
+                                    font-size: 16px;
+                                    bottom: 10px;
+                                }
+                            }
+                        }
 
-                    div.image {
-                        img {
+                        .overlay {
                             width: 260px;
                         }
-                    }
-
-                    .text-container {
-                        width: 260px;
-
-                        h4 {
-                            &:nth-child(1) {
-                                font-size: 22px;
-                                bottom: 35px;
-                            }
-
-                            &:nth-child(2) {
-                                font-size: 16px;
-                                bottom: 10px;
-                            }
-                        }
-                    }
-
-                    .overlay {
-                        width: 260px;
                     }
                 }
             }
