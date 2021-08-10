@@ -1,7 +1,6 @@
 import React from 'react';
 import '../styles/Footer.scss';
 import { Link } from 'react-router-dom';
-import logo from '../images/sah-logo.png'
 
 export default function Footer(props) {
     return (
@@ -48,7 +47,7 @@ export default function Footer(props) {
                         </div>
                         <div>
                             <Link to='/'>
-                                <img className="logo" src={logo} alt="SAH-logo"/>
+                                <img className="logo" src='images/sah-logo.png' alt="SAH-logo"/>
                             </Link>
                         </div>
                         <p id='copyright'>Copyright © 2021. All rights reserved.</p>
