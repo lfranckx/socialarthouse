@@ -94,7 +94,7 @@ const ArtistCards = [
     {
         name: 'block',
         color: 'brown',
-        height: 'small'
+        height: 'medium'
     },
     {
         url: 'https://www.instagram.com/manemystic/',
@@ -111,7 +111,7 @@ const ArtistCards = [
     {
         name: 'block',
         color: 'black',
-        height: 'large'
+        height: 'medium'
     },
     {
         url: 'https://www.instagram.com/crown_works/',
@@ -120,16 +120,26 @@ const ArtistCards = [
         ig: '@crown_works'
     },
     {
+        name: 'block',
+        color: 'orange',
+        height: 'small'
+    },
+    {
         url: 'https://www.instagram.com/rolandoaqui/',
         src: 'images/artists/rolando.jpg',
         name: 'Rolando Aqui',
-        ig: '@'
+        ig: '@rolandoaqui'
     },
     {
         url: 'https://www.instagram.com/jikaiahstylist/',
         src: 'images/artists/jikaiah.jpeg',
         name: 'Jikiah Stevens',
         ig: '@jikaiahstylist'
+    },
+    {
+        name: 'block',
+        color: 'grey',
+        height: 'large'
     },
 ]
 
