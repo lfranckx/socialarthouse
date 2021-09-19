@@ -1,9 +1,6 @@
 #homepage {
     header {
         background-image: url('../images/Wave-lines.png');
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
         background-size: cover;
         padding: 160px 40px 40px;
         min-height: 100vh;
@@ -23,10 +20,16 @@
 
         .fa-chevron-down {
             font-size: 32px;
-            animation-duration: 2s;
-            animation-iteration-count: infinite;
-            transform-origin: bottom;
-            transform: scale(1.05);  
+            -webkit-animation-duration: 2s;
+                    animation-duration: 2s;
+            -webkit-animation-iteration-count: infinite;
+                    animation-iteration-count: infinite;
+            -webkit-transform-origin: bottom;
+                -ms-transform-origin: bottom;
+                    transform-origin: bottom;
+            -webkit-transform: scale(1.05);
+                -ms-transform: scale(1.05);
+                    transform: scale(1.05);  
 
             &:hover {
                 cursor: pointer;
@@ -34,14 +37,22 @@
         }
 
         .bounce{
-            animation-name: bounce;
-            animation-timing-function: ease;
+            -webkit-animation-name: bounce;
+                    animation-name: bounce;
+            -webkit-animation-timing-function: ease;
+                    animation-timing-function: ease;
+        }
+
+        @-webkit-keyframes bounce {
+            0%   { -webkit-transform: translateY(0); transform: translateY(0); }
+            50%  { -webkit-transform: translateY(10px); transform: translateY(10px); }
+            100% { -webkit-transform: translateY(0); transform: translateY(0); }
         }
 
         @keyframes bounce {
-            0%   { transform: translateY(0); }
-            50%  { transform: translateY(10px); }
-            100% { transform: translateY(0); }
+            0%   { -webkit-transform: translateY(0); transform: translateY(0); }
+            50%  { -webkit-transform: translateY(10px); transform: translateY(10px); }
+            100% { -webkit-transform: translateY(0); transform: translateY(0); }
         }
     }
 
@@ -56,10 +67,16 @@
 
             .fa-chevron-down  {
                 font-size: 32px;
-                animation-duration: 2s;
-                animation-iteration-count: infinite;
-                transform-origin: bottom;
-                transform: scale(1.05);  
+                -webkit-animation-duration: 2s;
+                        animation-duration: 2s;
+                -webkit-animation-iteration-count: infinite;
+                        animation-iteration-count: infinite;
+                -webkit-transform-origin: bottom;
+                    -ms-transform-origin: bottom;
+                        transform-origin: bottom;
+                -webkit-transform: scale(1.05);
+                    -ms-transform: scale(1.05);
+                        transform: scale(1.05);  
     
                 &:hover {
                     cursor: pointer;
@@ -67,14 +84,22 @@
             }
     
             .bounce{
-                animation-name: bounce;
-                animation-timing-function: ease;
+                -webkit-animation-name: bounce;
+                        animation-name: bounce;
+                -webkit-animation-timing-function: ease;
+                        animation-timing-function: ease;
+            }
+    
+            @-webkit-keyframes bounce {
+                0%   { -webkit-transform: translateY(0); transform: translateY(0); }
+                50%  { -webkit-transform: translateY(10px); transform: translateY(10px); }
+                100% { -webkit-transform: translateY(0); transform: translateY(0); }
             }
     
             @keyframes bounce {
-                0%   { transform: translateY(0); }
-                50%  { transform: translateY(10px); }
-                100% { transform: translateY(0); }
+                0%   { -webkit-transform: translateY(0); transform: translateY(0); }
+                50%  { -webkit-transform: translateY(10px); transform: translateY(10px); }
+                100% { -webkit-transform: translateY(0); transform: translateY(0); }
             }
         }
 
@@ -88,7 +113,9 @@
 
             ul {
                 margin-top: 60px;
+                display: -ms-grid;
                 display: grid;
+                -ms-grid-columns: (minmax(0, 1fr))[3];
                 grid-template-columns: repeat(3, minmax(0, 1fr));
                 max-width: 2000px;
                 margin: 60px auto 0;

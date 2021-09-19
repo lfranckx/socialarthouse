@@ -1,10 +1,16 @@
 nav {
     background: #fff;
-    box-shadow: 0 4px 20px rgba(0,0,0, 0.25);
+    -webkit-box-shadow: 0 4px 20px rgba(0,0,0, 0.25);
+            box-shadow: 0 4px 20px rgba(0,0,0, 0.25);
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     padding: 10px 0;
 
     #logo {
@@ -18,8 +24,11 @@ nav {
 
 @media (max-width: 600px) {
     nav {
-        justify-content: flex-start;
-        justify-content: space-around;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
 
         .empty-space {
             width: 0;

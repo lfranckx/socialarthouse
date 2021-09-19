@@ -5,11 +5,14 @@
 
     footer {
         max-width: 1500px;
+        display: -ms-grid;
         display: grid;
+        -ms-grid-columns: 3fr 1fr;
         grid-template-columns: 3fr 1fr;
         margin: auto;
 
         .left {
+            display: -ms-grid;
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 
@@ -43,7 +46,11 @@
     
 
         .right {
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
+            -webkit-box-pack: end;
+            -ms-flex-pack: end;
             justify-content: flex-end;
             max-width: 400px;
 
@@ -160,6 +167,8 @@
             .right {
                 max-width: 100%;
                 margin-top: 50px;
+                -webkit-box-pack: start;
+                -ms-flex-pack: start;
                 justify-content: flex-start;
             }
         }

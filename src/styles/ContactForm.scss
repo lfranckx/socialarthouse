@@ -2,10 +2,9 @@
     min-height: 80vh;
     padding: 50px 0 40px;
     background-image: url('../images/Wave-lines.png');
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 
     div.container {
@@ -33,7 +32,8 @@
         padding: 25px 0 25px;
         border-radius: 2px;
         background: #DCCEC8;
-        box-shadow: 0 4px 20px rgb(0 0 0 / 10%);
+        -webkit-box-shadow: 0 4px 20px rgb(0 0 0 / 10%);
+                box-shadow: 0 4px 20px rgb(0 0 0 / 10%);
         
 
         .label {
@@ -65,20 +65,114 @@
             padding: 10px;
         }
 
-        input::placeholder {
+        input::-webkit-input-placeholder {
+            text-transform: uppercase;
+            font-size: 14px;
+            display: -webkit-box;
+            display: flex;
+            -webkit-box-align: center;
+                    align-items: center;
+            -webkit-box-pack: center;
+                    justify-content: center;
+        }
+
+        input::-moz-placeholder {
             text-transform: uppercase;
             font-size: 14px;
             display: flex;
             align-items: center;
             justify-content: center;
         }
+
+        input:-ms-input-placeholder {
+            text-transform: uppercase;
+            font-size: 14px;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-align: center;
+                align-items: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        }
+
+        input::-ms-input-placeholder {
+            text-transform: uppercase;
+            font-size: 14px;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-align: center;
+                align-items: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        }
+
+        input::placeholder {
+            text-transform: uppercase;
+            font-size: 14px;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
+        }
         
-        textarea::placeholder {
+        textarea::-webkit-input-placeholder {
+            text-transform: uppercase;
+            font-size: 16px;
+            display: -webkit-box;
+            display: flex;
+            -webkit-box-align: center;
+                    align-items: center;
+            -webkit-box-pack: center;
+                    justify-content: center;
+        }
+        
+        textarea::-moz-placeholder {
             text-transform: uppercase;
             font-size: 16px;
             display: flex;
             align-items: center;
             justify-content: center;
+        }
+        
+        textarea:-ms-input-placeholder {
+            text-transform: uppercase;
+            font-size: 16px;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-align: center;
+                align-items: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        }
+        
+        textarea::-ms-input-placeholder {
+            text-transform: uppercase;
+            font-size: 16px;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-align: center;
+                align-items: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        }
+        
+        textarea::placeholder {
+            text-transform: uppercase;
+            font-size: 16px;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
         }
 
         .btn {
@@ -145,20 +239,114 @@
                 padding: 10px;
             }
     
-            input::placeholder {
+            input::-webkit-input-placeholder {
+                text-transform: uppercase;
+                font-size: 14px;
+                display: -webkit-box;
+                display: flex;
+                -webkit-box-align: center;
+                        align-items: center;
+                -webkit-box-pack: center;
+                        justify-content: center;
+            }
+    
+            input::-moz-placeholder {
                 text-transform: uppercase;
                 font-size: 14px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
             }
+    
+            input:-ms-input-placeholder {
+                text-transform: uppercase;
+                font-size: 14px;
+                display: -ms-flexbox;
+                display: flex;
+                -ms-flex-align: center;
+                    align-items: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
+            }
+    
+            input::-ms-input-placeholder {
+                text-transform: uppercase;
+                font-size: 14px;
+                display: -ms-flexbox;
+                display: flex;
+                -ms-flex-align: center;
+                    align-items: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
+            }
+    
+            input::placeholder {
+                text-transform: uppercase;
+                font-size: 14px;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-align: center;
+                    -ms-flex-align: center;
+                        align-items: center;
+                -webkit-box-pack: center;
+                    -ms-flex-pack: center;
+                        justify-content: center;
+            }
             
-            textarea::placeholder {
+            textarea::-webkit-input-placeholder {
+                text-transform: uppercase;
+                font-size: 16px;
+                display: -webkit-box;
+                display: flex;
+                -webkit-box-align: center;
+                        align-items: center;
+                -webkit-box-pack: center;
+                        justify-content: center;
+            }
+            
+            textarea::-moz-placeholder {
                 text-transform: uppercase;
                 font-size: 16px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
+            }
+            
+            textarea:-ms-input-placeholder {
+                text-transform: uppercase;
+                font-size: 16px;
+                display: -ms-flexbox;
+                display: flex;
+                -ms-flex-align: center;
+                    align-items: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
+            }
+            
+            textarea::-ms-input-placeholder {
+                text-transform: uppercase;
+                font-size: 16px;
+                display: -ms-flexbox;
+                display: flex;
+                -ms-flex-align: center;
+                    align-items: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
+            }
+            
+            textarea::placeholder {
+                text-transform: uppercase;
+                font-size: 16px;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-align: center;
+                    -ms-flex-align: center;
+                        align-items: center;
+                -webkit-box-pack: center;
+                    -ms-flex-pack: center;
+                        justify-content: center;
             }
     
             .btn {

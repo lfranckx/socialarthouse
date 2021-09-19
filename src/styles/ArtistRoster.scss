@@ -33,17 +33,29 @@
     
             a {
                 .wrap {
+                    display: -webkit-box;
+                    display: -ms-flexbox;
                     display: flex;
-                    flex-direction: column;
-                    align-items: center;
+                    -webkit-box-orient: vertical;
+                    -webkit-box-direction: normal;
+                        -ms-flex-direction: column;
+                            flex-direction: column;
+                    -webkit-box-align: center;
+                        -ms-flex-align: center;
+                            align-items: center;
                     position: relative;
                     -webkit-column-break-inside: avoid;
                     page-break-inside: avoid;
-                    break-inside: avoid;
+                    -moz-column-break-inside: avoid;
+                         break-inside: avoid;
+                    -webkit-transition: .6s ease-out;
+                    -o-transition: .6s ease-out;
                     transition: .6s ease-out;
     
                     &:hover {
-                        transform: translateY(10px);
+                        -webkit-transform: translateY(10px);
+                            -ms-transform: translateY(10px);
+                                transform: translateY(10px);
                     }
     
                     .image-wrap {
@@ -56,10 +68,18 @@
                         position: absolute;
                         bottom: 0;
                         width: 350px;
+                        height: -webkit-fit-content;
+                        height: -moz-fit-content;
                         height: fit-content;
+                        display: -webkit-box;
+                        display: -ms-flexbox;
                         display: flex;
-                        flex-direction: column;
-                        align-content: center;
+                        -webkit-box-orient: vertical;
+                        -webkit-box-direction: normal;
+                            -ms-flex-direction: column;
+                                flex-direction: column;
+                        -ms-flex-line-pack: center;
+                            align-content: center;
     
                         h4 {
                             text-transform: uppercase;

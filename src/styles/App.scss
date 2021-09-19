@@ -20,7 +20,10 @@
 
 * {
   font-family: 'Lato';
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
 }
 
@@ -32,7 +35,8 @@ body {
 .App {
   text-align: center;
   scroll-behavior: smooth;
-  scroll-snap-type: y mandatory;
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
 }
 
 h1, h2, h3, h4, h5, ul, p, a {
@@ -94,6 +98,8 @@ button {
 }
 
 .fade-in {
+  -webkit-transition: opacity 1s ease;
+  -o-transition: opacity 1s ease;
   transition: opacity 1s ease;
 }
 
