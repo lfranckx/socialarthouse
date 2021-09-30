@@ -15,7 +15,7 @@ function App() {
   return (
     <>
       <Helmet >
-        <title>Social Arthouse</title>
+        <title>Social Art House</title>
         <meta name='description' content='A pro-beauty management and creative agency, offering an expansive consulting experience for brands through ingenuity, originality and imagination.'/>
         <meta name='keywords' content='Beauty Management, Creative Agency, Consulting Firm' />
       </Helmet>
