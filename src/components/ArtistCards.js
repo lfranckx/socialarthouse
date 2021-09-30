@@ -97,20 +97,10 @@ const ArtistCards = [
         height: 'medium'
     },
     {
-        name: 'block',
-        color: 'black',
-        height: 'medium'
-    },
-    {
         url: 'https://www.instagram.com/crown_works/',
         src: 'images/artists/andi.png',
         name: 'Andi Scarbrough',
         ig: '@crown_works'
-    },
-    {
-        name: 'block',
-        color: 'orange',
-        height: 'small'
     },
     {
         url: 'https://www.instagram.com/rolandoaqui/',
@@ -120,8 +110,13 @@ const ArtistCards = [
     },
     {
         name: 'block',
-        color: 'grey',
-        height: 'large'
+        color: 'orange',
+        height: 'medium'
+    },
+    {
+        name: 'block',
+        color: 'black',
+        height: 'medium'
     },
 ]
 
