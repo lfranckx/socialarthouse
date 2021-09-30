@@ -5,7 +5,7 @@ import '../styles/Team.scss';
 export default function Team(props) {
     return (
         <section id="team">
-            <h3>Social Arthouse Team</h3>
+            <h3>Social Art House Team</h3>
             <div className="container">
                 <div className="card">
                     <img src="images/marlene.jpg" alt="marlene" />

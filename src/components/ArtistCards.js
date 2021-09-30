@@ -97,18 +97,6 @@ const ArtistCards = [
         height: 'medium'
     },
     {
-        url: 'https://www.instagram.com/manemystic/',
-        src: 'images/artists/bri.png',
-        name: 'Bri Bird',
-        ig: '@manemystic'
-    },
-    {
-        url: 'https://www.instagram.com/drewschaefering/',
-        src: 'images/artists/drew.jpg',
-        name: 'Drew Schaefering',
-        ig: '@drewschaefering'
-    },
-    {
         name: 'block',
         color: 'black',
         height: 'medium'
@@ -129,12 +117,6 @@ const ArtistCards = [
         src: 'images/artists/rolando.jpg',
         name: 'Rolando Aqui',
         ig: '@rolandoaqui'
-    },
-    {
-        url: 'https://www.instagram.com/jikaiahstylist/',
-        src: 'images/artists/jikaiah.jpeg',
-        name: 'Jikiah Stevens',
-        ig: '@jikaiahstylist'
     },
     {
         name: 'block',
