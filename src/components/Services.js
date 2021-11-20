@@ -78,7 +78,7 @@ export default function Services(props) {
                         </ul> </div> : 
                         <>
                             <h4>Shows, Events, &amp; Production</h4>
-                            <p>Your worth your weight in gold. Let us help monetize your educaucation and concepts and bring them to life, virtually or on-location. From event and show development, technical production, or management of all of the above, we support you and your vision–where there’s a will there’s a way… no job is too small, no dream too big.</p>
+                            <p>You're worth your weight in gold. Let us help monetize your educaucation and concepts and bring them to life, virtually or on-location. From event and show development, technical production, or management of all of the above, we support you and your vision–where there’s a will there’s a way… no job is too small, no dream too big.</p>
                         </>
                     }
                     <button onClick={() => flipCard4(!isFlipped4)}> 
