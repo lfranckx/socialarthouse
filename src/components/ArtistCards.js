@@ -109,15 +109,39 @@ const ArtistCards = [
         ig: '@rolandoaqui'
     },
     {
+        url: 'https://www.instagram.com/sonnabrado/',
+        src: 'images/artists/sonna.png',
+        name: 'Sonna Brado',
+        ig: '@sonnabrado'
+    },
+    {
         name: 'block',
         color: 'orange',
         height: 'medium'
     },
     {
+        url: 'https://www.instagram.com/wesdoeshair/',
+        src: 'images/artists/wes.png',
+        name: 'Wes Palmer',
+        ig: '@wesdoeshair'
+    },
+    {
+        name: 'block',
+        color: 'grey',
+        height: 'large'
+    },
+    {
         name: 'block',
         color: 'black',
-        height: 'medium'
+        height: 'large'
     },
+
+    {
+        name: 'block',
+        color: 'brown',
+        height: 'small'
+    },
+
 ]
 
 export default ArtistCards;
