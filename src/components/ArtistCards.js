@@ -75,27 +75,38 @@ const ArtistCards = [
         ig: '@sonnabrado'
     },
     {
-        url: 'https://www.instagram.com/wesdoeshair/',
-        src: 'images/artists/wes.png',
-        name: 'Wes Palmer',
-        ig: '@wesdoeshair'
-    },
-    {
-        name: 'block',
-        color: 'black',
-        height: 'medium'
-    },
-    {
         url: 'https://www.instagram.com/minkimcolorist/',
         src: 'images/artists/minkim.jpg',
         name: 'Min Kim',
         ig: '@minkimcolorist'
     },
     {
+        name: 'block',
+        color: 'grey',
+        height: 'medium'
+    },
+    {
+        url: 'https://www.instagram.com/wesdoeshair/',
+        src: 'images/artists/wes.png',
+        name: 'Wes Palmer',
+        ig: '@wesdoeshair'
+    },
+    {
         url: 'https://www.instagram.com/lgibsoncolorist/',
         src: 'images/artists/laura.png',
         name: 'Laura Gibson',
         ig: '@lgibsoncolorist'
+    },
+    {
+        name: 'block',
+        color: 'black',
+        height: 'medium'
+    },
+
+    {
+        name: 'block',
+        color: 'brown',
+        height: 'medium'
     },
     {
         url: 'https://www.instagram.com/ramontgarcia/',
@@ -105,7 +116,7 @@ const ArtistCards = [
     },
     {
         name: 'block',
-        color: 'brown',
+        color: 'orange',
         height: 'medium'
     },
     {
@@ -128,7 +139,7 @@ const ArtistCards = [
     {
         name: 'block',
         color: 'black',
-        height: 'medium'
+        height: 'small'
     },
 ]
 
