@@ -69,9 +69,21 @@ const ArtistCards = [
         height: 'large'
     },
     {
+        url: 'https://www.instagram.com/sonnabrado/',
+        src: 'images/artists/sonna.png',
+        name: 'Sonna Brado',
+        ig: '@sonnabrado'
+    },
+    {
+        url: 'https://www.instagram.com/wesdoeshair/',
+        src: 'images/artists/wes.png',
+        name: 'Wes Palmer',
+        ig: '@wesdoeshair'
+    },
+    {
         name: 'block',
-        color: 'grey',
-        height: 'small'
+        color: 'black',
+        height: 'medium'
     },
     {
         url: 'https://www.instagram.com/minkimcolorist/',
@@ -109,23 +121,6 @@ const ArtistCards = [
         ig: '@rolandoaqui'
     },
     {
-        url: 'https://www.instagram.com/sonnabrado/',
-        src: 'images/artists/sonna.png',
-        name: 'Sonna Brado',
-        ig: '@sonnabrado'
-    },
-    {
-        name: 'block',
-        color: 'orange',
-        height: 'medium'
-    },
-    {
-        url: 'https://www.instagram.com/wesdoeshair/',
-        src: 'images/artists/wes.png',
-        name: 'Wes Palmer',
-        ig: '@wesdoeshair'
-    },
-    {
         name: 'block',
         color: 'grey',
         height: 'large'
@@ -133,15 +128,8 @@ const ArtistCards = [
     {
         name: 'block',
         color: 'black',
-        height: 'large'
+        height: 'medium'
     },
-
-    {
-        name: 'block',
-        color: 'brown',
-        height: 'small'
-    },
-
 ]
 
 export default ArtistCards;
