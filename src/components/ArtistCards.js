@@ -46,12 +46,6 @@ const ArtistCards = [
         ig: '@chitabeseau'
     },
     {
-        url: 'https://www.instagram.com/lalasupdos/',
-        src: 'images/artists/lala.png',
-        name: 'Lala Chihala',
-        ig: '@lalasupdos'
-    },
-    {
         url: 'https://www.instagram.com/monaeartistry/',
         src: 'images/artists/monae-everett.jpeg',
         name: 'Monae Everett',
