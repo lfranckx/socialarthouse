@@ -6,6 +6,14 @@
         min-height: 100vh;
         scroll-snap-align: center;
 
+        #homeVideo {
+            min-height: 100%;
+            min-width: 100%;
+            position: fixed;
+            right: 0;
+            bottom: 0;
+        }
+
         h2 {
             font-size: 52px;
             text-transform: uppercase;
