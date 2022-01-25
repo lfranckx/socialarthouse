@@ -27,6 +27,11 @@ export default function Team(props) {
                     <h4>Courtney Bright</h4>
                     <h5>Executive Content Specialist | <span>Brand Storyteller</span></h5>
                 </div>
+                <div className="card">
+                    <img src="images/lynn.jpg" alt="lynn" />
+                    <h4>Lynn Soares</h4>
+                    <h5>Executive Administration &amp; Even Coordinator</h5>
+                </div>
             </div>
 
             <Link activeClass="active" to="partners" spy={true} smooth={true} offset={0} duration={500}>
