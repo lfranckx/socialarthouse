@@ -3,7 +3,7 @@ import { Link } from 'react-scroll';
 import { useSpring, animated } from 'react-spring';
 
 export default function Header() {
-    const props = useSpring({ to: { opacity: 1 }, from: { opacity: 0 } })
+    const props = useSpring({ from: { opacity: 0 }, to: { opacity: 1 } })
 
     return (
         
