@@ -53,7 +53,7 @@ const ArtistCards = [
     },
     {
         url: 'https://www.instagram.com/sydneyannlopezhair/',
-        src: 'images/artists/sydney.jpeg',
+        src: 'images/artists/sydney.png',
         name: 'Sydney Lopez',
         ig: '@sydneyannlopezhair'
     },
@@ -124,6 +124,12 @@ const ArtistCards = [
         src: 'images/artists/rolando.jpg',
         name: 'Rolando Aqui',
         ig: '@rolandoaqui'
+    },
+    {
+        url: 'https://www.instagram.com/derickmonroe/',
+        src: 'images/artists/derik.png',
+        name: 'Derick Monroe',
+        ig: '@derickmonroe'
     },
     {
         name: 'block',

@@ -6,7 +6,6 @@ export default function Header() {
     const props = useSpring({ from: { opacity: 0 }, to: { opacity: 1 } })
 
     return (
-        
         <animated.div style={props}>
             <header id="header">
                 <h2>Build Your Dream</h2>
