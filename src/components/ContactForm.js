@@ -20,7 +20,7 @@ const ContactForm = () => {
     const history = useHistory();
 
     const submitForm = (values) => {
-        handleButtonState('Sending');
+        handleButtonState('Sending...');
         const newValues = {
             email: values.email,
             message: values.message,
