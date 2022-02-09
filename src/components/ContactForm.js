@@ -13,7 +13,6 @@ const ContactForm = () => {
         window.scrollTo(0,0);
     }, [])
 
-    const [messageSuccess, toggleMessageSuccess] = useState(false);
     const [buttonState, handleButtonState] = useState('Send');
     const [buttonDisabled, handleButtonDisabled] = useState(false);
     const [message, handleMessage] = useState('');
@@ -34,7 +33,6 @@ const ContactForm = () => {
         try {
             emailjs.send("service_lfs5csq", "template_qhm0n59", newValues, "user_4ZnH44kohKcJmQhnL2VGX")
             .then(res => {
-                    toggleMessageSuccess(true);
                     handleButtonState('Sent');
                     handleButtonDisabled(true);
                     history.push('/thankyou');
@@ -158,12 +156,13 @@ const ContactForm = () => {
                                 <ErrorMessage component="div" className='error' name='message' />
                             </div>
                             
-                            <button className="btn" type="submit">
+                            <button className="btn" type="submit" disabled={buttonDisabled}>
                                 {buttonState}
                             </button>
                         </Form>
                     </Formik>
                     
+                    {message && <div className='message'>{message}</div>}
                 </animated.div>
             </main>
         </>
