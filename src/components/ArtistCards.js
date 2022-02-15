@@ -114,12 +114,6 @@ const ArtistCards = [
         height: 'medium'
     },
     {
-        url: 'https://www.instagram.com/crown_works/',
-        src: 'images/artists/andi.png',
-        name: 'Andi Scarbrough',
-        ig: '@crown_works'
-    },
-    {
         url: 'https://www.instagram.com/rolandoaqui/',
         src: 'images/artists/rolando.jpg',
         name: 'Rolando Aqui',
