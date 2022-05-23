@@ -47,7 +47,7 @@ export default function Footer(props) {
                         </div>
                         <div>
                             <Link to='/'>
-                                <img className="logo" src='images/sah-logo.png' alt="SAH-logo"/>
+                                <img className="logo" src='https://socialarthouse.s3.us-east-2.amazonaws.com/Logos/sah-logo.png' alt="SAH-logo"/>
                             </Link>
                         </div>
                         <p id='copyright'>Copyright © 2021. All rights reserved.</p>

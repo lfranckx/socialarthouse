@@ -1,7 +1,7 @@
 const ArtistCards = [
     {
         url: 'https://www.instagram.com/johnnyramirez/',
-        src: 'images/artists/johnny.jpg',
+        src: 'https://socialarthouse.s3.us-east-2.amazonaws.com/Artists/johnny.jpg',
         name: 'Johnny Ramirez',
         ig: '@johnnyramirez'
     },
@@ -12,25 +12,25 @@ const ArtistCards = [
     },
     {
         url: 'https://www.instagram.com/leysahairandmakeup/',
-        src: 'images/artists/leysa.png',
+        src: 'https://socialarthouse.s3.us-east-2.amazonaws.com/Artists/leysa.png',
         name: 'Leysa Carrillo',
         ig: '@leysahairandmakeup'
     },
     {
         url: 'https://www.instagram.com/michelleoconnorbeauty/',
-        src: 'images/artists/michelle.jpg',
+        src: 'https://socialarthouse.s3.us-east-2.amazonaws.com/Artists/michelle.jpg',
         name: `Michelle O'Connor`,
         ig: '@michelleoconnorbeauty'
     },
     {
         url: 'https://www.instagram.com/shelleygregoryhair/',
-        src: 'images/artists/shelley.jpg',
+        src: 'https://socialarthouse.s3.us-east-2.amazonaws.com/Artists/shelley.jpg',
         name: 'Shelley Gregory',
         ig: '@shelleygregoryhair'
     },
     {
         url: 'https://www.instagram.com/tippishorter/',
-        src: 'images/artists/tippi-cropped.jpg',
+        src: 'https://socialarthouse.s3.us-east-2.amazonaws.com/Artists/tippi-cropped.jpg',
         name: 'Tippi Shorter',
         ig: '@tippishorter'
     },
@@ -41,19 +41,19 @@ const ArtistCards = [
     },
     {
         url: 'https://www.instagram.com/chitabeseau/',
-        src: 'images/artists/chita.png',
+        src: 'https://socialarthouse.s3.us-east-2.amazonaws.com/Artists/chita.png',
         name: 'Chita Beseau',
         ig: '@chitabeseau'
     },
     {
         url: 'https://www.instagram.com/monaeartistry/',
-        src: 'images/artists/monae-everett.jpeg',
+        src: 'https://socialarthouse.s3.us-east-2.amazonaws.com/Artists/monae-everett.jpeg',
         name: 'Monae Everett',
         ig: '@monaeartistry'
     },
     {
         url: 'https://www.instagram.com/sydneyannlopezhair/',
-        src: 'images/artists/sydney.png',
+        src: 'https://socialarthouse.s3.us-east-2.amazonaws.com/Artists/sydney.png',
         name: 'Sydney Lopez',
         ig: '@sydneyannlopezhair'
     },
@@ -64,13 +64,13 @@ const ArtistCards = [
     },
     {
         url: 'https://www.instagram.com/sonnabrado/',
-        src: 'images/artists/sonna.png',
+        src: 'https://socialarthouse.s3.us-east-2.amazonaws.com/Artists/sonna.png',
         name: 'Sonna Brado',
         ig: '@sonnabrado'
     },
     {
         url: 'https://www.instagram.com/minkimcolorist/',
-        src: 'images/artists/minkim.jpg',
+        src: 'https://socialarthouse.s3.us-east-2.amazonaws.com/Artists/minkim.jpg',
         name: 'Min Kim',
         ig: '@minkimcolorist'
     },
@@ -81,13 +81,13 @@ const ArtistCards = [
     },
     {
         url: 'https://www.instagram.com/wesdoeshair/',
-        src: 'images/artists/wes.png',
+        src: 'https://socialarthouse.s3.us-east-2.amazonaws.com/Artists/wes.png',
         name: 'Wes Palmer',
         ig: '@wesdoeshair'
     },
     {
         url: 'https://www.instagram.com/lgibsoncolorist/',
-        src: 'images/artists/laura.png',
+        src: 'https://socialarthouse.s3.us-east-2.amazonaws.com/Artists/laura.png',
         name: 'Laura Gibson',
         ig: '@lgibsoncolorist'
     },
@@ -104,7 +104,7 @@ const ArtistCards = [
     },
     {
         url: 'https://www.instagram.com/ramontgarcia/',
-        src: 'images/artists/ramon.png',
+        src: 'https://socialarthouse.s3.us-east-2.amazonaws.com/Artists/ramon.png',
         name: 'Ramon Garcia',
         ig: '@ramontgarcia'
     },
@@ -115,13 +115,13 @@ const ArtistCards = [
     },
     {
         url: 'https://www.instagram.com/rolandoaqui/',
-        src: 'images/artists/rolando.jpg',
+        src: 'https://socialarthouse.s3.us-east-2.amazonaws.com/Artists/rolando.jpg',
         name: 'Rolando Aqui',
         ig: '@rolandoaqui'
     },
     {
         url: 'https://www.instagram.com/derickmonroe/',
-        src: 'images/artists/derik.png',
+        src: 'https://socialarthouse.s3.us-east-2.amazonaws.com/Artists/derik.png',
         name: 'Derick Monroe',
         ig: '@derickmonroe'
     },
