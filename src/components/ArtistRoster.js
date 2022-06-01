@@ -3,8 +3,6 @@ import { Link } from 'react-scroll';
 import '../styles/ArtistRoster.scss';
 import ArtistCards from './ArtistCards';
 import Masonry from 'react-masonry-component';
-import { LazyLoadImage } from 'react-lazy-load-image-component';
-import 'react-lazy-load-image-component/src/effects/blur.css';
 
 export default function ArtistRoster() {
     const masonryOptions = {
@@ -29,11 +27,7 @@ export default function ArtistRoster() {
                     rel="noopener noreferrer">
                     <div className="wrap">
                         <div className="image-wrap">
-                            <LazyLoadImage 
-                                effect="blur"
-                                src={card.src}
-                                alt="artist headshot"
-                            />
+                            <img src={card.src} alt="artist headshot" />
                         </div>
                         <div className="text-wrap">
                             <h4>{card.name}</h4>
