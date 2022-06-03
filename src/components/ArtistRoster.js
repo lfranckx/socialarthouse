@@ -3,11 +3,15 @@ import { Link } from 'react-scroll';
 import '../styles/ArtistRoster.scss';
 import ArtistCards from './ArtistCards';
 import Masonry from 'react-masonry-component';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
+import { useForceUpdate } from '@react-spring/shared';
 
 export default function ArtistRoster() {
+
     const masonryOptions = {
         transitionDuration: 0,
-        fitWidth: true
+        fitWidth: true,
     };
 
     const children = ArtistCards.map((card, i) => {
@@ -27,7 +31,12 @@ export default function ArtistRoster() {
                     rel="noopener noreferrer">
                     <div className="wrap">
                         <div className="image-wrap">
-                            <img src={card.src} alt="artist headshot" />
+                            <LazyLoadImage 
+                                effect="blur" 
+                                placeholderSrc='https://socialarthouse.s3.us-east-2.amazonaws.com/Artists/Placeholder-pink.png'
+                                src={card.src}
+                                alt={card.name}
+                            />
                         </div>
                         <div className="text-wrap">
                             <h4>{card.name}</h4>
@@ -48,6 +57,7 @@ export default function ArtistRoster() {
                 options={masonryOptions} // default {}
                 disableImagesLoaded={false} // default false
                 updateOnEachImageLoad={false} // default false and works only if disableImagesLoaded is false
+                onImagesLoaded={useForceUpdate()}
             > 
                 {children}
             </Masonry>
