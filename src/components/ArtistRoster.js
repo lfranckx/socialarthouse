@@ -33,7 +33,7 @@ export default function ArtistRoster() {
                         <div className="image-wrap">
                             <LazyLoadImage 
                                 effect="blur" 
-                                placeholderSrc='https://socialarthouse.s3.us-east-2.amazonaws.com/Artists/Placeholder-pink.png'
+                                placeholderSrc='https://socialarthouse.s3.us-east-2.amazonaws.com/Artists/Placeholder-pink-1000.png'
                                 src={card.src}
                                 alt={card.name}
                             />
