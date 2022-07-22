@@ -114,7 +114,7 @@ const ArtistCards = [
     },
     {
         url: 'https://www.instagram.com/rolandoaqui/',
-        src: 'https://socialarthouse.s3.us-east-2.amazonaws.com/Artists/2022_artist_roster/rolando-aqui.jpg',
+        src: 'https://socialarthouse.s3.us-east-2.amazonaws.com/Artists/2022_artist_roster/rolando-aqui+1.png',
         name: 'Rolando Aqui',
         ig: '@rolandoaqui'
     },
