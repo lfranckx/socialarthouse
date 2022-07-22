@@ -18,9 +18,8 @@ export default function ArtistRoster() {
 
         if (card.name === 'block') {
             return (
-                <li className='card wrap spacer' key={i}>
-                    <div className={`${card.color} ${card.height}`}></div>
-                </li>
+                <>
+                </>
             )
         }
 
@@ -51,6 +50,7 @@ export default function ArtistRoster() {
 
     return (
         <section id='artists'>
+            <h3 className='section_title'>Artists</h3>
             <Masonry
                 className={'my-gallery-class masonry'} // default ''
                 elementType={'ul'} // default 'div'

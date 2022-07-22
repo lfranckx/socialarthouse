@@ -113,10 +113,10 @@ const ArtistCards = [
         height: 'medium'
     },
     {
-        url: 'https://www.instagram.com/rolandoaqui/',
-        src: 'https://socialarthouse.s3.us-east-2.amazonaws.com/Artists/2022_artist_roster/rolando-aqui+1.png',
-        name: 'Rolando Aqui',
-        ig: '@rolandoaqui'
+        url: 'https://www.instagram.com/__yure_style__/',
+        src: 'https://socialarthouse.s3.us-east-2.amazonaws.com/Artists/2022_artist_roster/yureesh-hooker.png',
+        name: 'Yureesh Hooker',
+        ig: '@__yure_style__'
     },
     {
         name: 'block',
@@ -159,10 +159,10 @@ const ArtistCards = [
         ig: '@jamiewileyeditorial'
     },
     {
-        url: 'https://www.instagram.com/__yure_style__/',
-        src: 'https://socialarthouse.s3.us-east-2.amazonaws.com/Artists/2022_artist_roster/yureesh-hooker.png',
-        name: 'Yureesh Hooker',
-        ig: '@__yure_style__'
+        url: 'https://www.instagram.com/rolandoaqui/',
+        src: 'https://socialarthouse.s3.us-east-2.amazonaws.com/Artists/2022_artist_roster/rolando-aqui+1.png',
+        name: 'Rolando Aqui',
+        ig: '@rolandoaqui'
     },
     {
         name: 'block',
