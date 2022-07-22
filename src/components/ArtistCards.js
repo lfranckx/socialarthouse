@@ -40,7 +40,7 @@ const ArtistCards = [
     },
     {
         url: 'https://www.instagram.com/wesdoeshair/',
-        src: 'https://socialarthouse.s3.us-east-2.amazonaws.com/Artists/wes.png',
+        src: 'https://socialarthouse.s3.us-east-2.amazonaws.com/Artists/2022_artist_roster/wes-palmer.jpeg',
         name: 'Wes Palmer',
         ig: '@wesdoeshair'
     },
@@ -74,7 +74,7 @@ const ArtistCards = [
     },
     {
         url: 'https://www.instagram.com/sydneyannlopezhair/',
-        src: 'https://socialarthouse.s3.us-east-2.amazonaws.com/Artists/sydney.png',
+        src: 'https://socialarthouse.s3.us-east-2.amazonaws.com/Artists/2022_artist_roster/sydney-lopez.jpg',
         name: 'Sydney Ann Lopez',
         ig: '@sydneyannlopezhair'
     },
@@ -86,7 +86,7 @@ const ArtistCards = [
     },
     {
         url: 'https://www.instagram.com/minkimcolorist/',
-        src: 'https://socialarthouse.s3.us-east-2.amazonaws.com/Artists/minkim.jpg',
+        src: 'https://socialarthouse.s3.us-east-2.amazonaws.com/Artists/2022_artist_roster/min-kim.jpg',
         name: 'Min Kim',
         ig: '@minkimcolorist'
     },
@@ -97,7 +97,7 @@ const ArtistCards = [
     },
     {
         url: 'https://www.instagram.com/monaeartistry/',
-        src: 'https://socialarthouse.s3.us-east-2.amazonaws.com/Artists/monae-everett.jpeg',
+        src: 'https://socialarthouse.s3.us-east-2.amazonaws.com/Artists/2022_artist_roster/monae-everett.jpeg',
         name: 'Monae Everett',
         ig: '@monaeartistry'
     },
@@ -148,7 +148,7 @@ const ArtistCards = [
     },
     {
         url: 'https://www.instagram.com/ramontgarcia/',
-        src: 'https://socialarthouse.s3.us-east-2.amazonaws.com/Artists/ramon.png',
+        src: 'https://socialarthouse.s3.us-east-2.amazonaws.com/Artists/2022_artist_roster/ramon-garcia.jpeg',
         name: 'Ramon Garcia',
         ig: '@ramontgarcia'
     },
