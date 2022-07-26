@@ -34,7 +34,7 @@ const ArtistCards = [
     },
     {
         url: 'https://www.instagram.com/jackhowardcolor/',
-        src: 'https://socialarthouse.s3.us-east-2.amazonaws.com/Artists/Resized-Images/jack-howard.png',
+        src: 'https://socialarthouse.s3.us-east-2.amazonaws.com/Artists/Resized-Images/jack-howard-1.png',
         name: `Jack Howard`,
         ig: '@jackhowardcolor'
     },
