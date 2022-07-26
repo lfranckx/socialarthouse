@@ -2,10 +2,8 @@ import React from 'react';
 import { Link } from 'react-scroll';
 import '../styles/ArtistRoster.scss';
 import ArtistCards from './ArtistCards';
-import Masonry from 'react-masonry-component';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
-import { useForceUpdate } from '@react-spring/shared';
 
 export default function ArtistRoster() {
 
