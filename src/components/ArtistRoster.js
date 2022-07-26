@@ -7,11 +7,6 @@ import 'react-lazy-load-image-component/src/effects/blur.css';
 
 export default function ArtistRoster() {
 
-    const masonryOptions = {
-        transitionDuration: 0,
-        fitWidth: true,
-    };
-
     const children = ArtistCards.map((card, i) => {
 
         if (card.name === 'block') {
