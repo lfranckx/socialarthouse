@@ -50,7 +50,7 @@ export default function Footer(props) {
                                 <img className="logo" src='https://socialarthouse.s3.us-east-2.amazonaws.com/Logos/sah-logo.png' alt="SAH-logo"/>
                             </Link>
                         </div>
-                        <div id='copyright'><small>Website designed &amp; developed by <a href='https://lfxmedia.io' target='_blank'>LFX Media</a></small></div>
+                        <div id='copyright'><small>Website designed &amp; developed by <a href='https://lfxmedia.io' rel='noreferrer' target='_blank'>LFX Media</a></small></div>
                         <div id='copyright'><small>Copyright © 2021. All rights reserved.</small></div>
                     </div>
                 </div>
