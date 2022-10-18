@@ -159,10 +159,10 @@ const ArtistCards = [
         ig: '@jamiewileyeditorial'
     },
     {
-        url: 'https://www.instagram.com/__yure_style__/',
+        url: 'https://www.instagram.com/ystyleny/',
         src: 'https://socialarthouse.s3.us-east-2.amazonaws.com/Artists/Resized-Images/yureesh-hooker.png',
         name: 'Yureesh Hooker',
-        ig: '@__yure_style__'
+        ig: '@ystyleny'
     },
     {
         name: 'block',
