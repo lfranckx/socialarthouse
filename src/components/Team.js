@@ -25,11 +25,6 @@ export default function Team(props) {
                     <h5>Executive Event &amp; Brand Specialist</h5>
                 </div>
                 <div className="card">
-                    <LazyLoadImage effect="blur" src="https://socialarthouse.s3.us-east-2.amazonaws.com/team/courtney.jpg" alt="courtney" />
-                    <h4>Courtney Bright</h4>
-                    <h5>Executive Content Specialist &amp; Brand Storyteller</h5>
-                </div>
-                <div className="card">
                     <LazyLoadImage effect="blur" src="https://socialarthouse.s3.us-east-2.amazonaws.com/team/lynn.jpg" alt="lynn" />
                     <h4>Lynn Soares</h4>
                     <h5>Executive Administration &amp; Event Coordinator</h5>
