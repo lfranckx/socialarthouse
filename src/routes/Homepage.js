@@ -2,12 +2,12 @@ import React from 'react';
 import { useEffect } from 'react';
 import '../styles/Homepage.scss';
 
-import Header from './Header';
-import About from './About';
-import Services from './Services';
-import Contact from './Contact';
-import Partners from './Partners';
-import ArtistRoster from './ArtistRoster';
+import Header from '../components/Header';
+import About from '../components/About';
+import Services from '../components/Services';
+import Contact from '../components/Contact';
+import Partners from '../components/Partners';
+import ArtistRoster from '../components/ArtistRoster';
 
 export default function Homepage(props) {
     useEffect(() => {

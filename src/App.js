@@ -1,14 +1,16 @@
 import React from 'react';
 import { withRouter, Switch, Route } from 'react-router-dom';
-
-import './styles/App.scss';
-import Navbar from './components/Navbar';
-import Homepage from './components/Homepage';
-import ContactForm from './components/ContactForm';
-import Footer from './components/Footer';
-import ThankYou from './components/ThankYouPage';
-import NotFoundPage from './components/NotFoundPage';
 import { Helmet } from 'react-helmet';
+import './styles/App.scss';
+
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+import Homepage from './routes/Homepage';
+import ContactForm from './routes/ContactPage';
+import BlogList from './components/BlogPosts';
+import BlogPostItem from './routes/BlogPostItem';
+import ThankYou from './routes/ThankYouPage';
+import NotFoundPage from './components/NotFoundPage';
 
 
 function App() {
@@ -25,6 +27,8 @@ function App() {
             <Route exact path="/" component={Homepage} />
             <Route exact path='/contact' component={ContactForm} />
             <Route exact path='/thankyou' component={ThankYou} />
+            <Route exact path='/test'component={BlogList} />
+            <Route exact path='/:postId' component={BlogPostItem} />
             <Route component={NotFoundPage} />
           </Switch>
           <Footer />

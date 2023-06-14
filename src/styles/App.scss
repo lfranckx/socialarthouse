@@ -107,6 +107,30 @@ button {
   display: none;
 }
 
+/* Loader Aninimation */
+.loader {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0;
+  font-size: 75px;
+}
+
+.spinner {
+  display: inline-block;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  border: 16px solid #DC997D;
+  border-top: 16px solid #DCCEC8;
+  animation: spin 2s infinite;
+}
+
+@keyframes spin {
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
 @media (max-width: 550px) {
   .btn {
     font-size: 14px;

@@ -6,7 +6,7 @@ import * as emailjs from 'emailjs-com';
 import * as Yup from 'yup';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 
-import '../styles/ContactForm.scss';
+import '../styles/ContactPage.scss';
 
 const ContactForm = () => {
     useEffect(() => {
@@ -47,7 +47,7 @@ const ContactForm = () => {
     const contactFormSchema = Yup.object().shape({
         name: Yup.string().min(2, '* Name is too short').max(20, "* 20 maximum characters").required('* Required'),
         email: Yup.string().email("* This is not an email").required("* Required"),
-        phone: Yup.string().matches(phoneRegExp, `* This doesn't look like a phone number`).max(10, '* Phone number is too long').required("* Required"),
+        phone: Yup.string().matches(phoneRegExp, `* This doesn't look like a phone number`).max(20, '* Phone number is too long').required("* Required"),
         message: Yup.string().min(2, "* Message is too short").max(1000, "* 1000 maximum characters").required("* Required"),
         website: Yup.string().min(2, "* Sorry, this is too short").max(50, "* 50 maximum characters"),
         salon: Yup.string().min(2, "* Salon name is too short").max(20, "* 20 maximum characters")
