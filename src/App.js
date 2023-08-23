@@ -11,6 +11,7 @@ import BlogList from './components/BlogPosts';
 import BlogPostItem from './routes/BlogPostItem';
 import ThankYou from './routes/ThankYouPage';
 import NotFoundPage from './components/NotFoundPage';
+import SideNav from './components/SideNav';
 
 
 function App() {
@@ -22,7 +23,8 @@ function App() {
         <meta name='keywords' content='Beauty Management, Creative Agency, Consulting Firm' />
       </Helmet>
       <div className="App">
-          <Navbar id='navbar'/>
+          <Navbar />
+          {/* <SideNav /> */}
           <Routes>
             <Route exact path="/" element={<Homepage/>} />
             <Route exact path='/contact' element={<ContactForm/>} />

@@ -1,50 +1,58 @@
-nav {
-    background: #fff;
-    -webkit-box-shadow: 0 4px 20px rgba(0,0,0, 0.25);
-            box-shadow: 0 4px 20px rgba(0,0,0, 0.25);
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    padding: 10px 0;
 
-    #logo {
-        height: 80px;
-    }
+#navbar {
+    nav {
+        background: #fff;
+        -webkit-box-shadow: 0 4px 20px rgba(0,0,0, 0.25);
+                box-shadow: 0 4px 20px rgba(0,0,0, 0.25);
+        width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+        padding: 10px 0;
     
-    .empty-space {
-        width: 150px;
+        #logo {
+            height: 80px;
+        }
+        
+        .empty-space {
+            width: 150px;
+        }
     }
 }
 
-@media (max-width: 600px) {
-    nav {
-        -webkit-box-pack: start;
-            -ms-flex-pack: start;
-                justify-content: flex-start;
-        -ms-flex-pack: distribute;
-            justify-content: space-around;
 
-        .empty-space {
-            width: 0;
-        }    
+@media (max-width: 600px) {
+    #navbar {
+        nav {
+            -webkit-box-pack: start;
+                -ms-flex-pack: start;
+                    justify-content: flex-start;
+            -ms-flex-pack: distribute;
+                justify-content: space-around;
+    
+            .empty-space {
+                width: 0;
+            }    
+        }
     }
 }
 
 @media (max-width: 550px) {
-    nav {
-        #logo {
-            height: 70px;
-        }
-
-        .btn {
-            font-size: 12px;
-            padding: 10px 15px;
+    #navbar {
+        nav {
+            #logo {
+                height: 70px;
+            }
+    
+            .btn {
+                font-size: 12px;
+                padding: 10px 15px;
+            }
         }
     }
 }

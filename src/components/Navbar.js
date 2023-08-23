@@ -8,7 +8,7 @@ export default function Navbar(props) {
     const location = useLocation();
 
     return (
-        <div id={props.id}>
+        <div id='navbar'>
             <nav>
                 <div className="empty-space"></div>
 
