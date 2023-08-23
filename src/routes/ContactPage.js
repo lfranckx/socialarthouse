@@ -11,7 +11,7 @@ import '../styles/ContactPage.scss';
 const ContactForm = () => {
     useEffect(() => {
         window.scrollTo(0,0);
-    }, [])
+    }, []);
 
     const navigate = useNavigate();
     const [buttonState, handleButtonState] = useState('Send');
@@ -28,7 +28,7 @@ const ContactForm = () => {
             website: values.website,
             salon: values.salon,
             reply_to: values.email
-        }
+        };
 
         try {
             emailjs.send("service_lfs5csq", "template_qhm0n59", newValues, "user_4ZnH44kohKcJmQhnL2VGX")
@@ -43,7 +43,7 @@ const ContactForm = () => {
         }
     }
 
-    const phoneRegExp = /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/
+    const phoneRegExp = /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/;
     const contactFormSchema = Yup.object().shape({
         name: Yup.string().min(2, '* Name is too short').max(20, "* 20 maximum characters").required('* Required'),
         email: Yup.string().email("* This is not an email").required("* Required"),
@@ -51,9 +51,9 @@ const ContactForm = () => {
         message: Yup.string().min(2, "* Message is too short").max(1000, "* 1000 maximum characters").required("* Required"),
         website: Yup.string().min(2, "* Sorry, this is too short").max(50, "* 50 maximum characters"),
         salon: Yup.string().min(2, "* Salon name is too short").max(20, "* 20 maximum characters")
-    })
+    });
 
-    const props = useSpring({ from: { opacity: 0 }, to: { opacity: 1 } })
+    const props = useSpring({ from: { opacity: 0 }, to: { opacity: 1 } });
 
     return(
         <>
@@ -166,7 +166,7 @@ const ContactForm = () => {
                 </animated.div>
             </main>
         </>
-    )
+    );
 }
 
 export default ContactForm;
