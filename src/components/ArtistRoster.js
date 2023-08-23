@@ -14,7 +14,7 @@ export default function ArtistRoster() {
                 <></>
             );
         }
-
+        
         else return (
             <li className="card" key={i}>
                 <a href={card.url}

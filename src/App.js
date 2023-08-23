@@ -1,5 +1,5 @@
 import React from 'react';
-import { withRouter, Switch, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 import './styles/App.scss';
 
@@ -23,18 +23,18 @@ function App() {
       </Helmet>
       <div className="App">
           <Navbar id='navbar'/>
-          <Switch>
-            <Route exact path="/" component={Homepage} />
-            <Route exact path='/contact' component={ContactForm} />
-            <Route exact path='/thankyou' component={ThankYou} />
-            <Route exact path='/test'component={BlogList} />
-            <Route exact path='/:postId' component={BlogPostItem} />
-            <Route component={NotFoundPage} />
-          </Switch>
+          <Routes>
+            <Route exact path="/" element={<Homepage/>} />
+            <Route exact path='/contact' element={<ContactForm/>} />
+            <Route exact path='/thankyou' element={<ThankYou/>} />
+            <Route exact path='/test'element={<BlogList/>} />
+            <Route exact path='/:postId' element={<BlogPostItem/>} />
+            <Route element={<NotFoundPage/>} />
+          </Routes>
           <Footer />
       </div>
     </>
   );
 }
 
-export default withRouter(App);
+export default App;

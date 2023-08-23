@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useHistory } from 'react-router';
+import { useNavigate } from 'react-router-dom';
 import { useSpring, animated } from 'react-spring';
 import { Helmet } from 'react-helmet';
 import * as emailjs from 'emailjs-com';
@@ -13,10 +13,10 @@ const ContactForm = () => {
         window.scrollTo(0,0);
     }, [])
 
+    const navigate = useNavigate();
     const [buttonState, handleButtonState] = useState('Send');
     const [buttonDisabled, handleButtonDisabled] = useState(false);
     const [message, handleMessage] = useState('');
-    const history = useHistory();
 
     const submitForm = (values) => {
         handleButtonState('Sending...');
@@ -35,7 +35,7 @@ const ContactForm = () => {
             .then(res => {
                     handleButtonState('Sent');
                     handleButtonDisabled(true);
-                    history.push('/thankyou');
+                    navigate('/thankyou');
                 }
             )
         } catch (error) {
