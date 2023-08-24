@@ -4,11 +4,17 @@ import { useSpring, animated } from 'react-spring';
 import video from '../videos/Black.mp4';
 
 export default function Header() {
-    const [videoProps, setVideoProps] = useSpring(() => ({ opacity: 1 }));
+    const [videoProps, setVideoProps] = useSpring(() => ({ 
+        opacity: 1,
+        zIndex: 100 
+    }));
     const textProps = useSpring({ from: { opacity: 0 }, to: { opacity: 1 } });
 
     const handleInteraction = () => {
-        setVideoProps({ opacity: 0 });
+        setVideoProps({ 
+            opacity: 0, 
+            zIndex: 0 
+        });
     };
 
     useEffect(() => {
@@ -23,7 +29,7 @@ export default function Header() {
 
     return (
         <>
-            <animated.div style={{ ...videoProps, position: 'fixed', top: 0, left: 0, width: '100%', height: '100%', zIndex: 100 }}>
+            <animated.div style={{ ...videoProps, position: 'fixed', top: 0, left: 0, width: '100%', height: '100%' }}>
                 <video src={video} autoPlay muted loop style={{ width: '100%', height: '100%', objectFit: 'cover' }}></video>
             </animated.div>
             <animated.div style={textProps}>
