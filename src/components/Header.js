@@ -29,8 +29,21 @@ export default function Header() {
 
     return (
         <>
-            <animated.div style={{ ...videoProps, position: 'fixed', top: 0, left: 0, width: '100%', height: '100%' }}>
-                <video src={video} autoPlay muted loop style={{ width: '100%', height: '100%', objectFit: 'cover' }}></video>
+            <animated.div className='video-wrap' style={{ 
+                ...videoProps, 
+                position: 'fixed', 
+                top: 0, 
+                left: 0, 
+                width: '100%', 
+                height: '100%',
+                backgroundColor: "#000" 
+            }}>
+                <video src={video} autoPlay muted loop style={{ 
+                    width: '100%', 
+                    height: '100%', 
+                    objectFit: 'cover'
+                }}>
+                </video>
             </animated.div>
             <animated.div style={textProps}>
                 <header id="header">

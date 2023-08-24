@@ -188,7 +188,17 @@
     }
 }
 
-@media(max-width: 600px) {
+@media (max-width: 1080px) {
+    #homepage {
+        .video-wrap {
+            video {
+                object-fit: contain !important;
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
     #homepage header {
         padding-top: 60px
     }
