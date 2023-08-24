@@ -1,6 +1,7 @@
 import React from 'react';
 import '../styles/Footer.scss';
 import { Link } from 'react-router-dom';
+import logo from '../images/sah-footer-logo.png';
 
 export default function Footer(props) {
     return (
@@ -47,7 +48,7 @@ export default function Footer(props) {
                         </div>
                         <div>
                             <Link to='/'>
-                                <img className="logo" src='https://socialarthouse.s3.us-east-2.amazonaws.com/Logos/sah-logo.png' alt="SAH-logo"/>
+                                <img className="logo" src={logo} alt="Social Art House"/>
                             </Link>
                         </div>
                         <div id='copyright'><small>Website designed &amp; developed by <a href='https://lfxmedia.io' rel='noreferrer' target='_blank'>LFX Media</a></small></div>
