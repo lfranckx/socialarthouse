@@ -13,7 +13,7 @@ export default function Header() {
     const handleInteraction = () => {
         setVideoProps({ 
             opacity: 0, 
-            zIndex: 0 
+            zIndex: -1 
         });
     };
 
