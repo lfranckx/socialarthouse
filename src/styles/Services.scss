@@ -20,6 +20,7 @@
             -webkit-transition: all ease 0.3s;
             -o-transition: all ease 0.3s;
             transition: all ease 0.3s;
+            min-height: 350px;
 
             ul {
                 display: block;
@@ -143,6 +144,10 @@
 
 @media(max-width: 850px) {
     #services {
+        h3 {
+            margin-bottom: 40px;
+        }
+
         .list {
             display: block;
             margin: 0 -10px 0;
