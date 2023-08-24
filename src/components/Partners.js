@@ -3,6 +3,25 @@ import '../styles/Partners.scss';
 import { useState, useRef } from 'react';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
+import dyson from '../images/partners/dyson.png';
+import ulta from '../images/partners/ulta.png';
+import loreal from '../images/partners/loreal.png';
+import redken from '../images/partners/redken.png';
+import bumble from '../images/partners/bab.png';
+import ker from '../images/partners/kerastase.png';
+import matrix from '../images/partners/matrix.png';
+import bqg from '../images/partners/bqg_logo.png';
+import milady from '../images/partners/miladypro.png';
+import bio from '../images/partners/Bioionic.png';
+import ouidad from '../images/partners/ouidad.png';
+import joico from '../images/partners/joico.png';
+import johnny from '../images/partners/johnny-ramirez.png';
+import gene from '../images/partners/genejuarez.png';
+import leysa from '../images/partners/leysa-crop.png';
+import keune from '../images/partners/keune.png';
+import fromm from '../images/partners/fromm.png';
+import cuvee from '../images/partners/cuvee.png';
+import pro from '../images/partners/provalliance.png';
 
 export default function Partners(props) {
     const [isOpen, setIsOpen] = useState(false);
@@ -14,32 +33,32 @@ export default function Partners(props) {
             <div className="container">
                 <div>
                     <a href="https://www.dyson.com/" target="_blank" rel="noopener noreferrer">
-                        <LazyLoadImage effect="blur" className="partner-logo" src='https://socialarthouse.s3.us-east-2.amazonaws.com/Partners/dyson.png' alt="dyson" />
+                        <LazyLoadImage effect="blur" className="partner-logo" src={dyson} alt="dyson" />
                     </a>
                 </div>
                 <div>
                     <a href="https://www.ulta.com/" target="_blank" rel="noopener noreferrer">
-                        <LazyLoadImage effect="blur" className="partner-logo" src='https://socialarthouse.s3.us-east-2.amazonaws.com/Partners/ulta.png' alt="ulta-beauty" />
+                        <LazyLoadImage effect="blur" className="partner-logo" src={ulta} alt="ulta-beauty" />
                     </a>
                 </div>
                 <div>
                     <a href="https://us.lorealprofessionnel.com/" target="_blank" rel="noopener noreferrer">
-                        <LazyLoadImage effect="blur" className="partner-logo" src='https://socialarthouse.s3.us-east-2.amazonaws.com/Partners/loreal.png' alt="loreal-professional" />
+                        <LazyLoadImage effect="blur" className="partner-logo" src={loreal} alt="loreal-professional" />
                     </a>
                 </div>
                 <div>
                     <a href="https://www.redken.com/" target="_blank" rel="noopener noreferrer">
-                        <LazyLoadImage effect="blur" className="partner-logo" src='https://socialarthouse.s3.us-east-2.amazonaws.com/Partners/redken.png' alt="redken" />
+                        <LazyLoadImage effect="blur" className="partner-logo" src={redken} alt="redken" />
                     </a>
                 </div>
                 <div>
                     <a href="https://www.bumbleandbumble.com/" target="_blank" rel="noopener noreferrer">
-                        <LazyLoadImage effect="blur" className="partner-logo" src='https://socialarthouse.s3.us-east-2.amazonaws.com/Partners/bab.png' alt="bumble-and-bumble" />
+                        <LazyLoadImage effect="blur" className="partner-logo" src={bumble} alt="bumble-and-bumble" />
                     </a>
                 </div>
                 <div>
                     <a href="https://www.kerastase-usa.com/" target="_blank" rel="noopener noreferrer">
-                        <LazyLoadImage effect="blur" className="partner-logo" src='https://socialarthouse.s3.us-east-2.amazonaws.com/Partners/kerastase.png' alt="kerastase-paris" />
+                        <LazyLoadImage effect="blur" className="partner-logo" src={ker} alt="kerastase-paris" />
                     </a>
                 </div>
                 
@@ -56,68 +75,68 @@ export default function Partners(props) {
                 className={"content"}>
                 <div>
                     <a href="https://www.matrix.com/" target="_blank" rel="noopener noreferrer">
-                        <LazyLoadImage effect="blur" className="partner-logo" src='https://socialarthouse.s3.us-east-2.amazonaws.com/Partners/matrix.png' alt="matrix" />
+                        <LazyLoadImage effect="blur" className="partner-logo" src={matrix} alt="matrix" />
                     </a>
                 </div>
                 <div>
                     <a href="https://www.beautyquestgroup.com/" target="_blank" rel="noopener noreferrer">
-                        <LazyLoadImage effect="blur" className="partner-logo" src='https://socialarthouse.s3.us-east-2.amazonaws.com/Partners/bqg_logo.png' alt="bqg-logo" />
+                        <LazyLoadImage effect="blur" className="partner-logo" src={bqg} alt="bqg-logo" />
                     </a> 
                 </div>
                 <div>
                     <a href="https://www.miladypro.com/" target="_blank" rel="noopener noreferrer">
-                        <LazyLoadImage effect="blur" className="partner-logo" src='https://socialarthouse.s3.us-east-2.amazonaws.com/Partners/miladypro.png' alt="milady-pro" />
+                        <LazyLoadImage effect="blur" className="partner-logo" src={milady} alt="milady-pro" />
                     </a>
                 </div>
                 <div>
                     <a href="https://www.bioionic.com/" target="_blank" rel="noopener noreferrer">
-                        <LazyLoadImage effect="blur" className="partner-logo" src='https://socialarthouse.s3.us-east-2.amazonaws.com/Partners/Bioionic.png' alt="bio-ionic" />
+                        <LazyLoadImage effect="blur" className="partner-logo" src={bio} alt="bio-ionic" />
                     </a>
                 </div>
                 <div>
                     <a href="https://www.ouidad.com/" target="_blank" rel="noopener noreferrer">
-                        <LazyLoadImage effect="blur" className="partner-logo" src='https://socialarthouse.s3.us-east-2.amazonaws.com/Partners/ouidad.png' alt="ouidad" />
+                        <LazyLoadImage effect="blur" className="partner-logo" src={ouidad} alt="ouidad" />
                     </a>
                 </div>
                 <div>
                     <a href="https://www.joico.com/" target="_blank" rel="noopener noreferrer">
-                        <LazyLoadImage effect="blur" className="partner-logo" src='https://socialarthouse.s3.us-east-2.amazonaws.com/Partners/joico.png' alt="joico" />
+                        <LazyLoadImage effect="blur" className="partner-logo" src={joico} alt="joico" />
                     </a>
                 </div>
                 <div>
                     <a href="https://johnnyramirez.com/" target="_blank" rel="noopener noreferrer">
-                        <LazyLoadImage effect="blur" className="partner-logo" src='https://socialarthouse.s3.us-east-2.amazonaws.com/Partners/johnny-ramirez.png' alt="johnny-ramirez-california" />
+                        <LazyLoadImage effect="blur" className="partner-logo" src={johnny} alt="johnny-ramirez-california" />
                     </a>
                 </div>
                 <div>
                     <a href="https://www.genejuarez.com/" target="_blank" rel="noopener noreferrer">
-                        <LazyLoadImage effect="blur" className="partner-logo" src='https://socialarthouse.s3.us-east-2.amazonaws.com/Partners/genejuarez.png' alt="gene-juarez" />
+                        <LazyLoadImage effect="blur" className="partner-logo" src={gene} alt="gene-juarez" />
                     </a>
                 </div>
                 <div>
                     <a href="https://forevercurlsbyleysa.com/" target="_blank" rel="noopener noreferrer">
-                        <LazyLoadImage effect="blur" className="partner-logo" src='https://socialarthouse.s3.us-east-2.amazonaws.com/Partners/leysa-crop.png' alt="leysa-carillo" />
+                        <LazyLoadImage effect="blur" className="partner-logo" src={leysa} alt="leysa-carillo" />
                     </a>
                 </div>
                 <div>
                     <a href="https://www.keune.com/" target="_blank" rel="noopener noreferrer">
-                        <LazyLoadImage effect="blur" className="partner-logo" src='https://socialarthouse.s3.us-east-2.amazonaws.com/Partners/keune.png' alt="keune-hair-cosmetics" />
+                        <LazyLoadImage effect="blur" className="partner-logo" src={keune} alt="keune-hair-cosmetics" />
                     </a>
                 </div>
                 <div>
                     <a href='https://frommbeauty.com/' target="_blank" rel="noopener noreferrer">
-                        <LazyLoadImage effect="blur" className="partner-logo" src='https://socialarthouse.s3.us-east-2.amazonaws.com/Partners/fromm.png' alt="fromm" />
+                        <LazyLoadImage effect="blur" className="partner-logo" src={fromm} alt="fromm" />
                     </a>
                 </div>
                 <div>
                     <a href="https://www.cuveebeauty.com/" target="_blank" rel="noopener noreferrer">
-                        <LazyLoadImage effect="blur" className="partner-logo" src='https://socialarthouse.s3.us-east-2.amazonaws.com/Partners/cuvee.png' alt="cuvee-beauty" />
+                        <LazyLoadImage effect="blur" className="partner-logo" src={cuvee} alt="cuvee-beauty" />
                     </a>
                 </div>
                 <div></div>
                 <div>
                     <a href="https://www.groupe-provalliance.com/fr/" target="_blank" rel="noopener noreferrer">
-                        <LazyLoadImage effect="blur" className="partner-logo" src='https://socialarthouse.s3.us-east-2.amazonaws.com/Partners/provalliance.png' alt="provalliance" />
+                        <LazyLoadImage effect="blur" className="partner-logo" src={pro} alt="provalliance" />
                     </a>
                 </div>
             </div>

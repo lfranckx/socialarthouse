@@ -3,6 +3,10 @@ import { Link } from 'react-scroll';
 import '../styles/Team.scss';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
+import marlene from '../images/team/marlene.png';
+import justine from '../images/team/justine.png';
+import maria from '../images/team/maria.png';
+import lynn from '../images/team/lynn.png';
 
 export default function Team(props) {
     return (
@@ -10,22 +14,22 @@ export default function Team(props) {
             <h3>Social Art House Team</h3>
             <div className="container">
                 <div className="card">
-                    <LazyLoadImage effect="blur" src="https://socialarthouse.s3.us-east-2.amazonaws.com/team/marlene.jpg" alt="marlene" />
+                    <LazyLoadImage effect="blur" src={marlene} alt="marlene" />
                     <h4>Marlene Arce</h4>
                     <h5>Founder, CEO</h5>
                 </div>
                 <div className="card">
-                    <LazyLoadImage effect="blur" src="https://socialarthouse.s3.us-east-2.amazonaws.com/team/justine.jpg" alt="justine" />
+                    <LazyLoadImage effect="blur" src={justine} alt="justine" />
                     <h4>Justine Berger</h4>
                     <h5>COO, Developing Partner</h5>
                 </div>
                 <div className="card">
-                    <LazyLoadImage effect="blur" src="https://socialarthouse.s3.us-east-2.amazonaws.com/team/maria.jpg" alt="maria" />
+                    <LazyLoadImage effect="blur" src={maria} alt="maria" />
                     <h4>Maria Vigarito</h4>
                     <h5>Executive Event &amp; Brand Specialist</h5>
                 </div>
                 <div className="card">
-                    <LazyLoadImage effect="blur" src="https://socialarthouse.s3.us-east-2.amazonaws.com/team/lynn.jpg" alt="lynn" />
+                    <LazyLoadImage effect="blur" src={lynn} alt="lynn" />
                     <h4>Lynn Soares</h4>
                     <h5>Executive Administration &amp; Event Coordinator</h5>
                 </div>
