@@ -1,3 +1,5 @@
+@import "./vars";
+
 #contact-form {
     min-height: 80vh;
     padding: 50px 0 40px;
@@ -21,7 +23,7 @@
 
     h3 {
         font-size: 28px;
-        font-family: 'Lato';
+        font-family: $f1;
     }
 
     form {
@@ -31,7 +33,7 @@
         margin: 50px auto;
         padding: 25px 0 25px;
         border-radius: 2px;
-        background: #DCCEC8;
+        background: $p2;
         -webkit-box-shadow: 0 4px 20px rgb(0 0 0 / 10%);
                 box-shadow: 0 4px 20px rgb(0 0 0 / 10%);
         
@@ -45,12 +47,12 @@
 
         label {
             font-size: 18px;
-            font-family: "Lato-Reg";
+            font-family: $f1-reg;
         }
 
         input {
             outline: none;
-            border: solid 1px #000;
+            border: solid 1px $black;
             border-radius: 2px;
             padding: 10px;
             margin: 10px 0;
@@ -206,7 +208,7 @@
     
         h3 {
             font-size: 20px;
-            font-family: 'Lato';
+            font-family: $f1;
         }
     
         form {
@@ -226,12 +228,12 @@
     
             label {
                 font-size: 18px;
-                font-family: "Lato-Reg";
+                font-family: $f1-reg;
             }
     
             input {
                 outline: none;
-                border: solid 1px #000;
+                border: solid 1px $black;
                 border-radius: 2px;
                 padding: 10px;
                 margin: 10px 0;

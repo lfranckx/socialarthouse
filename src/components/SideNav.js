@@ -10,11 +10,15 @@ export default function SideNav(props) {
                     <div className='link-wrap'>
                         <Link to='/'>Social Art House</Link>
                     </div>
-                    
+                    <div className='link-wrap'>
+                        /
+                    </div>
                     <div className='link-wrap'>
                         <Link to='/blog'>Social Art House Blog</Link>
                     </div>
-
+                    <div className='link-wrap'>
+                        /
+                    </div>
                     <div className='link-wrap'>
                         <Link to='/'>Buid Your Dream</Link>
                     </div>

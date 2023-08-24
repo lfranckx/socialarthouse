@@ -1,7 +1,8 @@
+@import './vars';
 
 #navbar {
     nav {
-        background: #fff;
+        background: $white;
         -webkit-box-shadow: 0 4px 20px rgba(0,0,0, 0.25);
                 box-shadow: 0 4px 20px rgba(0,0,0, 0.25);
         width: 100%;

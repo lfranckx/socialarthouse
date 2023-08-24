@@ -1,16 +1,18 @@
+@import "./vars";
+
 #services {
     min-height: 100vh;
     .list {
         display: -ms-grid;
         display: grid;
-        -ms-grid-columns: (minmax(0, 1fr))[2];
+        -ms-grid-columns: 1fr 1fr;
         grid-template-columns: repeat(2, minmax(0, 1fr));
         max-width: 2000px;
         margin: 50px auto;
         padding: 50px;
 
         .item.show {
-            background: #DC997D;
+            background: $t1;
         }
 
         .item {
@@ -41,21 +43,21 @@
             }
 
             &:nth-child(1) {
-                border-bottom: 1px solid black;
-                border-right: 1px solid black;
+                border-bottom: 1px solid $black;
+                border-right: 1px solid $black;
             }
 
             &:nth-child(2) {
-                border-bottom: 1px solid black;
+                border-bottom: 1px solid $black;
             }
             
             &:nth-child(3) {
-                border-right: 1px solid black;
+                border-right: 1px solid $black;
             }
             
             h4 {
                 font-size: 30px;
-                font-family: "Lato-Bold";
+                font-family: $f1-bold;
             }
 
             p {
@@ -76,7 +78,7 @@
                         align-items: baseline;
                 margin-top: 20px;
                 margin-left: auto;
-                font-family: "Lato-Bold";
+                font-family: $f1-bold;
 
                 .fa-chevron-right {
                     font-size: 10px;
@@ -166,7 +168,7 @@
 
                 &:nth-child(3) {
                     border-right: none;
-                    border-bottom: solid 1px #000;
+                    border-bottom: solid 1px $black;
                 }
             }
         }

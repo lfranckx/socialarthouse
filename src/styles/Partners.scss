@@ -1,6 +1,8 @@
+@import "./vars";
+
 #partners {
-    background: #000000;
-    color: #fff;
+    background: $black;
+    color: $white;
     padding-bottom: 20px;
     
     h3 {
@@ -90,10 +92,10 @@
 
     button {
         background: none;
-        color: #fff;
+        color: $white;
         border: none;
         font-size: 18px;
-        font-family: "Lato-Reg";
+        font-family: $f1-reg;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;

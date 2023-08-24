@@ -1,3 +1,5 @@
+@import "./vars";
+
 #team {
     div.container {
         display: -ms-grid;
@@ -17,7 +19,7 @@
             }
 
             h4 {
-                font-family: "Lato-Bold";
+                font-family: $f1-bold;
                 margin: 5px 0;
             }
 
@@ -40,7 +42,7 @@
 @media(max-width: 1100px) {
     #team {
         div.container {
-            -ms-grid-columns: (1fr)[2];
+            -ms-grid-columns: 1fr 1fr;
             grid-template-columns: repeat(2, 1fr);
         }
     }
@@ -49,7 +51,7 @@
 @media(max-width: 500px) {
     #team {
         div.container {
-            -ms-grid-columns: (1fr)[1];
+            -ms-grid-columns: 1fr;
             grid-template-columns: repeat(1, 1fr);
         }
     }

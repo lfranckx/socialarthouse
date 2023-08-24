@@ -1,3 +1,5 @@
+@import "./vars";
+
 #side-nav {
     height: 100vh;
     width: 80px;
@@ -15,14 +17,18 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        
         .link-wrap {
             transform: rotate(-90deg);
-            width: 200px; // Adjust this to fit your content
+            width: 200px; 
             text-align: center;
     
             a {
                 text-decoration: none;
-                color: black; // Add your color here
+                color: $black; 
+                text-transform: uppercase;
+                font-weight: 800;
+
     
                 &:hover {
                     // Your hover styles here
@@ -30,6 +36,4 @@
             }
         }
     }
-
-    
 }

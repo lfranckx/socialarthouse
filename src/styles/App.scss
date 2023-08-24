@@ -1,25 +1,7 @@
-@font-face {
-  font-family: "Manhattan";
-  src: url('../fonts/Manhattan-Regular.otf');
-}
-
-@font-face {
-  font-family: "Lato";
-  src: url('../fonts/Lato-Light.otf');
-}
-
-@font-face {
-  font-family: "Lato-Reg";
-  src: url('../fonts/Lato-Regular.ttf');
-}
-
-@font-face {
-  font-family: "Lato-Bold";
-  src: url('../fonts/Lato-Bold.ttf');
-}
+@import "./vars";
 
 * {
-  font-family: 'Lato';
+  font-family: $f1;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   -webkit-transition: all .2s ease-in-out;
@@ -45,11 +27,11 @@ h1, h2, h3, h4, h5, ul, p, a {
 }
 
 h1, h2, h3 {
-  font-family: "Manhattan", serif;
+  font-family: $f2;
 }
 
 a {
-  color: #000;
+  color: $black;
   text-decoration: none;
 }
 
@@ -68,8 +50,8 @@ button {
 }
 
 .btn {
-  background: #000000;
-  color: #fff;
+  background: $black;
+  color: $white;
   border-radius: 8px;
   padding: 10px 20px;
   border: none;
@@ -79,13 +61,13 @@ button {
   cursor: pointer;
 
   &:hover {
-    background: #814A3D;
+    background: $p1;
   }
 }
 
 .btn-big {
-  background: #000000;
-  color: #fff;
+  background: $black;
+  color: $white;
   border-radius: 8px;
   padding: 20px 60px;
   border: none;
@@ -93,7 +75,7 @@ button {
   cursor: pointer;
 
   &:hover {
-    background: #814A3D;
+    background: $p1;
   }
 }
 
@@ -120,8 +102,8 @@ button {
   height: 80px;
   width: 80px;
   border-radius: 50%;
-  border: 16px solid #DC997D;
-  border-top: 16px solid #DCCEC8;
+  border: 16px solid $t1;
+  border-top: 16px solid $p2;
   animation: spin 2s infinite;
 }
 
