@@ -15,6 +15,12 @@ export default function Footer(props) {
                             <a href="mailto:marlene@socialarthouse.com" className="email"
                                 rel="noopener noreferrer">Marlene@socialarthouse.com</a>
                         </div>
+
+                        <div>
+                            <p>Lynn</p>
+                            <a href="mailto:lynn@socialarthouse.com" className="email"
+                                rel="noopener noreferrer">Lynn@socialarthouse.com</a>
+                        </div>
                     </div>
                     <div className='column'>
                         <div>
@@ -35,6 +41,19 @@ export default function Footer(props) {
                             <p>Justine</p>
                             <a href="mailto:justine@socialarthouse.com" className="email"
                                 rel="noopener noreferrer">Justine@socialarthouse.com</a>
+                        </div>
+                        <div>
+                            <p>Akeem</p>
+                            <a href="mailto:akeem@socialarthouse.com" className="email"
+                                rel="noopener noreferrer">Akeem@socialarthouse.com</a>
+                        </div>
+                    </div>
+                    <div className='column'>
+                        <div>
+                            <p className="state">Texas</p>
+                            <p>Lachlan</p>
+                            <a href="mailto:lachlan@socialarthouse.com" className="email"
+                                rel="noopener noreferrer">Lachlan@socialarthouse.com</a>
                         </div>
                     </div>
                 </div>

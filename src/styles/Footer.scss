@@ -20,6 +20,8 @@
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 
             .column {
+                margin-bottom: 20px;
+
                 div {
                     text-align: left;
                     margin-bottom: 15px;
@@ -31,7 +33,7 @@
     
                     .state {
                         text-decoration: underline;
-                        margin-bottom: 30px;
+                        margin-bottom: 10px;
                         color: $white;
                     }
     
