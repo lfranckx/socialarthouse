@@ -23,12 +23,7 @@ export default function Footer(props) {
                         </div>
                     </div>
                     <div className='column'>
-                        <div>
-                            <p className='state'>New York</p>
-                            <p>Courtney</p>
-                            <a href="mailto:courtney@socialarthouse.com" className="email"
-                                rel="noopener noreferrer">Courtney@socialarthouse.com</a>
-                        </div>
+                        <p className='state'>New York</p>
                         <div>
                             <p>Maria</p>
                             <a href="mailto:maria@socialarthouse.com" className="email"
