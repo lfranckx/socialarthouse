@@ -14,10 +14,14 @@ import laura from '../images/artists/laura-gibson.png';
 import rol from '../images/artists/rolando-aqui.png';
 import ethan from '../images/artists/ethan-king.png';
 import ira from '../images/artists/ira-pope-sage.png';
-import katie from '../images/artists/katie-brenner.png';
 import ramon from '../images/artists/ramon-garcia.png';
 import jamie from '../images/artists/jamie-wiley.png';
 import yureesh from '../images/artists/yureesh-hooker.png';
+import amon from '../images/artists/ammon-1.webp';
+import j from '../images/artists/j-lad.png';
+import pekela from '../images/artists/pekela.webp';
+import whitney from '../images/artists/whitney.webp';
+import jay from '../images/artists/jay-m.webp';
 
 
 const ArtistCards = [
@@ -158,12 +162,6 @@ const ArtistCards = [
         ig: '@irapopesage'
     },
     {
-        url: 'https://www.instagram.com/ktbhair/',
-        src: katie,
-        name: 'Katie Brenner',
-        ig: '@ktbhair'
-    },
-    {
         name: 'block',
         color: 'grey',
         height: 'small'
@@ -200,6 +198,36 @@ const ArtistCards = [
         name: 'block',
         color: 'black',
         height: 'small'
+    },
+    {
+        url: 'https://www.instagram.com/ammoncarver',
+        src: amon,
+        name: 'Ammon Carver',
+        ig: '@ammoncarver'
+    },
+    {
+        url: 'https://www.instagram.com/itsmrjladner',
+        src: j,
+        name: 'J Ladner',
+        ig: '@itsmrjladner'
+    },
+    {
+        url: 'https://www.instagram.com/pekelariley',
+        src: pekela,
+        name: 'Pekela Riley',
+        ig: '@pekelariley'
+    },
+    {
+        url: 'https://www.instagram.com/whitneyvermeer',
+        src: whitney,
+        name: 'Whitney VerMeer',
+        ig: '@whitneyvermeer'
+    },
+    {
+        url: 'https://www.instagram.com/jaymahmood',
+        src: jay,
+        name: 'Jay Mahmood',
+        ig: '@jaymahmood'
     },
 ]
 
