@@ -27,6 +27,12 @@ import furt from '../images/partners/new-2023/furterer-white.png';
 import johnny from '../images/partners/johnny-ramirez.png';
 import academy from '../images/partners/new-2023/academy-white.png';
 import malibu from '../images/partners/new-2023/Malibu 1.png';
+import abs from '../images/partners/new-2023/new/abs.png';
+import gac from '../images/partners/new-2023/new/gac.png';
+import jeli from '../images/partners/new-2023/new/jeli.png';
+import premiere from '../images/partners/new-2023/new/premiere.png';
+import the from '../images/partners/new-2023/new/the.png';
+import tsa from '../images/partners/new-2023/new/tsa.png';
 
 
 export default function Partners(props) {
@@ -155,6 +161,37 @@ export default function Partners(props) {
                 <div>
                     <a href="https://malibuc.com/" target="_blank" rel="noopener noreferrer">
                         <LazyLoadImage effect="blur" className="partner-logo" src={malibu} alt="Malibu C" />
+                    </a>
+                </div>
+
+                <div>
+                    <a href="https://www.americasbeautyshow.com/" target="_blank" rel="noopener noreferrer">
+                        <LazyLoadImage effect="blur" className="partner-logo" src={abs} alt="America's Beauty Show" />
+                    </a>
+                </div>
+                <div>
+                    <a href="https://www.texturedhairelevated.com/global-artistry-council" target="_blank" rel="noopener noreferrer">
+                        <LazyLoadImage effect="blur" className="partner-logo" src={gac} alt="Global Artistry Council" />
+                    </a>
+                </div>
+                <div>
+                    <a href="https://jeli.io" target="_blank" rel="noopener noreferrer">
+                        <LazyLoadImage effect="blur" className="partner-logo" src={jeli} alt="Jeli" />
+                    </a>
+                </div>
+                <div>
+                    <a href="https://www.premiereshows.com/en/home.html" target="_blank" rel="noopener noreferrer">
+                        <LazyLoadImage effect="blur" className="partner-logo" src={premiere} alt="Premiere Show Group" />
+                    </a>
+                </div>
+                <div>
+                    <a href="https://texturedhairelevated.com" target="_blank" rel="noopener noreferrer">
+                        <LazyLoadImage effect="blur" className="partner-logo" src={the} alt="Textured Hair Elevated" />
+                    </a>
+                </div>
+                <div>
+                    <a href="https://texturestyleawards.com" target="_blank" rel="noopener noreferrer">
+                        <LazyLoadImage effect="blur" className="partner-logo" src={tsa} alt="Texture Style Awards" />
                     </a>
                 </div>
             </div>
