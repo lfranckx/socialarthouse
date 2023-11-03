@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-scroll';
 import { useSpring, animated } from 'react-spring';
-import video from '../videos/Black.mp4';
+import videoSrc from '../videos/Black.mp4';
 
 export default function Header() {
     const [videoProps, setVideoProps] = useSpring(() => ({ 
@@ -18,12 +18,24 @@ export default function Header() {
     };
 
     useEffect(() => {
-        window.addEventListener('mousemove', handleInteraction);
-        window.addEventListener('click', handleInteraction);
+        const eventHandler = (e) => {
+            handleInteraction();
+            // Removing event listeners after the first interaction
+            window.removeEventListener('mousemove', eventHandler);
+            window.removeEventListener('click', eventHandler);
+            window.removeEventListener('touchstart', eventHandler);
+        };
+
+        // Add both mouse and touch event listeners
+        window.addEventListener('mousemove', eventHandler);
+        window.addEventListener('click', eventHandler);
+        window.addEventListener('touchstart', eventHandler);
 
         return () => {
-            window.removeEventListener('mousemove', handleInteraction);
-            window.removeEventListener('click', handleInteraction);
+            // Remove the event listeners on cleanup
+            window.removeEventListener('mousemove', eventHandler);
+            window.removeEventListener('click', eventHandler);
+            window.removeEventListener('touchstart', eventHandler);
         };
     }, []);
 
@@ -38,7 +50,7 @@ export default function Header() {
                 height: '100%',
                 backgroundColor: "#000" 
             }}>
-                <video src={video} autoPlay muted loop style={{ 
+                <video src={videoSrc} autoPlay muted loop style={{ 
                     width: '100%', 
                     height: '100%', 
                     objectFit: 'cover'
