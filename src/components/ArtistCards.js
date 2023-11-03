@@ -47,6 +47,37 @@ const ArtistCards = [
         color: 'black',
         height: 'large'
     },
+
+    {
+        url: 'https://www.instagram.com/ammoncarver',
+        src: amon,
+        name: 'Ammon Carver',
+        ig: '@ammoncarver'
+    },
+    {
+        url: 'https://www.instagram.com/itsmrjladner',
+        src: j,
+        name: 'J Ladner',
+        ig: '@itsmrjladner'
+    },
+    {
+        url: 'https://www.instagram.com/pekelariley',
+        src: pekela,
+        name: 'Pekela Riley',
+        ig: '@pekelariley'
+    },
+    {
+        url: 'https://www.instagram.com/whitneyvermeer',
+        src: whitney,
+        name: 'Whitney VerMeer',
+        ig: '@whitneyvermeer'
+    },
+    {
+        url: 'https://www.instagram.com/jaymahmood',
+        src: jay,
+        name: 'Jay Mahmood',
+        ig: '@jaymahmood'
+    },
     {
         url: 'https://www.instagram.com/sonnabrado/',
         src: sonna,
@@ -198,37 +229,7 @@ const ArtistCards = [
         name: 'block',
         color: 'black',
         height: 'small'
-    },
-    {
-        url: 'https://www.instagram.com/ammoncarver',
-        src: amon,
-        name: 'Ammon Carver',
-        ig: '@ammoncarver'
-    },
-    {
-        url: 'https://www.instagram.com/itsmrjladner',
-        src: j,
-        name: 'J Ladner',
-        ig: '@itsmrjladner'
-    },
-    {
-        url: 'https://www.instagram.com/pekelariley',
-        src: pekela,
-        name: 'Pekela Riley',
-        ig: '@pekelariley'
-    },
-    {
-        url: 'https://www.instagram.com/whitneyvermeer',
-        src: whitney,
-        name: 'Whitney VerMeer',
-        ig: '@whitneyvermeer'
-    },
-    {
-        url: 'https://www.instagram.com/jaymahmood',
-        src: jay,
-        name: 'Jay Mahmood',
-        ig: '@jaymahmood'
-    },
+    }
 ]
 
 export default ArtistCards;
