@@ -58,9 +58,8 @@ const ContactForm = () => {
     return(
         <>
             <Helmet >
-                <title>Contact Social Arthouse</title>
-                <meta name='description' content='Get in touch with our team'/>
-                <meta name='keywords' content='Beauty Management, Creative Agency, Consulting Firm' />
+                <title>Contact Social Art House | Beauty &amp; Hair Creative Agency</title>
+                <meta name='description' content="Reach out to Social Art House, your creative agency for beauty and hair industry collaborations. Contact us today to elevate your brand's presence."/>
             </Helmet>
             <main> 
                 <animated.div style={props} id="contact-form">

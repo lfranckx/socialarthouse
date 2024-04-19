@@ -77,10 +77,15 @@
                     &:hover {
                         color: $t5;
                     }
+
+                    &.link {
+                        font-size: 16px;
+                    }
                 }
 
                 div.cb-container {
-                    margin-bottom: 20px;
+                    margin-bottom: 40px;
+
                     .contact-btn {
                         background: $p2;
                         padding: 10px 15px;

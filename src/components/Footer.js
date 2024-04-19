@@ -60,6 +60,11 @@ export default function Footer(props) {
                         <div className="cb-container">
                             <Link className="contact-btn" to='/contact'>Get in Touch</Link>
                         </div>
+
+                        <div className="link-wrap">
+                            <Link className="link" to='/contact'>Privacy Policy</Link>
+                        </div>
+                        
                         <div>
                             <Link to='/'>
                                 <img className="logo" src={logo} alt="Social Art House"/>
