@@ -62,7 +62,7 @@ export default function Footer(props) {
                         </div>
 
                         <div className="link-wrap">
-                            <Link className="link" to='/contact'>Privacy Policy</Link>
+                            <Link className="link" to='/privacy-policy'>Privacy Policy</Link>
                         </div>
                         
                         <div>
