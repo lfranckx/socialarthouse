@@ -57,7 +57,7 @@ const PrivacyPolicy = () => {
                             <li>Service providers and partners who assist us in order fulfillment and payment processing.</li>
                             <li>Our email marketing platform, to manage and send emails to you.</li>
                         </ul>
-                        <p>We do not sell or rent personal information to third parties for their marketing purposes without your explicit consent.</p>
+                        <p className='margin-top'>We do not sell or rent personal information to third parties for their marketing purposes without your explicit consent.</p>
                     </div>
 
                     <div className='container'>
