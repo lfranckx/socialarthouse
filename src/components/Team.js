@@ -4,7 +4,7 @@ import '../styles/Team.scss';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import marlene from '../images/team/marlene.png';
-import justine from '../images/team/justine.png';
+// import lachlan from '../images/team/lachlan.png';
 import maria from '../images/team/maria.png';
 import lynn from '../images/team/lynn.png';
 
@@ -19,11 +19,6 @@ export default function Team(props) {
                     <h5>Founder, CEO</h5>
                 </div>
                 <div className="card">
-                    <LazyLoadImage effect="blur" src={justine} alt="justine" />
-                    <h4>Justine Berger</h4>
-                    <h5>COO, Developing Partner</h5>
-                </div>
-                <div className="card">
                     <LazyLoadImage effect="blur" src={maria} alt="maria" />
                     <h4>Maria Vigarito</h4>
                     <h5>Executive Event &amp; Brand Specialist</h5>
@@ -33,6 +28,12 @@ export default function Team(props) {
                     <h4>Lynn Soares</h4>
                     <h5>Executive Administration &amp; Event Coordinator</h5>
                 </div>
+
+                {/* <div className="card">
+                    <LazyLoadImage effect="blur" src={Lachlan} alt="Lachlan" />
+                    <h4>Lachlan Franckx</h4>
+                    <h5>Web Development &amp; SEO</h5>
+                </div> */}
             </div>
 
             <Link activeClass="active" to="partners" spy={true} smooth={true} offset={0} duration={500}>
